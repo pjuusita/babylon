@@ -1,0 +1,405 @@
+@CHARSET "UTF-8";
+
+
+body {
+	margin:0; 
+	padding:0;
+}
+
+
+h1 {
+	text-align:left;
+	color:#514102;	
+}
+
+
+.titletable {
+	border: 2px solid #9693cc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width:600px;
+	background-color: #bcb8ff; 
+}
+
+
+
+
+.addbutton {
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;	
+   	border-width:3px;
+    width: 100px;
+    color: black;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.addbutton2 {
+	text-decoration: none;
+	background-color: #EEEEEE;
+	color: #333333;
+	padding: 2px 16px 2px 16px;
+	border-top: 2px solid #CCCCCC;
+	border-right: 2px solid #333333;
+	border-bottom: 2px solid #333333;
+	border-left: 2px solid #CCCCCC;
+	border-radius: 5px;	
+ 	font-size:14px;
+	font-weight:bold;
+}
+
+
+.addbutton2:hover {
+	color: #555555;
+	border-bottom: 2px solid #CCCCCC;
+	border-top: 2px solid #333333;
+	border-left: 2px solid #333333;
+	border-right: 2px solid #CCCCCC;
+}
+
+.addbutton:hover {
+    background-color: #9693cc;
+    cursor:pointer;
+    color: black;
+}
+
+
+.titletablediv {
+	border: 2px solid #9693cc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width:588px;
+	height:28px;
+	padding-left:8px;
+	background-color: #bcb8ff; 
+	font-size:22px;
+	color:#514102;	
+	padding-top:4px;
+}
+
+
+
+.titletablediv:hover {
+	border: 2px solid #866ce2;
+	background-color:#9693cc;
+}
+
+
+
+.titletabletitle {
+	font-size:22px;
+	padding-left:8px;
+	color:#514102;	
+	vertical-align:top;
+	padding-top:2px;
+	width:500px;
+}
+
+
+
+
+.titleobligatorydiv {
+	font-size:14px;
+	vertical-align:top;
+	font-weight:bold;
+}
+
+
+
+.titletabletitlenohower {
+	font-size:22px;
+	padding-left:8px;
+	color:#514102;	
+	vertical-align:top;
+	padding-top:2px;
+	width:500px;
+}
+
+
+
+.titletablerow:hover {
+	border: 2px solid #9693cc;
+	background-color:#bcb8ff;
+}
+
+
+
+
+.contenttitletable {
+	border-top: 2px solid #9693cc;
+	border-left: 2px solid #9693cc;
+	border-right: 2px solid #9693cc;
+	border-bottom: 2px solid #9693cc;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width:600px;
+	background-color: #bcb8ff; 
+}
+
+.contenttitletablenohower {
+	border-top: 2px solid #9693cc;
+	border-left: 2px solid #9693cc;
+	border-right: 2px solid #9693cc;
+	border-bottom: 2px solid #9693cc;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width:600px;
+	background-color: #bcb8ff; 
+}
+
+
+
+.contenttitletable:hover {
+	border: 2px solid #866ce2;
+	background-color:#9693cc;
+}
+
+
+
+.contenttable {
+	border-left: 2px solid #9693cc;
+	border-right: 2px solid #9693cc;
+	width:600px;
+}
+
+
+.contentedittable {
+	border-spacing:0;
+	border-collapse: collapse;
+}
+
+
+
+.contenttablefooter {
+	border-left: 2px solid #9693cc;
+	border-right: 2px solid #9693cc;
+	border-bottom: 2px solid #9693cc;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width:600px;
+	
+}
+
+
+
+.contentedittable td {
+	padding:0;
+}
+
+
+
+.contentdiv {
+	border: 2px solid #bcb8ff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width:588px;
+	height:28px;
+	padding-left:8px;
+	font-size:22px;
+	color:#514102;	
+	padding-top:4px;
+}
+
+
+
+.contentdiv:hover {
+	border: 2px solid #9693cc;
+	background-color:#bcb8ff;
+}
+
+
+
+.contentheader {
+	font-size:22px;
+	padding-left:8px;
+	color:#514102;	
+	vertical-align:top;
+	padding-top:4px;
+	width:140px;
+}
+
+
+.contentheadertop {
+	background-color:green;	
+}
+
+
+
+.contenttitlerow {
+	font-size:22px;
+	padding-left:8px;
+	color:#514102;	
+	background-color:#bcb8ff;
+	border-bottom: 2px dotted #cccccc;
+	padding-top:4px;
+	width:140px;
+}
+
+
+
+
+.spacerdiv {
+	height:5px;
+}
+
+
+.contentleft {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+
+.contentcell {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+
+.contentright {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+.contentedit {
+	padding: 0;
+	vertical-align:bottom;
+	padding-left: 8px;
+	padding-bottom: 4px;
+}
+
+
+.contentinsidetable {
+	border-spacing:0;
+	width:320px;
+}
+
+
+.infopagesectionleft {
+	border-spacing:0;
+	width: 80px;
+}
+
+.infopagesectionfieldtitle {
+	border-spacing:0;
+	width: 120px;
+}
+
+.infopagesectionfielddata {
+	border-spacing:0;
+	width: 220px;
+}
+
+
+.infopagesectionfielderror {
+	border-spacing:0;
+	width: 180px;
+}
+
+
+
+.errordiv {
+	border: 1px solid red;
+	background-color: pink;
+	border-radius: 2px;
+	padding: 2px 2px 2px 4px;
+	width:120px;
+	font-size:14px;
+}
+
+
+
+td.sectionfieldtitle {
+	font-size:16px;
+	color:#514102;	
+	width:120px;
+	height:22px;
+	padding-left:10px;
+}
+
+
+.sectionfieldvalue {
+	font-size:20px;
+	color:#514102;	
+	width:120px;
+	height:22px;
+	padding-left:10px;
+	vertical-align:top;
+}
+
+
+
+/*
+ * Tätä käytetään normaalissa sectionissa select-alasvetovalikon yhteydessä.
+ * 
+ */
+.sectioninputfield {
+	height:20px;
+	width:200px;
+	border: 1px solid #8888FF;
+	background-color: #CCDDFF;
+	font-size:15px;
+	padding-left:6px;
+	padding-top:2px;
+	border-radius: 3px;	
+}
+
+
+input:focus {
+
+	background-color: white;
+	
+	/*
+	border: 2px solid #FDD017;
+	box-shadow: 0 0 5px #FDD017;
+	*/
+}
+
+
+/*
+ * Tätä käytetään normaalissa sectionissa select-alasvetovalikon yhteydessä.
+ * 
+ */
+.sectionselectfield {
+	height:26px;
+	width:208px;
+	border: 1px solid #8888FF;
+	background-color: #CCDDFF;
+	font-size:15px;
+	padding-left:2px;
+	padding-top:2px;
+	border-radius: 3px;	
+}
+
+
+
+
+.contentinsidetable td {
+	padding:0;
+}
+
+
+
+
+td.contentinfovalue {
+	font-size:16px;
+	color:#514102;	
+	width:220px;
+	height:22px;
+	vertical-align:top;
+}
+
+
+.contenteditselect {
+	height:20px;
+	width:205px;
+	border: thin solid #888888;
+	background-color: #eeeeee;
+	padding-left:3px;
+}
+
+
+

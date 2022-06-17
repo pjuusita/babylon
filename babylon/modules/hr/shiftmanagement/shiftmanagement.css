@@ -1,0 +1,309 @@
+.horizontalLabelView {
+	
+	background-image	: url('/babylon/images/horizontal2.png');
+	background-size		: 20px 18px;
+	border-style		: solid solid solid solid;
+	width 				: 30px;
+	height				: 30px;
+	
+}
+
+.verticalLabelView {
+	
+	background-image	: url('/babylon/images/vertical2.png');
+	background-size		: 20px 20px;
+	border-style		: solid solid solid solid;
+	width 				: 30px;
+	height				: 30px;
+
+}
+
+.horizontalLabelViewPressed {
+	
+	background-image	: url('/babylon/images/redstar.png');
+	background-size		: 20px 20px;
+	border-style		: solid solid solid solid;
+	width 				: 30px;
+	height				: 30px;
+	
+}
+
+.verticalLabelViewPressed {
+	
+	background-image	: url('/babylon/images/redstar.png');
+	background-size		: 20px 20px;
+	border-style		: solid solid solid solid;
+	width 				: 30px;
+	height				: 30px;
+
+}
+
+.projectLabelView {
+	
+	background-image	: url('/babylon/images/project.png');
+	background-size		: 20px 20px;
+	border-style		: solid solid solid solid;
+	width 				: 30px;
+	height				: 30px;
+}
+
+.taskLabelView {
+	
+	background-image	: url('/babylon/images/task.png');
+	background-size		: 20px 20px;
+	border-style		: solid solid solid solid;
+	width 				: 30px;
+	height				: 30px;
+}
+
+.employeeLabelView {
+	
+	background-image	: url('/babylon/images/person.png');
+	background-size		: 20px 20px;
+	border-style		: solid solid solid solid;
+	width 				: 30px;
+	height				: 30px;
+	
+}	
+
+.projectLabelViewPressed {
+	
+	background-image	: url('/babylon/images/redstar.png');
+	background-size		: 20px 20px;
+	border-style		: solid solid solid solid;
+	width 				: 30px;
+	height				: 30px;
+}
+
+.taskLabelViewPressed {
+	
+	background-image	: url('/babylon/images/redstar.png');
+	background-size		: 20px 20px;
+	border-style		: solid solid solid solid;
+	width 				: 30px;
+	height				: 30px;
+}
+
+
+.employeeLabelViewPressed {
+	
+	background-image	: url('/babylon/images/redstar.png');
+	background-size		: 20px 20px;
+	border-style		: solid solid solid solid;
+	width 				: 30px;
+	height				: 30px;
+}
+
+
+.shiftTable {
+	
+	border-collapse		: collapse;
+	border-style: 		: none none none none;
+	padding				: 0px;
+	margin				: 0px;
+	background-color	: white;
+	position			: relative;
+	
+}
+
+.shiftMarker {
+	
+	border-radius 		: 5px;
+	border-style		: solid solid solid solid;
+	border-width		: 2px;
+	z-index				: 10;
+	text-align			: center;
+	
+}
+
+.floatingSelection {
+	
+	border-radius 		: 5px;
+	border-color		: lightgray;
+	border-style		: solid solid solid solid;
+	background-color 	: #4682b4;
+	position			: fixed;
+	z-index				: 12;
+	
+}
+
+.shiftOverview {
+	
+	border-radius 		: 5px;
+	border-color		: lightgray;
+	border-style		: solid solid solid solid;
+	background-color 	: #4682b4;
+	position			: fixed;
+	z-index				: 11;
+	
+}
+
+
+.floatingSelectionTableHeader {
+	
+	background-color 	: #4682b4;
+	border-color 	 	: #4078a5;
+	text-align			: center;
+	height				: 15px;
+	
+}
+
+.floatingSelectionDraggableArea {
+	
+	background-color 	: #ffffff;
+	border-color 	 	: #f0f0f0;
+	float: 				: left;
+	
+}
+
+.floatingSelectionTable {
+	
+	border-collapse		: collapse;
+	padding-top			: 0px;
+	padding-left		: 0px;
+	padding-right		: 0px;
+	padding-bottom		: 0px;
+	
+}
+
+.draggableElement {
+	
+	border-collapse		: collapse;
+	padding-top: 		: 2px;
+	padding-left		: 5px;
+	padding-right		: 5px;
+	padding-bottom		: 2px;
+	background-color	: gray;
+	border-color		: darkgray;
+	border-radius		: 8px;
+	border-style 		: solid solid solid solid;
+	border-width		: 2px;
+	width				: 175px;
+	height				: 20px;
+	text-align			: center;
+	float				: left;
+	z-index				: 11;
+
+}
+
+.employeeSelection {
+	
+	border-radius 		: 5px;
+	border-color		: lightgray;
+	border-style		: solid solid solid solid;
+	background-color 	: #ffffff;
+	position			: fixed;
+	z-index				: 10;
+	overflow 			: auto;
+}
+
+.employeeSelectionTable {
+	
+	border-collapse		: collapse;
+	padding-top			: 0px;
+	padding-left		: 0px;
+	padding-right		: 0px;
+	padding-bottom		: 0px;
+	
+}
+																											
+.employeeSelectionHeader {
+	
+	background-color 	: #4682b4;
+	border-color 	 	: #4078a5;
+	text-align			: center;
+	
+}
+
+.employeeSelectionMiddle {
+	
+	background-color 	: #ffffff;
+	border-color 	 	: #f0f0f0;
+	
+}
+
+.employeeSelectionFooter {
+	
+	background-color 	: #ffffff;
+	border-color 	 	: #f0f0f0;
+
+}
+
+
+.draggableEmployee {
+	
+	border-collapse		: collapse;
+	padding-top: 		: 2px;
+	padding-left		: 5px;
+	padding-right		: 5px;
+	padding-bottom		: 2px;
+	background-color	: gray;
+	border-color		: darkgray;
+	border-radius		: 8px;
+	border-style 		: solid solid solid solid;
+	border-width		: 2px;
+	float				: left;
+	z-index				: 11;
+
+}
+
+.taskSelection {
+	
+	border-radius 		: 5px;
+	border-color		: lightgray;
+	border-style		: solid solid solid solid;
+	background-color 	: #4682b4;
+	position			: fixed;
+	z-index				: 10;
+	
+}
+
+.taskSelectionTable {
+	
+	border-collapse		: collapse;
+	padding-top			: 0px;
+	padding-left		: 0px;
+	padding-right		: 0px;
+	padding-bottom		: 0px;
+		
+}
+																											
+.taskSelectionHeader {
+	
+	background-color 	: #4682b4;
+	border-color 	 	: #4078a5;
+	text-align			: center;
+	
+}
+
+.taskSelectionMiddle {
+	
+	background-color 	: #ffffff;
+	border-color 	 	: #f0f0f0;
+
+	
+}
+
+.taskSelectionFooter {
+	
+	background-color 	: #ffffff;
+	border-color 	 	: #f0f0f0;
+	
+}
+
+
+.draggableTask {
+	
+	border-collapse		: collapse;
+	padding-top: 		: 2px;
+	padding-left		: 5px;
+	padding-right		: 5px;
+	padding-bottom		: 2px;
+	background-color	: gray;
+	border-color		: darkgray;
+	border-radius		: 8px;
+	border-style 		: solid solid solid solid;
+	border-width		: 2px;
+	float				: left;
+	
+}

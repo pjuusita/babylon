@@ -1,0 +1,47 @@
+
+
+.toplevelmenucontainer {
+	border-spacing:0px;
+	border-collapse:separate;
+}
+
+
+/* Main menuitemeiden v‰lin m‰‰r‰ */
+.toplevelmenucontainer td {
+	padding-bottom:1px;
+}
+
+
+
+.toplevelmenuitem {
+	font-size:24px;
+	border:2px solid #7a74cc;
+	background-color:#9991ff;
+	padding-left:3px;
+	cursor:pointer;
+}
+
+
+.toplevelmenuitem:hover {
+	background-color:#7a4fff;
+	border:2px solid #6642cc;
+}
+
+
+
+.sublevelmenuitem {
+	font-size:20px;
+	border:2px solid #9693cc;
+	background-color:#bcb8ff;
+	text-align:left;
+	padding-left:3px;
+	cursor:pointer;
+}
+
+
+.sublevelmenuitem:hover {
+	background-color:#7a4fff;
+	border:2px solid #6642cc;
+}
+
+

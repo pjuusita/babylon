@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ImageMapster Beginner 2</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="https://www.babelsoft.fi/babylon/js/jquery.imagemapster.js"></script>
+</head>
+
+<body>
+
+<script>
+$(document).ready(function ()
+{
+	$('#shape1').mapster({
+	singleSelect : true,
+	render_highlight : { altImage : '/babylon/images/shape2.gif' },
+     mapKey: 'color',
+	fill : true, altImage : '/babylon/images/shape3.gif',
+	fillOpacity : 1,
+	stroke : true,
+	strokeColor : '000000',
+	strokeWidth : 3,
+});
+});
+</script>
+
+
+<div id="container">
+ <div id="text">Adding a bordund the selection, stroke color and width are editable
+<br><br>
+<a href="beginner1.htm">back</a>
+ </div>
+<div id="image">
+<img style="width:400px;height:400px;border:0;" id="shape1" src="https://www.babelsoft.fi/babylon/images/shape1.gif" alt="shapeee">
+ </div>
+</div>
+
+</body>

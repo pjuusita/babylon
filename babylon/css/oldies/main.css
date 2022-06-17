@@ -1,0 +1,94 @@
+body {
+	margin:0; 
+	padding:0;
+}
+
+
+h1 {
+	text-align:left;
+	color:black;
+}
+
+
+.logintable {
+	text-align:left;
+	border:3px solid #2ECCFA;
+	background-color: #EFFBFB;
+	border-radius:25px;
+}
+
+
+.pagetitle {
+	font-family:  "Times New Roman", Times, serif;
+	font-size: 30px;
+	font-weight:bold;
+}
+
+
+
+.titletablediv {
+	border: 2px solid #9693cc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	height:28px;
+	padding-left:8px;
+	background-color: #bcb8ff; 
+	font-size:22px;
+	color:#514102;	
+	padding-top:2px;
+}
+
+
+
+.titletablediv:hover {
+	border: 2px solid #866ce2;
+	background-color:#9693cc;
+}
+
+
+
+
+.buttonstyle {
+	text-align:center;
+	font-family:  "Times New Roman", Times, serif;
+	font-size: 16px;
+	padding: 2px 8px 2px 8px;
+	border:1px solid #7A4FFF;
+	background-color: #bcb8ff;
+}
+
+
+
+
+.buttonstyle:hover {
+	text-align:center;
+	font-family:  "Times New Roman", Times, serif;
+	padding: 2px 8px 2px 8px;
+	border:1px solid #6642cc;
+	background-color: #9991FF;
+	cursor: pointer;
+}
+
+.buttonstyledisabled {
+	text-align:center;
+	font-family:  "Times New Roman", Times, serif;
+	font-size: 16px;
+	padding: 2px 8px 2px 8px;
+	border:1px solid #6f6f6f;
+	background-color: #bebebe;
+}
+
+
+.buttonstyledisabled:hover {
+	text-align:center;
+	font-family:  "Times New Roman", Times, serif;
+	font-size: 16px;
+	padding: 2px 8px 2px 8px;
+	border:1px solid #6f6f6f;
+	background-color: #bebebe;
+	cursor: pointer;
+}
+
+
+

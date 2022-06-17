@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+
+body {
+	margin:0; 
+	padding:0;
+}
+
+
+h1 {
+	color:orange;
+}
+
+
+
+.logintable td {
+	font-size:16px;
+}
+
+
+.logininput {
+	height:20px;
+	font-size:16px;
+}
+
+
+.loginbutton {
+	height:32px;
+	font-size:16px;
+	border:1px solid #888888;
+	font-weight:bold;	
+	padding: 6px 12px;
+	background-color: #8DE2FF;
+	border-radius:3px;
+}
+
+
+.loginbutton:hover {
+	background-color: #4E99B2;
+}
+
+
+
+
+.logintable a {
+	font-size:14px;
+}
+
+
+
+.logintable {
+	text-align:left;
+	border:2px solid #888888;
+	background-color: #e8e8e8;
+	width: 300px;
+	border-radius:4px;
+
+}
+
+
+
+td.title {
+	padding-top:20px;
+	padding-bottom:10px;
+	font-size:28px;
+	font-weight:bold;	
+}

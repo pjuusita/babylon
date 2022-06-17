@@ -1,0 +1,289 @@
+@CHARSET "UTF-8";
+
+body {
+	margin:0; 
+	padding:0;
+}
+
+
+.infotable {
+	border-collapse: collapse;
+	text-align:left;
+	padding-left:8px;
+	color:black;
+	font-size:14px;
+	background-color:#FFEDA5;	
+}
+
+
+.infotablesectionheader {
+	text-align:left;
+	font-size:28px;
+	padding-left:8px;
+	color:#514102;	
+}
+
+
+
+.infotable td {
+	text-align:left;
+	font-size:14px;
+	padding-left:12px;
+}
+
+
+.infotablesectionheader {
+	background-color:#D7C069;	
+	padding-left:0px;
+}
+
+
+table.yritystaulu {
+		border:1px solid #404040 ;
+		text-align: left;
+		border-spacing: 0px;
+}
+
+
+
+table.listtable {
+	border: 2px solid #9693cc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align: left;
+	border-spacing: 0px;
+}
+
+
+.listtable th {
+ 	background-color:#bcb8ff;
+   	color: black;	
+   	text-align: left;
+   	padding-left: 4px;
+   	padding-top: 2px;
+   	padding-bottom: 2px;
+   	border-bottom: 2px solid #9693cc ;
+  	border-right: 2px solid #9693cc;
+   	padding-right: 4px;
+}
+
+
+
+.listtableoddrowfirst {
+   	background-color: #ffffff;
+   	color: black;	
+   	text-align: left;
+   	padding-left: 4px;
+   	border-right: 2px solid #9693cc;
+   	padding-right: 4px;
+   	vertical-align:top;
+}
+
+
+.listtableevenrowfirst {
+   	background-color: #dddddd;
+   	color: black;	
+   	text-align: left;
+   	padding-left: 4px;
+   	border-right: 2px solid #9693cc;
+   	padding-right: 4px;
+   	vertical-align:top;
+}
+
+
+
+.listtableoddrow {
+   	background-color: #ffffff;
+   	color: black;	
+   	text-align: left;
+   	padding-left: 4px;
+   	border-right: 2px solid #9693cc;
+   	padding-right: 4px;
+   	vertical-align:top;
+}
+
+
+.listtableevenrow {
+   	background-color: #dddddd;
+   	color: black;	
+   	text-align: left;
+   	padding-left: 4px;
+   	border-right: 2px solid #9693cc;
+   	padding-right: 4px;
+   	vertical-align:top;
+}
+
+
+.listtableoddrowlast {
+   	background-color: #ffffff;
+   	color: black;	
+   	text-align: left;
+   	padding-left: 4px;
+   	padding-right: 4px;
+   	vertical-align:top;
+}
+
+
+.listtableevenrowlast {
+   	background-color: #dddddd;
+   	color: black;	
+   	text-align: left;
+   	padding-left: 4px;
+   	padding-right: 4px;
+   	vertical-align:top;
+}
+
+
+
+.otsikkorivi td {
+    	background-color: #B8B8B8;
+    	color: black;	
+    	text-align: left;
+    	padding-left: 4px;
+    	border-bottom: 1px solid #404040 ;
+}
+
+.tavallinenrivi td {
+    	background-color: #F8F8F8;
+    	color: black;	
+    	padding-left: 4px;
+}
+
+
+td.odd {
+    	background-color: green;
+    	color: black;	
+    	padding-left: 4px;
+}
+
+
+td.odd {
+    	background-color: blue;
+    	color: black;	
+    	padding-left: 4px;
+}
+
+
+
+.tavallinencell {
+    	background-color: green;
+    	color: black;	
+    	padding-left: 4px;
+}
+
+
+.lisaysformtaulu {
+		border:1px solid #404040 ;
+		text-align: left;
+		border-spacing: 0px;
+		padding: 15px 15px;
+}
+
+
+.petebutton {
+	border: 2px solid #7D6816;
+    background-color: #D7C069;
+    padding: 1px 5px 1px 5px;
+    border-spacing: 4px;
+    border-radius: 5px;	
+    width: 100px;
+    color: #514102;
+}
+
+.petebutton:hover {
+	border-color: #514102;	
+    background-color: #9B852D;
+    cursor:pointer;
+    color: black;
+}
+
+
+
+#hider {
+	position:absolute;
+	top: 0%;
+	left: 0%;
+	width:100%;
+	height:100%;
+	z-index: 99;
+	background-color:rgba(0,0,0,0.3);
+}
+
+
+#popup_box {
+	position:absolute;
+	width:10em;
+	height:10em;
+	border:  2px solid black;
+	z-index:100; 
+}
+
+
+
+#petetabheader ul {	
+	list-style: none;
+	padding:0;
+	margin:0;
+	background:#D7C069;	
+}
+
+p {
+	margin:0;
+	padding:0;
+}
+
+#petetabheader li {
+	display:inline;
+	float:left;
+	height:20px;
+	border:solid #7D6816;
+	border-width:2px 2px 0px 2px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	margin: 0 0.5em 0 0;
+	padding-bottom: 3px;
+	padding-top: 4px;
+	position: relative;
+	background:#D7C069;	
+}
+
+#petetabheader li a {
+	padding-left: 15px;	
+	padding-right: 15px;
+	color: #514102;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#petecontent {
+	border:2px solid #7D6816;
+	background:#FFEDA5;
+	clear:both;
+}
+
+
+#petetabheader .selectedtabu {
+	position: relative;
+	top:2px;
+	background:#FFEDA5;
+	border-width:2px 2px 0px 2px;	
+}
+
+
+
+#container {
+	width : 100%;
+	margin : auto;
+	}
+#text {
+	width : 60%;
+	float : left;
+	font-family : verdana, arial, sans-serif;
+	font-size : 12pt;
+	margin-top : 20px;
+	margin-left : 20px;
+	}
+#image { float : right; }
+
+

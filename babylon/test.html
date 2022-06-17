@@ -1,0 +1,16 @@
+<html>
+<head>
+<script type="text/javascript">
+var app = {};
+app.unloaded = false;
+app.unload = function() {
+    if (app.unloaded) return; else app.unloaded = true;
+    // your code here
+    return "YO";
+};
+</script>
+</head>
+<body onunload="return app.unload();" onbeforeunload="return app.unload();">
+YO
+</body>
+</html>

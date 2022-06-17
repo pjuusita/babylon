@@ -1,0 +1,92 @@
+.hierarchyTableHeader {
+	
+	background-color : orange;
+	color			 : white;
+	border-style	 : none none solid none;
+	border-width 	 : 2px;
+	border-color	 : chocolate;
+	border-radius	 : 0px 0px 0px 0px;
+}
+
+.hierarchyTableBorderDiv {
+	
+	border-style	 : solid solid solid solid;
+	border-width 	 : 2px;
+	border-color	 : chocolate;
+	border-radius	 : 5px 5px 5px 5px;
+	
+}
+
+.hierarchyOpenerOpen {
+	
+	background-image 	: url('/babylon/images/buttonminus.gif');
+	background-size		: 20px 20px;
+	background-repeat	: no-repeat;
+	background-position : center center;
+	width 				: 22px;
+	height				: 22px;
+	
+}
+
+.hierarchyOpenerClosed {
+		
+	background-image 	: url('/babylon/images/buttonplus.gif');
+	background-size		: 20px 20px;
+	background-repeat	: no-repeat;
+	background-position : center center;
+	width 				: 22px;
+	height				: 20px;
+		
+}
+
+.hierarchyOpenerNoChildren {
+		
+	background-size		: 20px 20px;
+	background-repeat	: no-repeat;
+	background-position : center center;
+	width 				: 22px;
+	height				: 20px;
+	
+}
+
+.hierarchyOpenerOpen:hover, .hierarchyOpenerClosed:hover  {
+
+	background-color	: gray;
+		
+}
+
+.hierarchyItem {
+	
+	background-color : white;
+	
+}
+
+.hierarchyItem:hover {
+	
+	background-color : orange;
+	
+}
+
+.hierarchyEnclosingDiv {
+	
+	border-style 	 : solid solid solid solid;
+	border-width	 : 1px;
+	border-color	 : white;
+	background-color : white;
+	
+}
+
+.hierarchyEnclosingDivHover {
+	
+	border-style 	 : solid solid solid solid;
+	border-width	 : 1px;
+	border-color 	 : black;
+	background-color : orange;
+	
+}
+
+.hierarchyButtonsDiv {
+	
+	
+	
+}

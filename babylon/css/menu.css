@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+
+.menu_toplevel { 
+	background-color: #666666;
+	color: white;
+	padding: 7px 0px 7px 8px;
+	font-family: Arial, sans-serif;;
+	font-size: 16px;
+	text-decoration: none;
+	font-smooth: never;
+	-webkit-font-smoothing: none; ;
+	border-bottom: ;
+	border-top: 4px solid #525252;
+	background-image: url(/images/module.png);
+} 
+
+.menu_sublevel { 
+	background-color: #666666;
+	padding: 4px 3px 3px 25px;
+	color: #FFFFFF;
+	font-family: Arial, sans-serif;;
+	font-size: 14px;
+} 
+
+.menucontainer { 
+	background-color: #525252;
+} 
+
+
+.level1_verticalspace_eikaytossa { 
+	height: 2px;
+	backgound-color: #525252;
+	width: 100%;
+} 
+
+.level2_verticalspace_eikaytossa { 
+	height: 1px;
+	width: 100%;
+	background-color: #525252;
+} 
+
+.level1_menuicon { 
+	background-color: #666666;
+	padding: 3px 4px 2px 2px;
+} 
+
+.menu_textcolumn { 
+	width: 170px;
+} 
+
+.menu_iconcolumn { 
+	width: 30px;
+} 
+
+.menurow:hover div { 
+	background-color: #424242;
+} 
+
+.level2_menuitem:hover { 
+	background-color: #424242;
+} 
+
+.menu_active { 
+	background-color: yellow;
+} 

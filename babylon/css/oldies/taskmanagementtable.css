@@ -1,0 +1,133 @@
+.taskCardSmall {
+	
+	border-radius	 : 5px;
+	border-style 	 : solid solid solid solid;
+	border-color	 : chocolate;
+	background-color : orange;
+	color			 : white;
+	min-width		 : 150px;
+	max-width: 		 : 150px;
+	
+}
+
+.taskCardSmall:hover {
+	
+	border-radius	 : 5px;
+	border-style 	 : solid solid solid solid;
+	border-color	 : green;
+	background-color : orange;
+	color			 : white;
+	min-width		 : 150px;
+	max-width: 		 : 150px;
+	
+}
+
+.taskCardSmallHelperHover {
+	
+	border-radius	 : 5px;
+	border-style 	 : solid solid solid solid;
+	border-color	 : chocolate;
+	background-color : green;
+	color			 : white;
+	min-width		 : 150px;
+	max-width: 		 : 150px;
+	
+}
+
+.taskCardSmallDragged {
+	
+	border-radius	 : 5px;
+	border-style 	 : solid solid solid solid;
+	border-color	 : red;
+	background-color : orange;
+	color			 : white;
+	min-width		 : 150px;
+	max-width: 		 : 150px;
+	
+}
+
+.taskDropZone {
+	
+	background-color : yellow;
+	
+}
+
+.taskArea {
+	
+	border-style 	 : none none none none
+	border-color 	 : white;
+	background-color : #DDDDDD;
+	
+}
+
+.taskAreaHover {
+	
+	border-style 	 : none none none none
+	border-color 	 : white;
+	background-color : green;
+	
+}
+
+.taskCardImage {
+	
+	width	: 50px;
+	height	: 50px;
+	
+}
+
+.taskTable {
+	
+	padding 		 : 5px;
+	background-color : white;
+	
+}
+
+.taskTableHeader {
+	
+	background-color : orange;
+	border-style 	 : solid solid solid solid;
+	border-color	 : chocolate;
+	border-collapse	 : collapse;
+	
+	color			 : white;
+	
+}
+
+.taskCardTable {
+	
+	text-align	: left;
+	min-width  : 240px;
+	max-width  : 240px;
+	border-collapse : collapse;
+		
+}
+
+.firstColumnSmallTaskCard {
+	
+	min-width  	 : 50px;
+	max-width  	 : 50px;
+	text-align 	 : left;
+
+}
+
+.secondColumnSmallTaskCard {
+	
+	min-width : 160px;
+	max-width : 160px;
+	
+}
+
+.firstColumnBigDialog {
+	
+	text-align : center;
+	min-width  	 : 150px;
+	max-width  	 : 150px;
+	
+}
+
+.secondColumnBigDialog {
+	
+	text-align 	   : left;
+	
+}
+

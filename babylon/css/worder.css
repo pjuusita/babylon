@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+
+
+h1 {
+	font-size:30px;
+	font-weight:bold;
+	padding-top:0px;
+	margin-top:0px;
+}
+
+
+.worderlist {
+	border-collapse:collapse;
+}
+
+.worderlist tr:hover {
+	background-color:#BBBBBB;
+	cursor: pointer;
+}
+
+.wselected {
+	background-color:#33FFC7;
+}
+

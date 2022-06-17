@@ -1,0 +1,1805 @@
+A	1	Maatalous, metsatalous ja kalatalous
+01	2	Kasvinviljely ja kotielaintalous, riistatalous ja niihin liittyvat palvelut
+011	3	Yksivuotisten kasvien viljely
+0111	4	Viljakasvien (pl. riisin), palkokasvien ja aljysiemenkasvien viljely
+01110	5	Viljakasvien (pl. riisin), palkokasvien ja aljysiemenkasvien viljely
+0112	4	Riisin viljely
+01120	5	Riisin viljely
+0113	4	Vihannesten ja melonien, juuresten ja mukulakasvien viljely
+01131	5	Vihannesten viljely avomaalla (pl. peruna ja sokerijuurikas)
+01132	5	Vihannesten viljely kasvihuoneessa
+01133	5	Perunan viljely
+01134	5	Sokerijuurikkaan viljely
+0114	4	Sokeriruon viljely
+01140	5	Sokeriruon viljely
+0115	4	Tupakan viljely
+01150	5	Tupakan viljely
+0116	4	Kuitukasvien viljely
+01160	5	Kuitukasvien viljely
+0119	4	Muu yksivuotisten ja koristekasvien viljely
+01191	5	Koristekasvien viljely
+01199	5	Muiden yksivuotisten kasvien viljely
+012	3	Monivuotisten kasvien viljely
+0121	4	Rypaleiden viljely
+01210	5	Rypaleiden viljely
+0122	4	Trooppisten ja subtrooppisten hedelmien viljely
+01220	5	Trooppisten ja subtrooppisten hedelmien viljely
+0123	4	Sitrushedelmien viljely
+01230	5	Sitrushedelmien viljely
+0124	4	Omenoiden, kirsikoiden, luumujen ym. kota- ja kivihedelmien viljely
+01240	5	Omenoiden, kirsikoiden, luumujen ym. kota- ja kivihedelmien viljely
+0125	4	Marjojen, pahkinaiden ja muiden puissa ja pensaissa kasvavien hedelmien viljely
+01250	5	Marjojen, pahkinaiden ja muiden puissa ja pensaissa kasvavien hedelmien viljely
+0126	4	aljya sisaltavien hedelmien viljely
+01260	5	aljya sisaltavien hedelmien viljely
+0127	4	Juomakasvien viljely
+01270	5	Juomakasvien viljely
+0128	4	Mauste-, aromi-, rohdos- ja laakekasvien viljely
+01280	5	Mauste-, aromi-, rohdos- ja laakekasvien viljely
+0129	4	Muu monivuotisten kasvien viljely
+01290	5	Muu monivuotisten kasvien viljely
+013	3	Taimien kasvatus ja muu kasvien lisaaminen
+0130	4	Taimien kasvatus ja muu kasvien lisaaminen
+01300	5	Taimien kasvatus ja muu kasvien lisaaminen
+014	3	Kotielaintalous
+0141	4	Lypsykarjan kasvatus
+01410	5	Lypsykarjan kasvatus
+0142	4	Muun nautakarjan ja puhvelien kasvatus
+01420	5	Muun nautakarjan ja puhvelien kasvatus
+0143	4	Hevosten ja muiden hevoselainten kasvatus
+01430	5	Hevosten ja muiden hevoselainten kasvatus
+0144	4	Kamelien ja kamelielainten kasvatus
+01440	5	Kamelien ja kamelielainten kasvatus
+0145	4	Lampaiden ja vuohien kasvatus
+01450	5	Lampaiden ja vuohien kasvatus
+0146	4	Sikojen kasvatus
+01461	5	Porsastuotanto
+01462	5	Lihasikojen kasvatus
+0147	4	Siipikarjan kasvatus
+01471	5	Kananmunien tuotanto
+01472	5	Broilerien tuotanto
+01479	5	Muu siipikarjatalous
+0149	4	Muiden elainten kasvatus
+01491	5	Turkistarhaus
+01492	5	Poronhoito
+01499	5	Muu elainten hoito
+015	3	Yhdistetty kasvinviljely ja kotielaintalous (sekatilat)
+0150	4	Yhdistetty kasvinviljely ja kotielaintalous (sekatilat)
+01500	5	Yhdistetty kasvinviljely ja kotielaintalous (sekatilat)
+016	3	Maataloutta palveleva toiminta
+0161	4	Kasvinviljelya palveleva toiminta
+01611	5	Kasvinviljelyn tukipalvelut
+01612	5	Maatalousmaan pitaminen viljelykelpoisena
+0162	4	Kotielaintaloutta palveleva toiminta
+01620	5	Kotielaintaloutta palveleva toiminta
+0163	4	Sadon jatkokasittely
+01630	5	Sadon jatkokasittely
+0164	4	Siementen kasittely kasvinviljelya varten
+01640	5	Siementen kasittely kasvinviljelya varten
+017	3	Metsastys ja sita palveleva toiminta
+0170	4	Metsastys ja sita palveleva toiminta
+01700	5	Metsastys ja sita palveleva toiminta
+02	2	Metsatalous ja puunkorjuu
+021	3	Metsanhoito
+0210	4	Metsanhoito
+02100	5	Metsanhoito
+022	3	Puunkorjuu
+0220	4	Puunkorjuu
+02200	5	Puunkorjuu
+023	3	Luonnon tuotteiden keruu (pl. polttopuu)
+0230	4	Luonnon tuotteiden keruu (pl. polttopuu)
+02300	5	Luonnon tuotteiden keruu (pl. polttopuu)
+024	3	Metsataloutta palveleva toiminta
+0240	4	Metsataloutta palveleva toiminta
+02400	5	Metsataloutta palveleva toiminta
+03	2	Kalastus ja vesiviljely
+031	3	Kalastus
+0311	4	Merikalastus
+03110	5	Merikalastus
+0312	4	Sisavesikalastus
+03120	5	Sisavesikalastus
+032	3	Vesiviljely
+0321	4	Kalanviljely meressa
+03210	5	Kalanviljely meressa
+0322	4	Kalanviljely sisavesissa
+03220	5	Kalanviljely sisavesissa
+B	1	Kaivostoiminta ja louhinta
+05	2	Kivihiilen ja ruskohiilen kaivu
+051	3	Kivihiilen kaivu
+0510	4	Kivihiilen kaivu
+05100	5	Kivihiilen kaivu
+052	3	Ruskohiilen kaivu
+0520	4	Ruskohiilen kaivu
+05200	5	Ruskohiilen kaivu
+06	2	Raakaaljyn ja maakaasun tuotanto
+061	3	Raakaaljyn tuotanto
+0610	4	Raakaaljyn tuotanto
+06100	5	Raakaaljyn tuotanto
+062	3	Maakaasun tuotanto
+0620	4	Maakaasun tuotanto
+06200	5	Maakaasun tuotanto
+07	2	Metallimalmien louhinta
+071	3	Rautamalmien louhinta
+0710	4	Rautamalmien louhinta
+07100	5	Rautamalmien louhinta
+072	3	Varimetallimalmien louhinta
+0721	4	Uraani- ja toriummalmien louhinta
+07210	5	Uraani- ja toriummalmien louhinta
+0729	4	Muiden varimetallimalmien louhinta
+07290	5	Muiden varimetallimalmien louhinta
+08	2	Muu kaivostoiminta ja louhinta
+081	3	Kiven louhinta, hiekan ja saven otto
+0811	4	Koriste- ja rakennuskiven, kalkkikiven, kipsin, liidun ja liuskekiven louhinta
+08111	5	Koriste- ja rakennuskiven louhinta
+08112	5	Kalkkikiven, kipsin, liidun ja dolomiitin louhinta
+08113	5	Liuskekiven louhinta
+0812	4	Soran, hiekan, saven ja kaoliinin otto
+08120	5	Soran, hiekan, saven ja kaoliinin otto
+089	3	Muu mineraalien kaivu
+0891	4	Kemiallisten ja lannoitemineraalien louhinta
+08910	5	Kemiallisten ja lannoitemineraalien louhinta
+0892	4	Turpeen nosto
+08920	5	Turpeen nosto
+0893	4	Suolan tuotanto
+08930	5	Suolan tuotanto
+0899	4	Muualla luokittelematon kaivostoiminta ja louhinta
+08990	5	Muualla luokittelematon kaivostoiminta ja louhinta
+09	2	Kaivostoimintaa palveleva toiminta
+091	3	Raakaaljyn ja maakaasun tuotantoa palveleva toiminta
+0910	4	Raakaaljyn ja maakaasun tuotantoa palveleva toiminta
+09100	5	Raakaaljyn ja maakaasun tuotantoa palveleva toiminta
+099	3	Muuta kaivostoimintaa ja louhintaa palveleva toiminta
+0990	4	Muuta kaivostoimintaa ja louhintaa palveleva toiminta
+09900	5	Muuta kaivostoimintaa ja louhintaa palveleva toiminta
+C	1	Teollisuus
+10	2	Elintarvikkeiden valmistus
+101	3	Teurastus, lihan sailyvyyskasittely ja lihatuotteiden valmistus
+1011	4	Teurastus ja lihan sailyvyyskasittely (pl. siipikarja)
+10110	5	Teurastus ja lihan sailyvyyskasittely (pl. siipikarja)
+1012	4	Siipikarjan teurastus ja lihan sailyvyyskasittely
+10120	5	Siipikarjan teurastus ja lihan sailyvyyskasittely
+1013	4	Liha- ja siipikarjatuotteiden valmistus
+10130	5	Liha- ja siipikarjatuotteiden valmistus
+102	3	Kalan, ayriaisten ja nilviaisten jalostus ja sailanta
+1020	4	Kalan, ayriaisten ja nilviaisten jalostus ja sailanta
+10200	5	Kalan, ayriaisten ja nilviaisten jalostus ja sailanta
+103	3	Hedelmien ja kasvisten jalostus ja sailanta
+1031	4	Perunoiden jalostus ja sailanta
+10310	5	Perunoiden jalostus ja sailanta
+1032	4	Hedelma-, marja- ja kasvismehujen valmistus
+10320	5	Hedelma-, marja- ja kasvismehujen valmistus
+1039	4	Muu hedelmien, marjojen ja kasvisten jalostus ja sailanta
+10390	5	Muu hedelmien, marjojen ja kasvisten jalostus ja sailanta
+104	3	Kasvi- ja elainaljyjen ja -rasvojen valmistus
+1041	4	Kasvi- ja elainperaisten aljyjen ja -rasvojen valmistus (pl. ravintorasvat)
+10410	5	Kasvi- ja elainperaisten aljyjen ja -rasvojen valmistus (pl. ravintorasvat)
+1042	4	Margariinin ja sen kaltaisten ravintorasvojen valmistus
+10420	5	Margariinin ja sen kaltaisten ravintorasvojen valmistus
+105	3	Maitotaloustuotteiden valmistus
+1051	4	Maitotaloustuotteiden ja juuston valmistus
+10510	5	Maitotaloustuotteiden ja juuston valmistus
+1052	4	Jaatelan valmistus
+10520	5	Jaatelan valmistus
+106	3	Mylly- ja tarkkelystuotteiden valmistus
+1061	4	Myllytuotteiden valmistus
+10610	5	Myllytuotteiden valmistus
+1062	4	Tarkkelyksen ja tarkkelystuotteiden valmistus
+10620	5	Tarkkelyksen ja tarkkelystuotteiden valmistus
+107	3	Leipomotuotteiden, makaronien yms. valmistus
+1071	4	Leivan valmistus; tuoreiden leivonnaisten ja kakkujen valmistus
+10710	5	Leivan valmistus; tuoreiden leivonnaisten ja kakkujen valmistus
+1072	4	Nakkileivan ja keksien valmistus; sailyvien leivonnaisten ja kakkujen valmistus
+10720	5	Nakkileivan ja keksien valmistus; sailyvien leivonnaisten ja kakkujen valmistus
+1073	4	Makaronin, nuudelien, kuskusin ja vastaavien jauhotuotteiden valmistus
+10730	5	Makaronin, nuudelien, kuskusin ja vastaavien jauhotuotteiden valmistus
+108	3	Muiden elintarvikkeiden valmistus
+1081	4	Sokerin valmistus
+10810	5	Sokerin valmistus
+1082	4	Kaakaon, suklaan ja makeisten valmistus
+10820	5	Kaakaon, suklaan ja makeisten valmistus
+1083	4	Teen ja kahvin valmistus
+10830	5	Teen ja kahvin valmistus
+1084	4	Mausteiden ja maustekastikkeiden valmistus
+10840	5	Mausteiden ja maustekastikkeiden valmistus
+1085	4	Einesten ja valmisruokien valmistus
+10850	5	Einesten ja valmisruokien valmistus
+1086	4	Homogenoitujen ravintovalmisteiden ja dieettiruokien valmistus
+10860	5	Homogenoitujen ravintovalmisteiden ja dieettiruokien valmistus
+1089	4	Muualla luokittelematon elintarvikkeiden valmistus
+10890	5	Muualla luokittelematon elintarvikkeiden valmistus
+109	3	Elainten ruokien valmistus
+1091	4	Kotielainten rehujen valmistus
+10910	5	Kotielainten rehujen valmistus
+1092	4	Lemmikkielainten ruokien valmistus
+10920	5	Lemmikkielainten ruokien valmistus
+11	2	Juomien valmistus
+110	3	Juomien valmistus
+1101	4	Alkoholijuomien tislaus ja sekoittaminen; etyylialkoholin valmistus kaymisteitse
+11010	5	Alkoholijuomien tislaus ja sekoittaminen; etyylialkoholin valmistus kaymisteitse
+1102	4	Viinin valmistus rypaleista
+11020	5	Viinin valmistus rypaleista
+1103	4	Siiderin, hedelma- ja marjaviinien valmistus
+11030	5	Siiderin, hedelma- ja marjaviinien valmistus
+1104	4	Muiden tislaamattomien juomien valmistus kaymisteitse
+11040	5	Muiden tislaamattomien juomien valmistus kaymisteitse
+1105	4	Oluen valmistus
+11050	5	Oluen valmistus
+1106	4	Maltaiden valmistus
+11060	5	Maltaiden valmistus
+1107	4	Virvoitusjuomien valmistus; kivennaisvesien ja muiden pullotettujen vesien tuotanto
+11070	5	Virvoitusjuomien valmistus; kivennaisvesien ja muiden pullotettujen vesien tuotanto
+12	2	Tupakkatuotteiden valmistus
+120	3	Tupakkatuotteiden valmistus
+1200	4	Tupakkatuotteiden valmistus
+12000	5	Tupakkatuotteiden valmistus
+13	2	Tekstiilien valmistus
+131	3	Tekstiilikuitujen valmistelu ja kehruu
+1310	4	Tekstiilikuitujen valmistelu ja kehruu
+13100	5	Tekstiilikuitujen valmistelu ja kehruu
+132	3	Kankaiden kudonta
+1320	4	Kankaiden kudonta
+13200	5	Kankaiden kudonta
+133	3	Tekstiilien viimeistely
+1330	4	Tekstiilien viimeistely
+13300	5	Tekstiilien viimeistely
+139	3	Muiden tekstiilituotteiden valmistus
+1391	4	Neulosten valmistus
+13910	5	Neulosten valmistus
+1392	4	Sovitettujen tekstiilituotteiden valmistus (pl. vaatteet)
+13921	5	Sisustustekstiilien valmistus
+13922	5	Tavaranpeitteiden, purjeiden ja muiden sovitettujen tekstiilituotteiden valmistus
+1393	4	Mattojen valmistus
+13930	5	Mattojen valmistus
+1394	4	Purjelankojen, nuoran, sidelangan ja verkkojen valmistus
+13940	5	Purjelankojen, nuoran, sidelangan ja verkkojen valmistus
+1395	4	Kuitukankaiden ja kuitukangastuotteiden valmistus (pl. vaatteet)
+13950	5	Kuitukankaiden ja kuitukangastuotteiden valmistus (pl. vaatteet)
+1396	4	Teknisten ja teollisuustekstiilien valmistus
+13960	5	Teknisten ja teollisuustekstiilien valmistus
+1399	4	Muualla luokittelematon tekstiilituotteiden valmistus
+13990	5	Muualla luokittelematon tekstiilituotteiden valmistus
+14	2	Vaatteiden valmistus
+141	3	Vaatteiden valmistus (pl. turkisvaatteet)
+1411	4	Nahkavaatteiden valmistus
+14110	5	Nahkavaatteiden valmistus
+1412	4	Tyavaatteiden valmistus
+14120	5	Tyavaatteiden valmistus
+1413	4	Muu takkien, pukujen, housujen, hameiden yms. valmistus
+14130	5	Muu takkien, pukujen, housujen, hameiden yms. valmistus
+1414	4	Alusvaatteiden valmistus
+14140	5	Alusvaatteiden valmistus
+1419	4	Muiden vaatteiden ja asusteiden valmistus
+14190	5	Muiden vaatteiden ja asusteiden valmistus
+142	3	Turkisvaatteiden ja -tuotteiden valmistus
+1420	4	Turkisvaatteiden ja -tuotteiden valmistus
+14200	5	Turkisvaatteiden ja -tuotteiden valmistus
+143	3	Neulevaatteiden ja sukkien valmistus
+1431	4	Sukkien ja sukkahousujen valmistus
+14310	5	Sukkien ja sukkahousujen valmistus
+1439	4	Muiden neulevaatteiden valmistus
+14390	5	Muiden neulevaatteiden valmistus
+15	2	Nahan ja nahkatuotteiden valmistus
+151	3	Nahan parkitseminen ja muokkaus; matka- ja kasilaukkujen, satuloiden ja valjaiden valmistus; turkisten muokkaus ja varjays
+1511	4	Turkisten ja nahan muokkaus ja varjays
+15110	5	Turkisten ja nahan muokkaus ja varjays
+1512	4	Matka-, kasi- ym. laukkujen, satuloiden ja valjaiden valmistus
+15120	5	Matka-, kasi- ym. laukkujen, satuloiden ja valjaiden valmistus
+152	3	Jalkineiden valmistus
+1520	4	Jalkineiden valmistus
+15200	5	Jalkineiden valmistus
+16	2	Sahatavaran seka puu- ja korkkituotteiden valmistus (pl. huonekalut); olki- ja punontatuotteiden valmistus
+161	3	Puun sahaus, haylays ja kyllastys
+1610	4	Puun sahaus, haylays ja kyllastys
+16100	5	Puun sahaus, haylays ja kyllastys
+162	3	Puu-, korkki-, olki- ja punontatuotteiden valmistus
+1621	4	Vaneriviilun ja puupaneelien valmistus
+16211	5	Vanerin ja vaneriviilun valmistus
+16212	5	Lastulevyn valmistus
+16213	5	Kuitulevyn valmistus
+1622	4	Asennettavien parkettilevyjen valmistus
+16220	5	Asennettavien parkettilevyjen valmistus
+1623	4	Muiden rakennuspuusepantuotteiden valmistus
+16231	5	Puutalojen valmistus
+16239	5	Muu rakennuspuusepantuotteiden valmistus
+1624	4	Puupakkausten valmistus
+16240	5	Puupakkausten valmistus
+1629	4	Muiden puutuotteiden valmistus; korkki-, olki- ja punontatuotteiden valmistus
+16290	5	Muiden puutuotteiden valmistus; korkki-, olki- ja punontatuotteiden valmistus
+17	2	Paperin, paperi- ja kartonkituotteiden valmistus
+171	3	Massan, paperin, kartongin ja pahvin valmistus
+1711	4	Massan valmistus
+17110	5	Massan valmistus
+1712	4	Paperin, kartongin ja pahvin valmistus
+17120	5	Paperin, kartongin ja pahvin valmistus
+172	3	Paperi-, kartonki- ja pahvituotteiden valmistus
+1721	4	Aaltopaperin ja -pahvin seka paperi-, kartonki- ja pahvipakkausten valmistus
+17211	5	Paperisakkien ja -pussien valmistus
+17212	5	Aaltopahvin seka paperi- ja kartonkipakkausten valmistus
+1722	4	Paperisten talous- ja hygieniatarvikkeiden valmistus
+17220	5	Paperisten talous- ja hygieniatarvikkeiden valmistus
+1723	4	Paperikauppatavaroiden valmistus
+17230	5	Paperikauppatavaroiden valmistus
+1724	4	Tapettien valmistus
+17240	5	Tapettien valmistus
+1729	4	Muiden paperi-, kartonki- ja pahvituotteiden valmistus
+17290	5	Muiden paperi-, kartonki- ja pahvituotteiden valmistus
+18	2	Painaminen ja tallenteiden jaljentaminen
+181	3	Painaminen ja siihen liittyvat palvelut
+1811	4	Sanomalehtien painaminen
+18110	5	Sanomalehtien painaminen
+1812	4	Muu painaminen
+18120	5	Muu painaminen
+1813	4	Painamista ja julkaisemista edeltavat palvelut
+18130	5	Painamista ja julkaisemista edeltavat palvelut
+1814	4	Sidonta ja siihen liittyvat palvelut
+18140	5	Sidonta ja siihen liittyvat palvelut
+182	3	aani-, kuva- ja atk-tallenteiden tuotanto
+1820	4	aani-, kuva- ja atk-tallenteiden tuotanto
+18200	5	aani-, kuva- ja atk-tallenteiden tuotanto
+19	2	Koksin ja jalostettujen aljytuotteiden valmistus
+191	3	Koksituotteiden valmistus
+1910	4	Koksituotteiden valmistus
+19100	5	Koksituotteiden valmistus
+192	3	Jalostettujen aljytuotteiden valmistus
+1920	4	Jalostettujen aljytuotteiden valmistus
+19200	5	Jalostettujen aljytuotteiden valmistus
+20	2	Kemikaalien ja kemiallisten tuotteiden valmistus
+201	3	Peruskemikaalien, lannoitteiden ja typpiyhdisteiden, muoviaineiden ja synteettisen kumiraaka-aineen valmistus
+2011	4	Teollisuuskaasujen valmistus
+20110	5	Teollisuuskaasujen valmistus
+2012	4	Varien ja pigmenttien valmistus
+20120	5	Varien ja pigmenttien valmistus
+2013	4	Muiden epaorgaanisten peruskemikaalien valmistus
+20130	5	Muiden epaorgaanisten peruskemikaalien valmistus
+2014	4	Muiden orgaanisten peruskemikaalien valmistus
+20140	5	Muiden orgaanisten peruskemikaalien valmistus
+2015	4	Lannoitteiden ja typpiyhdisteiden valmistus
+20150	5	Lannoitteiden ja typpiyhdisteiden valmistus
+2016	4	Muoviaineiden valmistus
+20160	5	Muoviaineiden valmistus
+2017	4	Synteettisen kumiraaka-aineen valmistus
+20170	5	Synteettisen kumiraaka-aineen valmistus
+202	3	Torjunta-aineiden ja muiden maatalouskemikaalien valmistus
+2020	4	Torjunta-aineiden ja muiden maatalouskemikaalien valmistus
+20200	5	Torjunta-aineiden ja muiden maatalouskemikaalien valmistus
+203	3	Maalien, lakan, painovarien yms. valmistus
+2030	4	Maalien, lakan, painovarien yms. valmistus
+20300	5	Maalien, lakan, painovarien yms. valmistus
+204	3	Saippuan, pesu-, puhdistus- ja kiillotusaineiden; hajuvesien ja hygieniatuotteiden valmistus
+2041	4	Saippuan, pesu-, puhdistus- ja kiillotusaineiden valmistus
+20410	5	Saippuan, pesu-, puhdistus- ja kiillotusaineiden valmistus
+2042	4	Hajuvesien ja hygieniatuotteiden valmistus
+20420	5	Hajuvesien ja hygieniatuotteiden valmistus
+205	3	Muiden kemiallisten tuotteiden valmistus
+2051	4	Rajahdysaineiden valmistus
+20510	5	Rajahdysaineiden valmistus
+2052	4	Liimojen valmistus
+20520	5	Liimojen valmistus
+2053	4	Eteeristen aljyjen valmistus
+20530	5	Eteeristen aljyjen valmistus
+2059	4	Muualla luokittelematon kemiallisten tuotteiden valmistus
+20590	5	Muualla luokittelematon kemiallisten tuotteiden valmistus
+206	3	Tekokuitujen valmistus
+2060	4	Tekokuitujen valmistus
+20600	5	Tekokuitujen valmistus
+21	2	Laakeaineiden ja laakkeiden valmistus
+211	3	Laakeaineiden valmistus
+2110	4	Laakeaineiden valmistus
+21100	5	Laakeaineiden valmistus
+212	3	Laakkeiden ja muiden laakevalmisteiden valmistus
+2120	4	Laakkeiden ja muiden laakevalmisteiden valmistus
+21200	5	Laakkeiden ja muiden laakevalmisteiden valmistus
+22	2	Kumi- ja muovituotteiden valmistus
+221	3	Kumituotteiden valmistus
+2211	4	Renkaiden valmistus ja uudelleenpinnoitus
+22110	5	Renkaiden valmistus ja uudelleenpinnoitus
+2219	4	Muiden kumituotteiden valmistus
+22190	5	Muiden kumituotteiden valmistus
+222	3	Muovituotteiden valmistus
+2221	4	Muovilevyjen, -kalvojen, -putkien ja -profiilien valmistus
+22210	5	Muovilevyjen, -kalvojen, -putkien ja -profiilien valmistus
+2222	4	Muovipakkausten valmistus
+22220	5	Muovipakkausten valmistus
+2223	4	Rakennusmuovien valmistus
+22230	5	Rakennusmuovien valmistus
+2229	4	Muiden muovituotteiden valmistus
+22290	5	Muiden muovituotteiden valmistus
+23	2	Muiden ei-metallisten mineraalituotteiden valmistus
+231	3	Lasin ja lasituotteiden valmistus
+2311	4	Tasolasin valmistus
+23110	5	Tasolasin valmistus
+2312	4	Tasolasin muotoilu ja muokkaus
+23120	5	Tasolasin muotoilu ja muokkaus
+2313	4	Onton lasitavaran valmistus
+23130	5	Onton lasitavaran valmistus
+2314	4	Lasikuitujen valmistus
+23140	5	Lasikuitujen valmistus
+2319	4	Muu lasin valmistus ja muokkaus ml. tekniset lasituotteet
+23190	5	Muu lasin valmistus ja muokkaus ml. tekniset lasituotteet
+232	3	Tulenkestavien keraamisten tuotteiden valmistus
+2320	4	Tulenkestavien keraamisten tuotteiden valmistus
+23200	5	Tulenkestavien keraamisten tuotteiden valmistus
+233	3	Keraamisten rakennusaineiden valmistus
+2331	4	Keraamisten tiilien ja laattojen valmistus
+23310	5	Keraamisten tiilien ja laattojen valmistus
+2332	4	Poltettujen tiilien ja muun rakennuskeramiikan valmistus
+23320	5	Poltettujen tiilien ja muun rakennuskeramiikan valmistus
+234	3	Muiden posliini- ja keramiikkatuotteiden valmistus
+2341	4	Keraamisten talous- ja koriste-esineiden valmistus
+23410	5	Keraamisten talous- ja koriste-esineiden valmistus
+2342	4	Keraamisten saniteettikalusteiden valmistus
+23420	5	Keraamisten saniteettikalusteiden valmistus
+2343	4	Keraamisten eristystuotteiden valmistus
+23430	5	Keraamisten eristystuotteiden valmistus
+2344	4	Muiden teknisten keraamisten tuotteiden valmistus
+23440	5	Muiden teknisten keraamisten tuotteiden valmistus
+2349	4	Muiden keramiikkatuotteiden valmistus
+23490	5	Muiden keramiikkatuotteiden valmistus
+235	3	Sementin, kalkin ja kipsin valmistus
+2351	4	Sementin valmistus
+23510	5	Sementin valmistus
+2352	4	Kalkin ja kipsin valmistus
+23520	5	Kalkin ja kipsin valmistus
+236	3	Betoni-, kipsi- ja sementtituotteiden valmistus
+2361	4	Betonituotteiden valmistus rakennustarkoituksiin
+23610	5	Betonituotteiden valmistus rakennustarkoituksiin
+2362	4	Kipsituotteiden valmistus rakennustarkoituksiin
+23620	5	Kipsituotteiden valmistus rakennustarkoituksiin
+2363	4	Valmisbetonin valmistus
+23630	5	Valmisbetonin valmistus
+2364	4	Muurauslaastin valmistus
+23640	5	Muurauslaastin valmistus
+2365	4	Kuitusementin valmistus
+23650	5	Kuitusementin valmistus
+2369	4	Muiden betoni-, kipsi- ja sementtituotteiden valmistus
+23690	5	Muiden betoni-, kipsi- ja sementtituotteiden valmistus
+237	3	Kiven leikkaaminen, muotoilu ja viimeistely
+2370	4	Kiven leikkaaminen, muotoilu ja viimeistely
+23700	5	Kiven leikkaaminen, muotoilu ja viimeistely
+239	3	Hiontatuotteiden ja muualla luokittelemattomien ei-metallisten mineraalituotteiden valmistus
+2391	4	Hiontatuotteiden valmistus
+23910	5	Hiontatuotteiden valmistus
+2399	4	Muualla luokittelemattomien ei-metallisten mineraalituotteiden valmistus
+23990	5	Muualla luokittelemattomien ei-metallisten mineraalituotteiden valmistus
+24	2	Metallien jalostus
+241	3	Raudan, teraksen ja rautaseosten valmistus
+2410	4	Raudan, teraksen ja rautaseosten valmistus
+24100	5	Raudan, teraksen ja rautaseosten valmistus
+242	3	Putkien, profiiliputkien ja niihin liittyvien tarvikkeiden valmistus teraksesta
+2420	4	Putkien, profiiliputkien ja niihin liittyvien tarvikkeiden valmistus teraksesta
+24200	5	Putkien, profiiliputkien ja niihin liittyvien tarvikkeiden valmistus teraksesta
+243	3	Muu teraksen jalostus
+2431	4	Raudan ja teraksen kylmavetaminen
+24310	5	Raudan ja teraksen kylmavetaminen
+2432	4	Rainan kylmavalssaus
+24320	5	Rainan kylmavalssaus
+2433	4	Kylmamuovaus tai kylmataitto
+24330	5	Kylmamuovaus tai kylmataitto
+2434	4	Teraslangan veto
+24340	5	Teraslangan veto
+244	3	Jalometallien ja muiden varimetallien valmistus
+2441	4	Jalometallien valmistus
+24410	5	Jalometallien valmistus
+2442	4	Alumiinin valmistus
+24420	5	Alumiinin valmistus
+2443	4	Lyijyn, sinkin ja tinan valmistus
+24430	5	Lyijyn, sinkin ja tinan valmistus
+2444	4	Kuparin valmistus
+24440	5	Kuparin valmistus
+2445	4	Muiden varimetallien valmistus
+24450	5	Muiden varimetallien valmistus
+2446	4	Ydinpolttoaineen valmistus
+24460	5	Ydinpolttoaineen valmistus
+245	3	Metallien valu
+2451	4	Raudan valu
+24510	5	Raudan valu
+2452	4	Teraksen valu
+24520	5	Teraksen valu
+2453	4	Kevytmetallien valu
+24530	5	Kevytmetallien valu
+2454	4	Muiden varimetallien valu
+24540	5	Muiden varimetallien valu
+25	2	Metallituotteiden valmistus (pl. koneet ja laitteet)
+251	3	Metallirakenteiden valmistus
+2511	4	Metallirakenteiden ja niiden osien valmistus
+25110	5	Metallirakenteiden ja niiden osien valmistus
+2512	4	Metalliovien ja -ikkunoiden valmistus
+25120	5	Metalliovien ja -ikkunoiden valmistus
+252	3	Metallisailiaiden ja -altaiden yms. valmistus
+2521	4	Keskuslammityspatterien ja kuumavesivaraajien valmistus
+25210	5	Keskuslammityspatterien ja kuumavesivaraajien valmistus
+2529	4	Muiden metallisailiaiden ja -altaiden yms. valmistus
+25290	5	Muiden metallisailiaiden ja -altaiden yms. valmistus
+253	3	Hayrykattiloiden valmistus (pl. keskuslammityslaitteet)
+2530	4	Hayrykattiloiden valmistus (pl. keskuslammityslaitteet)
+25300	5	Hayrykattiloiden valmistus (pl. keskuslammityslaitteet)
+254	3	Aseiden ja ammusten valmistus
+2540	4	Aseiden ja ammusten valmistus
+25400	5	Aseiden ja ammusten valmistus
+255	3	Metallin takominen, puristaminen, meistaminen ja valssaus; jauhemetallurgia
+2550	4	Metallin takominen, puristaminen, meistaminen ja valssaus; jauhemetallurgia
+25500	5	Metallin takominen, puristaminen, meistaminen ja valssaus; jauhemetallurgia
+256	3	Metallien kasittely, paallystaminen ja tyasta
+2561	4	Metallien kasittely ja paallystaminen
+25610	5	Metallien kasittely ja paallystaminen
+2562	4	Metallien tyasta
+25620	5	Metallien tyasta
+257	3	Ruokailu- ja leikkuuvalineiden yms. seka tyakalujen ja rautatavaran valmistus
+2571	4	Ruokailu- ja leikkuuvalineiden yms. valmistus
+25710	5	Ruokailu- ja leikkuuvalineiden yms. valmistus
+2572	4	Lukkojen ja saranoiden valmistus
+25720	5	Lukkojen ja saranoiden valmistus
+2573	4	Tyakalujen valmistus
+25730	5	Tyakalujen valmistus
+259	3	Muu metallituotteiden valmistus
+2591	4	Metallipakkausten ja -astioiden valmistus
+25910	5	Metallipakkausten ja -astioiden valmistus
+2592	4	Kevytmetallipakkausten valmistus
+25920	5	Kevytmetallipakkausten valmistus
+2593	4	Metallilankatuotteiden, ketjujen ja jousien valmistus
+25930	5	Metallilankatuotteiden, ketjujen ja jousien valmistus
+2594	4	Kiinnittimien ja ruuvituotteiden valmistus
+25940	5	Kiinnittimien ja ruuvituotteiden valmistus
+2599	4	Muiden metallituotteiden valmistus
+25990	5	Muiden metallituotteiden valmistus
+26	2	Tietokoneiden seka elektronisten ja optisten tuotteiden valmistus
+261	3	Elektronisten komponenttien ja piirilevyjen valmistus
+2611	4	Elektronisten komponenttien valmistus
+26110	5	Elektronisten komponenttien valmistus
+2612	4	Kalustettujen piirilevyjen valmistus
+26120	5	Kalustettujen piirilevyjen valmistus
+262	3	Tietokoneiden ja niiden oheislaitteiden valmistus
+2620	4	Tietokoneiden ja niiden oheislaitteiden valmistus
+26200	5	Tietokoneiden ja niiden oheislaitteiden valmistus
+263	3	Viestintalaitteiden valmistus
+2630	4	Viestintalaitteiden valmistus
+26300	5	Viestintalaitteiden valmistus
+264	3	Viihde-elektroniikan valmistus
+2640	4	Viihde-elektroniikan valmistus
+26400	5	Viihde-elektroniikan valmistus
+265	3	Mittaus-, testaus- ja navigointivalineiden ja -laitteiden valmistus; kellot
+2651	4	Mittaus-, testaus- ja navigointivalineiden ja -laitteiden valmistus
+26510	5	Mittaus-, testaus- ja navigointivalineiden ja -laitteiden valmistus
+2652	4	Kellojen valmistus
+26520	5	Kellojen valmistus
+266	3	Sateilylaitteiden seka elektronisten laakinta- ja terapialaitteiden valmistus
+2660	4	Sateilylaitteiden seka elektronisten laakinta- ja terapialaitteiden valmistus
+26600	5	Sateilylaitteiden seka elektronisten laakinta- ja terapialaitteiden valmistus
+267	3	Optisten instrumenttien ja valokuvausvalineiden valmistus
+2670	4	Optisten instrumenttien ja valokuvausvalineiden valmistus
+26700	5	Optisten instrumenttien ja valokuvausvalineiden valmistus
+268	3	Tallennevalineiden valmistus
+2680	4	Tallennevalineiden valmistus
+26800	5	Tallennevalineiden valmistus
+27	2	Sahkalaitteiden valmistus
+271	3	Sahkamoottorien, generaattorien, muuntajien seka sahkanjakelu- ja valvontalaitteiden valmistus
+2711	4	Sahkamoottorien, generaattorien ja muuntajien valmistus
+27110	5	Sahkamoottorien, generaattorien ja muuntajien valmistus
+2712	4	Sahkanjakelu- ja valvontalaitteiden valmistus
+27120	5	Sahkanjakelu- ja valvontalaitteiden valmistus
+272	3	Paristojen ja akkujen valmistus
+2720	4	Paristojen ja akkujen valmistus
+27200	5	Paristojen ja akkujen valmistus
+273	3	Sahkajohtojen ja kytkentalaitteiden valmistus
+2731	4	Optisten kuitukaapelien valmistus
+27310	5	Optisten kuitukaapelien valmistus
+2732	4	Muiden elektronisten ja sahkajohtojen seka -kaapelien valmistus
+27320	5	Muiden elektronisten ja sahkajohtojen seka -kaapelien valmistus
+2733	4	Kytkentalaitteiden valmistus
+27330	5	Kytkentalaitteiden valmistus
+274	3	Sahkalamppujen ja valaisimien valmistus
+2740	4	Sahkalamppujen ja valaisimien valmistus
+27400	5	Sahkalamppujen ja valaisimien valmistus
+275	3	Kodinkoneiden valmistus
+2751	4	Sahkaisten kodinkoneiden valmistus
+27510	5	Sahkaisten kodinkoneiden valmistus
+2752	4	Sahkaistamattamien kodinkoneiden valmistus
+27520	5	Sahkaistamattamien kodinkoneiden valmistus
+279	3	Muiden sahkalaitteiden valmistus
+2790	4	Muiden sahkalaitteiden valmistus
+27900	5	Muiden sahkalaitteiden valmistus
+28	2	Muiden koneiden ja laitteiden valmistus
+281	3	Yleiskayttaan tarkoitettujen voimakoneiden valmistus
+2811	4	Moottorien ja turbiinien valmistus (pl. lentokoneiden ja ajoneuvojen moottorit)
+28110	5	Moottorien ja turbiinien valmistus (pl. lentokoneiden ja ajoneuvojen moottorit)
+2812	4	Hydraulisten voimalaitteiden valmistus
+28120	5	Hydraulisten voimalaitteiden valmistus
+2813	4	Pumppujen ja kompressoreiden valmistus
+28130	5	Pumppujen ja kompressoreiden valmistus
+2814	4	Muiden hanojen ja venttiilien valmistus
+28140	5	Muiden hanojen ja venttiilien valmistus
+2815	4	Laakereiden, hammaspyarien, vaihteisto- ja ohjauselementtien valmistus
+28150	5	Laakereiden, hammaspyarien, vaihteisto- ja ohjauselementtien valmistus
+282	3	Muiden yleiskayttaan tarkoitettujen koneiden valmistus
+2821	4	Teollisuusuunien, lammitysjarjestelmien ja tulipesapolttimien valmistus
+28210	5	Teollisuusuunien, lammitysjarjestelmien ja tulipesapolttimien valmistus
+2822	4	Nosto- ja siirtolaitteiden valmistus
+28220	5	Nosto- ja siirtolaitteiden valmistus
+2823	4	Konttorikoneiden ja -laitteiden valmistus (pl. tietokoneet ja niiden oheislaitteet)
+28230	5	Konttorikoneiden ja -laitteiden valmistus (pl. tietokoneet ja niiden oheislaitteet)
+2824	4	Voimakayttaisten kasityakalujen valmistus
+28240	5	Voimakayttaisten kasityakalujen valmistus
+2825	4	Muuhun kuin kotitalouskayttaan tarkoitettujen jaahdytys- ja tuuletuslaitteiden valmistus
+28250	5	Muuhun kuin kotitalouskayttaan tarkoitettujen jaahdytys- ja tuuletuslaitteiden valmistus
+2829	4	Muualla luokittelematon yleiskayttaan tarkoitettujen koneiden valmistus
+28290	5	Muualla luokittelematon yleiskayttaan tarkoitettujen koneiden valmistus
+283	3	Maa- ja metsatalouskoneiden valmistus
+2830	4	Maa- ja metsatalouskoneiden valmistus
+28300	5	Maa- ja metsatalouskoneiden valmistus
+284	3	Metallin tyastakoneiden ja konetyakalujen valmistus
+2841	4	Metallin tyastakoneiden valmistus
+28410	5	Metallin tyastakoneiden valmistus
+2849	4	Muiden konetyakalujen valmistus
+28490	5	Muiden konetyakalujen valmistus
+289	3	Muiden erikoiskoneiden valmistus
+2891	4	Metallinjalostuskoneiden valmistus
+28910	5	Metallinjalostuskoneiden valmistus
+2892	4	Kaivos-, louhinta- ja rakennuskoneiden valmistus
+28920	5	Kaivos-, louhinta- ja rakennuskoneiden valmistus
+2893	4	Elintarvike-, juoma- ja tupakkateollisuuden koneiden valmistus
+28930	5	Elintarvike-, juoma- ja tupakkateollisuuden koneiden valmistus
+2894	4	Tekstiili-, vaate- ja nahkateollisuuden koneiden valmistus
+28940	5	Tekstiili-, vaate- ja nahkateollisuuden koneiden valmistus
+2895	4	Paperi-, kartonki- ja pahviteollisuuden koneiden valmistus
+28950	5	Paperi-, kartonki- ja pahviteollisuuden koneiden valmistus
+2896	4	Muovi- ja kumiteollisuuden koneiden valmistus
+28960	5	Muovi- ja kumiteollisuuden koneiden valmistus
+2899	4	Muualla luokittelematon erikoiskoneiden valmistus
+28990	5	Muualla luokittelematon erikoiskoneiden valmistus
+29	2	Moottoriajoneuvojen, peravaunujen ja puoliperavaunujen valmistus
+291	3	Moottoriajoneuvojen valmistus
+2910	4	Moottoriajoneuvojen valmistus
+29100	5	Moottoriajoneuvojen valmistus
+292	3	Moottoriajoneuvojen korien valmistus; peravaunujen ja puoliperavaunujen valmistus
+2920	4	Moottoriajoneuvojen korien valmistus; peravaunujen ja puoliperavaunujen valmistus
+29200	5	Moottoriajoneuvojen korien valmistus; peravaunujen ja puoliperavaunujen valmistus
+293	3	Osien ja tarvikkeiden valmistus moottoriajoneuvoihin
+2931	4	Sahka- ja elektroniikkalaitteiden valmistus moottoriajoneuvoihin
+29310	5	Sahka- ja elektroniikkalaitteiden valmistus moottoriajoneuvoihin
+2932	4	Muiden osien ja tarvikkeiden valmistus moottoriajoneuvoihin
+29320	5	Muiden osien ja tarvikkeiden valmistus moottoriajoneuvoihin
+30	2	Muiden kulkuneuvojen valmistus
+301	3	Laivojen ja veneiden rakentaminen
+3011	4	Laivojen ja kelluvien rakenteiden rakentaminen
+30110	5	Laivojen ja kelluvien rakenteiden rakentaminen
+3012	4	Huvi- ja urheiluveneiden rakentaminen
+30120	5	Huvi- ja urheiluveneiden rakentaminen
+302	3	Raideliikenteen kulkuneuvojen valmistus
+3020	4	Raideliikenteen kulkuneuvojen valmistus
+30200	5	Raideliikenteen kulkuneuvojen valmistus
+303	3	Ilma- ja avaruusalusten ja niihin liittyvien koneiden valmistus
+3030	4	Ilma- ja avaruusalusten ja niihin liittyvien koneiden valmistus
+30300	5	Ilma- ja avaruusalusten ja niihin liittyvien koneiden valmistus
+304	3	Taisteluajoneuvojen valmistus
+3040	4	Taisteluajoneuvojen valmistus
+30400	5	Taisteluajoneuvojen valmistus
+309	3	Muualla luokittelematon kulkuneuvojen valmistus
+3091	4	Moottoripyarien valmistus
+30910	5	Moottoripyarien valmistus
+3092	4	Polkupyarien ja invalidiajoneuvojen valmistus
+30920	5	Polkupyarien ja invalidiajoneuvojen valmistus
+3099	4	Muiden muualla luokittelemattomien kulkuneuvojen valmistus
+30990	5	Muiden muualla luokittelemattomien kulkuneuvojen valmistus
+31	2	Huonekalujen valmistus
+310	3	Huonekalujen valmistus
+3101	4	Konttori- ja myymalakalusteiden valmistus
+31010	5	Konttori- ja myymalakalusteiden valmistus
+3102	4	Keittiakalusteiden valmistus
+31020	5	Keittiakalusteiden valmistus
+3103	4	Patjojen valmistus
+31030	5	Patjojen valmistus
+3109	4	Muiden huonekalujen valmistus
+31090	5	Muiden huonekalujen valmistus
+32	2	Muu valmistus
+321	3	Korujen, kultasepantuotteiden ja muiden vastaavien tuotteiden valmistus
+3211	4	Kolikoiden ja mitalien valmistus
+32110	5	Kolikoiden ja mitalien valmistus
+3212	4	Jalokivikorujen ja muiden kultasepantuotteiden valmistus
+32120	5	Jalokivikorujen ja muiden kultasepantuotteiden valmistus
+3213	4	Jaljitelmakorujen ja muiden vastaavien tuotteiden valmistus
+32130	5	Jaljitelmakorujen ja muiden vastaavien tuotteiden valmistus
+322	3	Soitinten valmistus
+3220	4	Soitinten valmistus
+32200	5	Soitinten valmistus
+323	3	Urheiluvalineiden valmistus
+3230	4	Urheiluvalineiden valmistus
+32300	5	Urheiluvalineiden valmistus
+324	3	Pelien ja leikkikalujen valmistus
+3240	4	Pelien ja leikkikalujen valmistus
+32400	5	Pelien ja leikkikalujen valmistus
+325	3	Laakinta- ja hammaslaakintainstrumenttien ja -tarvikkeiden valmistus
+3250	4	Laakinta- ja hammaslaakintainstrumenttien ja -tarvikkeiden valmistus
+32501	5	Laakinta- ja hammaslaakintainstrumenttien ja -tarvikkeiden valmistus (pl. hammasproteesit)
+32502	5	Hammasproteesien, keinohampaiden ym. valmistus
+329	3	Muualla luokittelematon valmistus
+3291	4	Luutien ja harjojen valmistus
+32910	5	Luutien ja harjojen valmistus
+3299	4	Muu muualla luokittelematon valmistus
+32991	5	Turvavarusteiden valmistus
+32999	5	Muu muualla luokittelemattomien tuotteiden valmistus
+33	2	Koneiden ja laitteiden korjaus, huolto ja asennus
+331	3	Metallituotteiden, teollisuuden koneiden ja laitteiden korjaus ja huolto
+3311	4	Metallituotteiden korjaus ja huolto
+33110	5	Metallituotteiden korjaus ja huolto
+3312	4	Teollisuuden koneiden ja laitteiden korjaus ja huolto
+33121	5	Yleiskayttaan tarkoitettujen koneiden korjaus ja huolto
+33122	5	Maa- ja metsatalouskoneiden korjaus ja huolto
+33123	5	Metallintyastakoneiden ja muiden konetyakalujen korjaus ja huolto
+33129	5	Muiden erikoiskoneiden korjaus ja huolto
+3313	4	Elektronisten ja optisten laitteiden korjaus ja huolto
+33130	5	Elektronisten ja optisten laitteiden korjaus ja huolto
+3314	4	Sahkalaitteiden korjaus ja huolto
+33140	5	Sahkalaitteiden korjaus ja huolto
+3315	4	Laivojen ja veneiden korjaus ja huolto
+33150	5	Laivojen ja veneiden korjaus ja huolto
+3316	4	Ilma- ja avaruusalusten korjaus ja huolto
+33160	5	Ilma- ja avaruusalusten korjaus ja huolto
+3317	4	Muiden kulkuneuvojen korjaus ja huolto
+33170	5	Muiden kulkuneuvojen korjaus ja huolto
+3319	4	Muiden laitteiden korjaus ja huolto
+33190	5	Muiden laitteiden korjaus ja huolto
+332	3	Teollisuuden koneiden ja laitteiden ym. asennus
+3320	4	Teollisuuden koneiden ja laitteiden ym. asennus
+33200	5	Teollisuuden koneiden ja laitteiden ym. asennus
+D	1	Sahka-, kaasu- ja lampahuolto, jaahdytysliiketoiminta
+35	2	Sahka-, kaasu- ja lampahuolto, jaahdytysliiketoiminta
+351	3	Sahkavoiman tuotanto, siirto ja jakelu
+3511	4	Sahkan tuotanto
+35111	5	Sahkan tuotanto vesi- ja tuulivoimalla
+35112	5	Sahkan erillistuotanto lampavoimalla
+35113	5	Sahkan ja kaukolamman yhteistuotanto
+35114	5	Sahkan tuotanto ydinvoimalla
+35115	5	Teollisuutta palveleva sahkan ja lamman tuotanto
+3512	4	Sahkan siirto
+35120	5	Sahkan siirto
+3513	4	Sahkan jakelu
+35130	5	Sahkan jakelu
+3514	4	Sahkan kauppa
+35140	5	Sahkan kauppa
+352	3	Kaasun tuotanto; kaasumaisten polttoaineiden jakelu putkiverkossa
+3521	4	Kaasun tuotanto
+35210	5	Kaasun tuotanto
+3522	4	Kaasumaisten polttoaineiden jakelu putkiverkossa
+35220	5	Kaasumaisten polttoaineiden jakelu putkiverkossa
+3523	4	Kaasun kauppa putkiverkossa
+35230	5	Kaasun kauppa putkiverkossa
+353	3	Lamman ja kylman tuotanto ja jakelu
+3530	4	Lamman ja kylman tuotanto ja jakelu
+35301	5	Kaukolamman ja -kylman erillistuotanto ja jakelu
+35302	5	Teollisuutta palveleva lamman ja kylman erillistuotanto
+E	1	Vesihuolto, viemari- ja jatevesihuolto, jatehuolto ja muu ymparistan puhtaanapito
+36	2	Veden otto, puhdistus ja jakelu
+360	3	Veden otto, puhdistus ja jakelu
+3600	4	Veden otto, puhdistus ja jakelu
+36000	5	Veden otto, puhdistus ja jakelu
+37	2	Viemari- ja jatevesihuolto
+370	3	Viemari- ja jatevesihuolto
+3700	4	Viemari- ja jatevesihuolto
+37000	5	Viemari- ja jatevesihuolto
+38	2	Jatteen keruu, kasittely ja loppusijoitus; materiaalien kierratys
+381	3	Jatteen keruu
+3811	4	Tavanomaisen jatteen keruu
+38110	5	Tavanomaisen jatteen keruu
+3812	4	Ongelmajatteen keruu
+38120	5	Ongelmajatteen keruu
+382	3	Jatteen kasittely ja loppusijoitus
+3821	4	Tavanomaisen jatteen kasittely ja loppusijoitus
+38210	5	Tavanomaisen jatteen kasittely ja loppusijoitus
+3822	4	Ongelmajatteen kasittely, loppusijoitus ja havittaminen
+38220	5	Ongelmajatteen kasittely, loppusijoitus ja havittaminen
+383	3	Materiaalien kierratys
+3831	4	Romujen purkaminen
+38310	5	Romujen purkaminen
+3832	4	Lajiteltujen materiaalien kierratys
+38320	5	Lajiteltujen materiaalien kierratys
+39	2	Maaperan ja vesistajen kunnostus ja muut ymparistanhuoltopalvelut
+390	3	Maaperan ja vesistajen kunnostus ja muut ymparistanhuoltopalvelut
+3900	4	Maaperan ja vesistajen kunnostus ja muut ymparistanhuoltopalvelut
+39000	5	Maaperan ja vesistajen kunnostus ja muut ymparistanhuoltopalvelut
+F	1	Rakentaminen
+41	2	Talonrakentaminen
+411	3	Rakennuttaminen ja rakennushankkeiden kehittaminen
+4110	4	Rakennuttaminen ja rakennushankkeiden kehittaminen
+41100	5	Rakennuttaminen ja rakennushankkeiden kehittaminen
+412	3	Asuin- ja muiden rakennusten rakentaminen
+4120	4	Asuin- ja muiden rakennusten rakentaminen
+41200	5	Asuin- ja muiden rakennusten rakentaminen
+42	2	Maa- ja vesirakentaminen
+421	3	Teiden ja rautateiden rakentaminen
+4211	4	Teiden ja moottoriteiden rakentaminen
+42110	5	Teiden ja moottoriteiden rakentaminen
+4212	4	Rautateiden ja metrolinjojen rakentaminen
+42120	5	Rautateiden ja metrolinjojen rakentaminen
+4213	4	Siltojen ja tunneleiden rakentaminen
+42130	5	Siltojen ja tunneleiden rakentaminen
+422	3	Yleisten jakeluverkkojen rakentaminen
+4221	4	Yleisten jakeluverkkojen rakentaminen nestemaisia ja kaasumaisia aineita varten
+42210	5	Yleisten jakeluverkkojen rakentaminen nestemaisia ja kaasumaisia aineita varten
+4222	4	Sahka- ja tietoliikenneverkkojen rakentaminen
+42220	5	Sahka- ja tietoliikenneverkkojen rakentaminen
+429	3	Muu maa- ja vesirakentaminen
+4291	4	Vesirakentaminen
+42910	5	Vesirakentaminen
+4299	4	Muualla luokittelematon maa- ja vesirakentaminen
+42991	5	Maa- ja vesirakennushankkeiden kehittaminen ja rakennuttaminen
+42999	5	Muu muualla luokittelematon maa- ja vesirakentaminen
+43	2	Erikoistunut rakennustoiminta
+431	3	Rakennusten ja rakennelmien purku ja rakennuspaikan valmistelutyat
+4311	4	Rakennusten ja rakennelmien purku
+43110	5	Rakennusten ja rakennelmien purku
+4312	4	Rakennuspaikan valmistelutyat
+43120	5	Rakennuspaikan valmistelutyat
+4313	4	Koeporaus
+43130	5	Koeporaus
+432	3	Sahka-, vesijohto- ja muu rakennusasennus
+4321	4	Sahkaasennus
+43210	5	Sahkaasennus
+4322	4	Lampa-, vesijohto- ja ilmastointiasennus
+43220	5	Lampa-, vesijohto- ja ilmastointiasennus
+4329	4	Muu rakennusasennus
+43291	5	Lampa-, aani- ja tarinaeristeiden asennus
+43292	5	Hissien ja liukuportaiden asennus
+43299	5	Muualla luokittelematon rakennusasennus
+433	3	Rakennusten ja rakennelmien viimeistely
+4331	4	Rappaus
+43310	5	Rappaus
+4332	4	Rakennuspuusepan asennustyat
+43320	5	Rakennuspuusepan asennustyat
+4333	4	Lattianpaallystys ja seinien verhoilu
+43330	5	Lattianpaallystys ja seinien verhoilu
+4334	4	Maalaus ja lasitus
+43341	5	Maalaus
+43342	5	Lasitus
+4339	4	Muu rakennusten viimeistely
+43390	5	Muu rakennusten viimeistely
+439	3	Muu erikoistunut rakennustoiminta
+4391	4	Kattorakenteiden asennus ja kattaminen
+43910	5	Kattorakenteiden asennus ja kattaminen
+4399	4	Muualla luokittelematon erikoistunut rakennustoiminta
+43991	5	Rakennuskonevuokraus kayttajineen
+43999	5	Muu muualla luokittelematon erikoistunut rakennustoiminta
+G	1	Tukku- ja vahittaiskauppa; moottoriajoneuvojen ja moottoripyarien korjaus
+45	2	Moottoriajoneuvojen ja moottoripyarien tukku- ja vahittaiskauppa seka korjaus
+451	3	Moottoriajoneuvojen kauppa
+4511	4	Henkilaautojen ja kevyiden moottoriajoneuvojen kauppa
+45111	5	Henkilaautojen ja kevyiden moottoriajoneuvojen tukkukauppa
+45112	5	Henkilaautojen ja kevyiden moottoriajoneuvojen vahittaiskauppa
+4519	4	Muiden moottoriajoneuvojen myynti
+45191	5	Kuorma-autojen ja muiden raskaiden moottoriajoneuvojen tukkukauppa
+45192	5	Matkailuvaunujen ja muualla luokittelemattomien moottoriajoneuvojen vahittaiskauppa
+452	3	Moottoriajoneuvojen huolto ja korjaus (pl. moottoripyarat)
+4520	4	Moottoriajoneuvojen huolto ja korjaus (pl. moottoripyarat)
+45201	5	Moottoriajoneuvojen huolto ja korjaus (pl. renkaat)
+45202	5	Renkaiden korjaus
+453	3	Moottoriajoneuvojen osien ja varusteiden kauppa
+4531	4	Moottoriajoneuvojen osien ja varusteiden tukkukauppa
+45311	5	Moottoriajoneuvojen osien ja varusteiden tukkukauppa (pl. renkaat)
+45312	5	Renkaiden tukkukauppa
+4532	4	Moottoriajoneuvojen osien ja varusteiden vahittaiskauppa
+45321	5	Moottoriajoneuvojen osien ja varusteiden vahittaiskauppa (pl. renkaat)
+45322	5	Renkaiden vahittaiskauppa
+454	3	Moottoripyarien seka niiden osien ja varusteiden myynti, huolto ja korjaus
+4540	4	Moottoripyarien seka niiden osien ja varusteiden myynti, huolto ja korjaus
+45401	5	Moottoripyarien seka niiden osien ja varusteiden tukkukauppa
+45402	5	Moottoripyarien seka niiden osien ja varusteiden vahittaiskauppa
+45403	5	Moottoripyarien huolto ja korjaus
+46	2	Tukkukauppa (pl. moottoriajoneuvojen ja moottoripyarien kauppa)
+461	3	Agentuuritoiminta
+4611	4	Maatalousraaka-aineiden, elavien elainten, tekstiiliraaka-aineiden seka puolivalmisteiden agentuuritoiminta
+46110	5	Maatalousraaka-aineiden, elavien elainten, tekstiiliraaka-aineiden seka puolivalmisteiden agentuuritoiminta
+4612	4	Polttoaineiden, malmien, metallien ja teollisuuskemikaalien agentuuritoiminta
+46120	5	Polttoaineiden, malmien, metallien ja teollisuuskemikaalien agentuuritoiminta
+4613	4	Puutavaran ja rakennusmateriaalien agentuuritoiminta
+46130	5	Puutavaran ja rakennusmateriaalien agentuuritoiminta
+4614	4	Koneiden ja laitteiden agentuuritoiminta
+46140	5	Koneiden ja laitteiden agentuuritoiminta
+4615	4	Huonekalujen, taloustavaroiden ja rautakauppatavaroiden agentuuritoiminta
+46150	5	Huonekalujen, taloustavaroiden ja rautakauppatavaroiden agentuuritoiminta
+4616	4	Tekstiilien, vaatteiden, jalkineiden ja nahkavalmisteiden agentuuritoiminta
+46160	5	Tekstiilien, vaatteiden, jalkineiden ja nahkavalmisteiden agentuuritoiminta
+4617	4	Elintarvikkeiden, juomien ja tupakan agentuuritoiminta
+46170	5	Elintarvikkeiden, juomien ja tupakan agentuuritoiminta
+4618	4	Muu erikoistunut agentuuritoiminta
+46181	5	Paperialan agentuuritoiminta
+46189	5	Muualla luokittelematon erikoistunut agentuuritoiminta
+4619	4	Yleisagentuuritoiminta
+46190	5	Yleisagentuuritoiminta
+462	3	Maatalousperaisten raaka-aineiden ja elavien elainten tukkukauppa
+4621	4	Viljan, raakatupakan, siementen ja elainrehujen tukkukauppa
+46210	5	Viljan, raakatupakan, siementen ja elainrehujen tukkukauppa
+4622	4	Kukkien ja taimien tukkukauppa
+46220	5	Kukkien ja taimien tukkukauppa
+4623	4	Elavien elainten tukkukauppa
+46230	5	Elavien elainten tukkukauppa
+4624	4	Turkisten ja nahkojen tukkukauppa
+46240	5	Turkisten ja nahkojen tukkukauppa
+463	3	Elintarvikkeiden, juomien ja tupakan tukkukauppa
+4631	4	Juures-, vihannes- marja- ja hedelmatukkukauppa
+46310	5	Juures-, vihannes- marja- ja hedelmatukkukauppa
+4632	4	Lihan ja lihatuotteiden tukkukauppa
+46320	5	Lihan ja lihatuotteiden tukkukauppa
+4633	4	Maitotaloustuotteiden, munien seka ravintoaljyjen ja -rasvojen tukkukauppa
+46331	5	Maitotaloustuotteiden, ravintoaljyjen ja -rasvojen tukkukauppa
+46332	5	Munatukkukauppa
+4634	4	Alkoholi- ja muiden juomien tukkukauppa
+46340	5	Alkoholi- ja muiden juomien tukkukauppa
+4635	4	Tupakkatuotteiden tukkukauppa
+46350	5	Tupakkatuotteiden tukkukauppa
+4636	4	Sokerin, suklaan, makeisten ja leipomotuotteiden tukkukauppa
+46360	5	Sokerin, suklaan, makeisten ja leipomotuotteiden tukkukauppa
+4637	4	Kahvin, teen, kaakaon ja mausteiden tukkukauppa
+46370	5	Kahvin, teen, kaakaon ja mausteiden tukkukauppa
+4638	4	Kalan, luontaistuotteiden ja muiden elintarvikkeiden tukkukauppa
+46381	5	Kalatukkukauppa
+46382	5	Luontaistuotteiden tukkukauppa
+46383	5	Lemmikkielainten ruokien tukkukauppa
+46389	5	Muualla luokittelematon elintarvikkeiden tukkukauppa
+4639	4	Elintarvikkeiden, juomien ja tupakan yleistukkukauppa
+46390	5	Elintarvikkeiden, juomien ja tupakan yleistukkukauppa
+464	3	Taloustavaroiden tukkukauppa
+4641	4	Tekstiilien tukkukauppa
+46411	5	Kangas- ja lankatukkukauppa
+46412	5	Tekstiilivalmisteiden tukkukauppa
+4642	4	Vaatteiden ja jalkineiden tukkukauppa
+46421	5	Vaatteiden tukkukauppa
+46422	5	Jalkineiden tukkukauppa
+4643	4	Kodinkoneiden tukkukauppa
+46431	5	Kodinkoneiden ja kodin sahkalaitteiden tukkukauppa
+46432	5	Viihde-elektroniikan tukkukauppa
+46433	5	Valokuvausvalineiden ja -tarvikkeiden tukkukauppa
+46434	5	Optisen alan tukkukauppa
+4644	4	Posliini-, lasi- ja muiden taloustavaroiden seka puhdistusaineiden tukkukauppa
+46441	5	Taloustavaroiden ja -tarvikkeiden tukkukauppa
+46442	5	Puhdistusaineiden tukkukauppa
+4645	4	Hajuvesien ja kosmetiikan tukkukauppa
+46450	5	Hajuvesien ja kosmetiikan tukkukauppa
+4646	4	Farmaseuttisten tuotteiden tukkukauppa
+46461	5	Laaketukkukauppa
+46462	5	Laboratorio- ja sairaanhoitovalineiden tukkukauppa
+4647	4	Huonekalujen, mattojen ja valaisimien tukkukauppa
+46470	5	Huonekalujen, mattojen ja valaisimien tukkukauppa
+4648	4	Kellojen ja korujen tukkukauppa
+46480	5	Kellojen ja korujen tukkukauppa
+4649	4	Muiden taloustavaroiden tukkukauppa
+46491	5	Paperi- ja toimistotarvikkeiden tukkukauppa
+46492	5	Kirjatukkukauppa
+46493	5	Urheilualan tukkukauppa
+46494	5	Musiikkitarvikkeiden tukkukauppa
+46495	5	Veneiden ja veneilytarvikkeiden tukkukauppa
+46496	5	Lelujen ja pelien tukkukauppa
+46499	5	Muu kotitaloustavaroiden tukkukauppa
+465	3	Tieto- ja viestintateknisten laitteiden tukkukauppa
+4651	4	Tietokoneiden, oheislaitteiden ja ohjelmistojen tukkukauppa
+46510	5	Tietokoneiden, oheislaitteiden ja ohjelmistojen tukkukauppa
+4652	4	Elektroniikka- ja viestintalaitteiden ja osien tukkukauppa
+46521	5	Viestintalaitteiden tukkukauppa
+46522	5	Elektronisten komponenttien tukkukauppa
+466	3	Muiden koneiden, laitteiden ja tarvikkeiden tukkukauppa
+4661	4	Maa- ja metsatalouskoneiden ja -tarvikkeiden tukkukauppa ml. traktorit
+46610	5	Maa- ja metsatalouskoneiden ja -tarvikkeiden tukkukauppa ml. traktorit
+4662	4	Tyastakoneiden tukkukauppa
+46620	5	Tyastakoneiden tukkukauppa
+4663	4	Kaivos- ja rakennuskoneiden tukkukauppa
+46630	5	Kaivos- ja rakennuskoneiden tukkukauppa
+4664	4	Tekstiiliteollisuuden koneiden seka ompelu- ja kutomakoneiden tukkukauppa
+46640	5	Tekstiiliteollisuuden koneiden seka ompelu- ja kutomakoneiden tukkukauppa
+4665	4	Toimitilakalusteiden tukkukauppa
+46650	5	Toimitilakalusteiden tukkukauppa
+4666	4	Muiden konttorikoneiden ja -laitteiden tukkukauppa
+46660	5	Muiden konttorikoneiden ja -laitteiden tukkukauppa
+4669	4	Muiden koneiden, laitteiden ja tarvikkeiden tukkukauppa
+46691	5	Sahkatarviketukkukauppa
+46692	5	Teollisuudessa kaytettavien muiden koneiden tukkukauppa
+46699	5	Muualla luokittelemattomien koneiden ja laitteiden tukkukauppa
+467	3	Muu erikoistunut tukkukauppa
+4671	4	Kiinteiden, nestemaisten ja kaasumaisten polttoaineiden yms. tukkukauppa
+46711	5	Nestemaisten ja kaasumaisten polttoaineiden tukkukauppa
+46719	5	Muiden polttoaineiden tukkukauppa
+4672	4	Raakametallien ja metallimalmien tukkukauppa
+46720	5	Raakametallien ja metallimalmien tukkukauppa
+4673	4	Puun, rakennusmateriaalien ja saniteettilaitteiden tukkukauppa
+46731	5	Raakapuutukkukauppa
+46732	5	Puutavaratuotetukkukauppa
+46733	5	Metalli- ja mineraalituotteiden tukkukauppa
+46734	5	Kylpyhuonekalusteiden ja -tarvikkeiden tukkukauppa
+46735	5	Lattianpaallysteiden ja tapettien tukkukauppa
+46739	5	Rakennustarvikkeiden yleistukkukauppa
+4674	4	Rautakauppatavaroiden, LVI-laitteiden ja -tarvikkeiden tukkukauppa
+46741	5	Tyakalu- ja tarviketukkukauppa
+46742	5	Lampa-, vesi- ja ilmastointilaitteiden ja -tarvikkeiden tukkukauppa
+4675	4	Peruskemikaalien, lannoitteiden yms. tukkukauppa
+46750	5	Peruskemikaalien, lannoitteiden yms. tukkukauppa
+4676	4	Muiden valituotteiden tukkukauppa
+46760	5	Muiden valituotteiden tukkukauppa
+4677	4	Jatteen ja romun tukkukauppa
+46770	5	Jatteen ja romun tukkukauppa
+469	3	Muu tukkukauppa
+4690	4	Muu tukkukauppa
+46901	5	Yleistukkukauppa
+46909	5	Muualla luokittelematon tukkukauppa
+47	2	Vahittaiskauppa (pl. moottoriajoneuvojen ja moottoripyarien kauppa)
+471	3	Vahittaiskauppa erikoistumattomissa myymalaissa
+4711	4	Elintarvikkeiden, juomien ja tupakan erikoistumaton vahittaiskauppa
+47111	5	Isot supermarketit (yli 1000 ma)
+47112	5	Pienet supermarketit (yli 400 ma, enintaan 1000 ma)
+47113	5	Valintamyymalat (yli 100 ma, enintaan 400 ma)
+47114	5	Elintarvike-, makeis- ym. kioskit (enintaan 100 ma)
+4719	4	Muu vahittaiskauppa erikoistumattomissa myymalaissa
+47191	5	Itsepalvelutavaratalot (yli 2500 ma)
+47192	5	Tavaratalot (yli 2500 ma)
+47199	5	Pienoistavaratalot ja muut erikoistumattomat myymalat (enintaan 2500 ma)
+472	3	Elintarvikkeiden, juomien ja tupakan vahittaiskauppa erikoismyymalaissa
+4721	4	Hedelmien, marjojen ja vihannesten vahittaiskauppa
+47210	5	Hedelmien, marjojen ja vihannesten vahittaiskauppa
+4722	4	Lihan ja lihatuotteiden vahittaiskauppa
+47220	5	Lihan ja lihatuotteiden vahittaiskauppa
+4723	4	Kalan, ayriaisten ja nilviaisten vahittaiskauppa
+47230	5	Kalan, ayriaisten ja nilviaisten vahittaiskauppa
+4724	4	Leipomotuotteiden ja makeisten vahittaiskauppa
+47241	5	Leipomotuotteiden vahittaiskauppa
+47242	5	Makeisten vahittaiskauppa
+4725	4	Alkoholi- ja muiden juomien vahittaiskauppa
+47250	5	Alkoholi- ja muiden juomien vahittaiskauppa
+4726	4	Tupakkatuotteiden vahittaiskauppa
+47260	5	Tupakkatuotteiden vahittaiskauppa
+4729	4	Muu vahittaiskauppa erikoismyymalaissa
+47291	5	Jaatelakioskit
+47292	5	Luontaistuotteiden vahittaiskauppa
+47299	5	Muu paivittaistavaroiden erikoisvahittaiskauppa
+473	3	Ajoneuvojen polttoaineen vahittaiskauppa
+4730	4	Ajoneuvojen polttoaineen vahittaiskauppa
+47301	5	Huoltamotoiminta
+47302	5	Polttoaineiden vahittaiskauppa automaateista
+474	3	Tieto- ja viestintateknisten laitteiden vahittaiskauppa erikoismyymalaissa
+4741	4	Tietokoneiden, niiden oheislaitteiden ja ohjelmistojen vahittaiskauppa
+47410	5	Tietokoneiden, niiden oheislaitteiden ja ohjelmistojen vahittaiskauppa
+4742	4	Televiestintalaitteiden vahittaiskauppa
+47420	5	Televiestintalaitteiden vahittaiskauppa
+4743	4	Viihde-elektroniikan vahittaiskauppa
+47430	5	Viihde-elektroniikan vahittaiskauppa
+475	3	Muiden kotitaloustavaroiden vahittaiskauppa erikoismyymalaissa
+4751	4	Tekstiilien vahittaiskauppa
+47511	5	Kankaiden vahittaiskauppa
+47512	5	Lankojen ja kasityatarvikkeiden vahittaiskauppa
+4752	4	Rautakauppatavaran, maalien ja lasin vahittaiskauppa
+47521	5	Rauta- ja rakennustarvikkeiden yleisvahittaiskauppa
+47522	5	Maalien vahittaiskauppa
+47523	5	Keittia- ja saniteettitilojen kalusteiden vahittaiskauppa
+47529	5	Muu rauta- ja rakennusalan vahittaiskauppa
+4753	4	Mattojen, tapettien ja lattianpaallysteiden vahittaiskauppa
+47531	5	Mattojen ja verhojen vahittaiskauppa
+47532	5	Tapettien ja lattianpaallysteiden vahittaiskauppa
+4754	4	Sahkaisten kodinkoneiden vahittaiskauppa
+47540	5	Sahkaisten kodinkoneiden vahittaiskauppa
+4759	4	Huonekalujen, valaisimien ja muualla luokittelemattomien taloustarvikkeiden vahittaiskauppa erikoismyymalaissa
+47591	5	Huonekalujen vahittaiskauppa
+47592	5	Sahkatarvikkeiden ja valaisimien vahittaiskauppa
+47593	5	Kumi- ja muovitavaroiden vahittaiskauppa
+47594	5	Taloustavaroiden vahittaiskauppa
+47595	5	Soittimien ja musiikkitarvikkeiden vahittaiskauppa
+47596	5	Lukkoseppa- ja avainliikkeet
+47599	5	Muualla luokittelemattomien kotitaloustarvikkeiden vahittaiskauppa
+476	3	Kulttuuri- ja vapaa-ajan tuotteiden vahittaiskauppa erikoismyymalaissa
+4761	4	Kirjojen vahittaiskauppa
+47610	5	Kirjojen vahittaiskauppa
+4762	4	Sanomalehtien ja paperitavaran vahittaiskauppa
+47621	5	Paperi- ja toimistotarvikkeiden vahittaiskauppa
+47622	5	Aikakausjulkaisujen ja lehtien vahittaiskauppa
+4763	4	Musiikki- ja videotallenteiden vahittaiskauppa
+47630	5	Musiikki- ja videotallenteiden vahittaiskauppa
+4764	4	Urheiluvalineiden vahittaiskauppa
+47641	5	Urheiluvalineiden ja polkupyarien vahittaiskauppa
+47642	5	Veneiden ja veneilytarvikkeiden vahittaiskauppa
+4765	4	Pelien ja leikkikalujen vahittaiskauppa
+47650	5	Pelien ja leikkikalujen vahittaiskauppa
+477	3	Muiden tavaroiden vahittaiskauppa erikoismyymalaissa
+4771	4	Vaatteiden vahittaiskauppa
+47711	5	Naisten vaatteiden vahittaiskauppa
+47712	5	Miesten vaatteiden vahittaiskauppa
+47713	5	Lastenvaatteiden vahittaiskauppa
+47714	5	Turkisten ja nahkavaatteiden vahittaiskauppa
+47715	5	Lakkien ja hattujen vahittaiskauppa
+47719	5	Vaatteiden yleisvahittaiskauppa
+4772	4	Jalkineiden ja nahkatavaroiden vahittaiskauppa
+47721	5	Jalkineiden vahittaiskauppa
+47722	5	Laukkujen vahittaiskauppa
+4773	4	Apteekit
+47730	5	Apteekit
+4774	4	Terveydenhoitotarvikkeiden vahittaiskauppa
+47740	5	Terveydenhoitotarvikkeiden vahittaiskauppa
+4775	4	Kosmetiikka- ja hygieniatuotteiden vahittaiskauppa
+47750	5	Kosmetiikka- ja hygieniatuotteiden vahittaiskauppa
+4776	4	Kukkien, kasvien, siementen, lannoitteiden, lemmikkielainten ja niiden ruokien vahittaiskauppa
+47761	5	Kukkien vahittaiskauppa
+47762	5	Kukkakioskit
+47763	5	Puutarha-alan vahittaiskauppa
+47764	5	Lemmikkielainten, niiden ruokien ja tarvikkeiden vahittaiskauppa
+4777	4	Kultasepanteosten ja kellojen vahittaiskauppa
+47770	5	Kultasepanteosten ja kellojen vahittaiskauppa
+4778	4	Muu uusien tavaroiden vahittaiskauppa
+47781	5	Taideliikkeet
+47782	5	Valokuvausalan vahittaiskauppa
+47783	5	Optisen alan vahittaiskauppa
+47784	5	Lastenvaunujen ja -tarvikkeiden vahittaiskauppa
+47785	5	Lahjatavaroiden ja askartelutarvikkeiden vahittaiskauppa
+47789	5	Muiden uusien tavaroiden vahittaiskauppa
+4779	4	Kaytettyjen tavaroiden vahittaiskauppa myymalaissa
+47791	5	Antiikkiliikkeet
+47792	5	Antikvariaattikauppa
+47793	5	Huutokauppakamarit
+47799	5	Muiden kaytettyjen tavaroiden vahittaiskauppa
+478	3	Tori- ja markkinakauppa
+4781	4	Elintarvikkeiden, juomien ja tupakkatuotteiden vahittaiskauppa kojuista ja toreilla
+47810	5	Elintarvikkeiden, juomien ja tupakkatuotteiden vahittaiskauppa kojuista ja toreilla
+4782	4	Tekstiilien, vaatteiden ja jalkineiden vahittaiskauppa kojuista ja toreilla
+47820	5	Tekstiilien, vaatteiden ja jalkineiden vahittaiskauppa kojuista ja toreilla
+4789	4	Muiden tavaroiden vahittaiskauppa kojuista ja toreilla
+47890	5	Muiden tavaroiden vahittaiskauppa kojuista ja toreilla
+479	3	Vahittaiskauppa muualla kuin myymalaissa (pl. tori- ja markkinakauppa)
+4791	4	Vahittaiskauppa postimyyntiliikkeiden tai Internetin valityksella
+47911	5	Kirjojen, musiikki- ja videotallenteiden postimyynti ja verkkokauppa
+47912	5	Vaatteiden postimyynti ja verkkokauppa
+47913	5	Laajan valikoiman postimyynti ja verkkokauppa
+47919	5	Muu postimyynti ja verkkokauppa
+4799	4	Muu vahittaiskauppa muualla kuin myymalaissa
+47990	5	Muu vahittaiskauppa muualla kuin myymalaissa
+H	1	Kuljetus ja varastointi
+49	2	Maaliikenne ja putkijohtokuljetus
+491	3	Rautateiden henkilaliikenne, kaukoliikenne
+4910	4	Rautateiden henkilaliikenne, kaukoliikenne
+49100	5	Rautateiden henkilaliikenne, kaukoliikenne
+492	3	Rautateiden tavaraliikenne
+4920	4	Rautateiden tavaraliikenne
+49200	5	Rautateiden tavaraliikenne
+493	3	Muu maaliikenteen henkilaliikenne
+4931	4	Paikallisliikenne
+49310	5	Paikallisliikenne
+4932	4	Taksiliikenne
+49320	5	Taksiliikenne
+4939	4	Muualla luokittelematon maaliikenteen henkilaliikenne
+49391	5	Saannallinen linja-autojen kaukoliikenne
+49392	5	Linja-autojen tilausliikenne
+49399	5	Muualla luokittelematon muu maaliikenteen henkilaliikenne
+494	3	Tieliikenteen tavarankuljetus ja muuttopalvelut
+4941	4	Tieliikenteen tavarankuljetus
+49410	5	Tieliikenteen tavarankuljetus
+4942	4	Muuttopalvelut
+49420	5	Muuttopalvelut
+495	3	Putkijohtokuljetus
+4950	4	Putkijohtokuljetus
+49500	5	Putkijohtokuljetus
+50	2	Vesiliikenne
+501	3	Meri- ja rannikkovesiliikenteen henkilakuljetus
+5010	4	Meri- ja rannikkovesiliikenteen henkilakuljetus
+50101	5	Meriliikenteen henkilakuljetus
+50102	5	Rannikkovesiliikenteen henkilakuljetus
+502	3	Meri- ja rannikkovesiliikenteen tavarankuljetus
+5020	4	Meri- ja rannikkovesiliikenteen tavarankuljetus
+50201	5	Meriliikenteen tavarankuljetus
+50202	5	Rannikkovesiliikenteen tavarankuljetus
+503	3	Sisavesiliikenteen henkilakuljetus
+5030	4	Sisavesiliikenteen henkilakuljetus
+50300	5	Sisavesiliikenteen henkilakuljetus
+504	3	Sisavesiliikenteen tavarankuljetus
+5040	4	Sisavesiliikenteen tavarankuljetus
+50400	5	Sisavesiliikenteen tavarankuljetus
+51	2	Ilmaliikenne
+511	3	Matkustajalentoliikenne
+5110	4	Matkustajalentoliikenne
+51101	5	Saannallinen lentoliikenne
+51102	5	Tilauslentoliikenne
+512	3	Lentoliikenteen tavarankuljetus ja avaruusliikenne
+5121	4	Lentoliikenteen tavarankuljetus
+51210	5	Lentoliikenteen tavarankuljetus
+5122	4	Avaruusliikenne
+51220	5	Avaruusliikenne
+52	2	Varastointi ja liikennetta palveleva toiminta
+521	3	Varastointi
+5210	4	Varastointi
+52100	5	Varastointi
+522	3	Liikennetta palveleva toiminta
+5221	4	Maaliikennetta palveleva toiminta
+52211	5	Linja-autoasemat
+52212	5	Tieliikenteen terminaalitoiminta
+52213	5	Maksullinen pysakainti
+52219	5	Muu maaliikennetta palveleva toiminta
+5222	4	Vesiliikennetta palveleva toiminta
+52221	5	Satamat
+52229	5	Muu vesiliikennetta palveleva toiminta
+5223	4	Ilmaliikennetta palveleva toiminta
+52230	5	Ilmaliikennetta palveleva toiminta
+5224	4	Lastinkasittely
+52240	5	Lastinkasittely
+5229	4	Muu liikennetta palveleva toiminta
+52291	5	Huolinta ja rahtaus
+52299	5	Muu kuljetusvalitys
+53	2	Posti- ja kuriiritoiminta
+531	3	Postin yleispalvelu
+5310	4	Postin yleispalvelu
+53100	5	Postin yleispalvelu
+532	3	Muu posti-, jakelu- ja kuriiritoiminta
+5320	4	Muu posti-, jakelu- ja kuriiritoiminta
+53200	5	Muu posti-, jakelu- ja kuriiritoiminta
+I	1	Majoitus- ja ravitsemistoiminta
+55	2	Majoitus
+551	3	Hotellit ja vastaavat majoitusliikkeet
+5510	4	Hotellit ja vastaavat majoitusliikkeet
+55101	5	Hotellit
+55109	5	Motellit, matkustajakodit ja vastaavat majoitusliikkeet
+552	3	Lomakylat, retkeilymajat yms. majoitus
+5520	4	Lomakylat, retkeilymajat yms. majoitus
+55201	5	Retkeilymajat
+55209	5	Lomakylat yms. majoitus
+553	3	Leirintaalueet, asuntovaunu- ja matkailuvaunualueet
+5530	4	Leirintaalueet, asuntovaunu- ja matkailuvaunualueet
+55300	5	Leirintaalueet, asuntovaunu- ja matkailuvaunualueet
+559	3	Muu majoitus
+5590	4	Muu majoitus
+55901	5	Asuntolat ja taysihoitolat yms.
+55902	5	Maatilamatkailu, bed & breakfast
+55903	5	Lomamakkien vuokraus
+55909	5	Muualla luokittelematon majoitustoiminta
+56	2	Ravitsemistoiminta
+561	3	Ravintolat ja vastaava ravitsemistoiminta
+5610	4	Ravintolat ja vastaava ravitsemistoiminta
+56101	5	Ravintolat
+56102	5	Kahvila-ravintolat
+56103	5	Ruokakioskit
+562	3	Ateriapalvelut ja muut ravitsemispalvelut
+5621	4	Pitopalvelu
+56210	5	Pitopalvelu
+5629	4	Henkilasta- ja laitosruokalat
+56290	5	Henkilasta- ja laitosruokalat
+563	3	Baarit ja kahvilat
+5630	4	Baarit ja kahvilat
+56301	5	Olut- ja drinkkibaarit
+56302	5	Kahvilat ja kahvibaarit
+J	1	Informaatio ja viestinta
+58	2	Kustannustoiminta
+581	3	Kirjojen ja lehtien kustantaminen ja muu kustannustoiminta
+5811	4	Kirjojen kustantaminen
+58110	5	Kirjojen kustantaminen
+5812	4	Hakemistojen ja postituslistojen julkaiseminen
+58120	5	Hakemistojen ja postituslistojen julkaiseminen
+5813	4	Sanomalehtien kustantaminen
+58130	5	Sanomalehtien kustantaminen
+5814	4	Aikakauslehtien ja harvemmin ilmestyvien sanomalehtien kustantaminen
+58141	5	Paikallislehtien ja harvemmin ilmestyvien sanomalehtien kustantaminen
+58142	5	Aikakauslehtien kustantaminen
+5819	4	Muu kustannustoiminta
+58190	5	Muu kustannustoiminta
+582	3	Ohjelmistojen kustantaminen
+5821	4	Tietokonepelien kustantaminen
+58210	5	Tietokonepelien kustantaminen
+5829	4	Muu ohjelmistojen kustantaminen
+58290	5	Muu ohjelmistojen kustantaminen
+59	2	Elokuva-, video- ja televisio-ohjelmatuotanto, aanitteiden ja musiikin kustantaminen
+591	3	Elokuva-, video- ja televisio-ohjelmatoiminta
+5911	4	Elokuvien, videoiden ja televisio-ohjelmien tuotanto
+59110	5	Elokuvien, videoiden ja televisio-ohjelmien tuotanto
+5912	4	Elokuvien, video- ja televisio-ohjelmien jalkituotanto
+59120	5	Elokuvien, video- ja televisio-ohjelmien jalkituotanto
+5913	4	Elokuvien, videoiden ja televisio-ohjelmien levitys
+59130	5	Elokuvien, videoiden ja televisio-ohjelmien levitys
+5914	4	Elokuvien esittaminen
+59140	5	Elokuvien esittaminen
+592	3	aanitysstudiot; aanitteiden ja musiikin kustantaminen
+5920	4	aanitysstudiot; aanitteiden ja musiikin kustantaminen
+59200	5	aanitysstudiot; aanitteiden ja musiikin kustantaminen
+60	2	Radio- ja televisiotoiminta
+601	3	Radio-ohjelmien tuottaminen ja lahettaminen
+6010	4	Radio-ohjelmien tuottaminen ja lahettaminen
+60100	5	Radio-ohjelmien tuottaminen ja lahettaminen
+602	3	Televisio-ohjelmien tuottaminen ja lahettaminen
+6020	4	Televisio-ohjelmien tuottaminen ja lahettaminen
+60201	5	Televisio-ohjelmien tuottaminen ja lahettaminen (pl. maksulliset tv-kanavat)
+60202	5	Maksulliset tv-kanavat
+61	2	Televiestinta
+611	3	Langallisen verkon hallinta ja palvelut
+6110	4	Langallisen verkon hallinta ja palvelut
+61100	5	Langallisen verkon hallinta ja palvelut
+612	3	Langattoman verkon hallinta ja palvelut
+6120	4	Langattoman verkon hallinta ja palvelut
+61200	5	Langattoman verkon hallinta ja palvelut
+613	3	Satelliittiviestinta
+6130	4	Satelliittiviestinta
+61300	5	Satelliittiviestinta
+619	3	Muut televiestintapalvelut
+6190	4	Muut televiestintapalvelut
+61900	5	Muut televiestintapalvelut
+62	2	Ohjelmistot, konsultointi ja siihen liittyva toiminta
+620	3	Ohjelmistot, konsultointi ja siihen liittyva toiminta
+6201	4	Ohjelmistojen suunnittelu ja valmistus
+62010	5	Ohjelmistojen suunnittelu ja valmistus
+6202	4	Atk-laitteisto- ja ohjelmistokonsultointi
+62020	5	Atk-laitteisto- ja ohjelmistokonsultointi
+6203	4	Tietojenkasittelyn ja laitteistojen kaytta- ja hallintapalvelut
+62030	5	Tietojenkasittelyn ja laitteistojen kaytta- ja hallintapalvelut
+6209	4	Muu laitteisto- ja tietotekninen palvelutoiminta
+62090	5	Muu laitteisto- ja tietotekninen palvelutoiminta
+63	2	Tietopalvelutoiminta
+631	3	Tietojenkasittely, palvelintilan vuokraus ja niihin liittyvat palvelut; verkkoportaalit
+6311	4	Tietojenkasittely, palvelintilan vuokraus ja niihin liittyvat palvelut
+63110	5	Tietojenkasittely, palvelintilan vuokraus ja niihin liittyvat palvelut
+6312	4	Verkkoportaalit
+63120	5	Verkkoportaalit
+639	3	Muu tietopalvelutoiminta
+6391	4	Uutistoimistot
+63910	5	Uutistoimistot
+6399	4	Muualla luokittelematon tietopalvelutoiminta
+63990	5	Muualla luokittelematon tietopalvelutoiminta
+K	1	Rahoitus- ja vakuutustoiminta
+64	2	Rahoituspalvelut (pl. vakuutus- ja elakevakuutustoiminta)
+641	3	Pankkitoiminta
+6411	4	Keskuspankkitoiminta
+64110	5	Keskuspankkitoiminta
+6419	4	Muu pankkitoiminta
+64190	5	Muu pankkitoiminta
+642	3	Rahoitusalan holdingyhtiaiden toiminta
+6420	4	Rahoitusalan holdingyhtiaiden toiminta
+64200	5	Rahoitusalan holdingyhtiaiden toiminta
+643	3	Rahastotoiminta
+6430	4	Rahastotoiminta
+64300	5	Rahastotoiminta
+649	3	Muut rahoituspalvelut (pl. vakuutus- ja elakevakuutustoiminta)
+6491	4	Rahoitusleasing
+64910	5	Rahoitusleasing
+6492	4	Muu luotonanto
+64920	5	Muu luotonanto
+6499	4	Muualla luokittelemattomat rahoituspalvelut (pl. vakuutus- ja elakevakuutustoiminta)
+64990	5	Muualla luokittelemattomat rahoituspalvelut (pl. vakuutus- ja elakevakuutustoiminta)
+65	2	Vakuutus-, jalleenvakuutus- ja elakevakuutustoiminta (pl. pakollinen sosiaalivakuutus)
+651	3	Vakuutustoiminta
+6511	4	Henkivakuutustoiminta
+65110	5	Henkivakuutustoiminta
+6512	4	Muu vakuutustoiminta
+65121	5	Vahinkovakuutusyhtiat
+65122	5	Vakuutusyhdistykset
+65129	5	Muu vahinkovakuutus
+652	3	Jalleenvakuutustoiminta
+6520	4	Jalleenvakuutustoiminta
+65200	5	Jalleenvakuutustoiminta
+653	3	Elakevakuutustoiminta
+6530	4	Elakevakuutustoiminta
+65300	5	Elakevakuutustoiminta
+66	2	Rahoitusta ja vakuuttamista palveleva toiminta
+661	3	Rahoitusta ja vakuuttamista palveleva toiminta (pl. vakuutus- ja elakevakuutustoiminta)
+6611	4	Parssitoiminta ja rahoitusmarkkinoiden hallinnolliset tukipalvelut
+66110	5	Parssitoiminta ja rahoitusmarkkinoiden hallinnolliset tukipalvelut
+6612	4	Arvopaperien ja raaka-ainesopimusten valittaminen
+66120	5	Arvopaperien ja raaka-ainesopimusten valittaminen
+6619	4	Muu rahoitusta palveleva toiminta (pl. vakuutus- ja elakevakuutustoiminta)
+66190	5	Muu rahoitusta palveleva toiminta (pl. vakuutus- ja elakevakuutustoiminta)
+662	3	Vakuutus- ja elakevakuutustoimintaa avustava toiminta
+6621	4	Riskin- ja vahingonarviointi
+66210	5	Riskin- ja vahingonarviointi
+6622	4	Vakuutusasiamiesten ja -valittajien toiminta
+66220	5	Vakuutusasiamiesten ja -valittajien toiminta
+6629	4	Muu vakuutus- ja elakevakuutustoimintaa avustava toiminta
+66290	5	Muu vakuutus- ja elakevakuutustoimintaa avustava toiminta
+663	3	Omaisuudenhoitotoiminta
+6630	4	Omaisuudenhoitotoiminta
+66300	5	Omaisuudenhoitotoiminta
+L	1	Kiinteistaalan toiminta
+68	2	Kiinteistaalan toiminta
+681	3	Omien kiinteistajen kauppa
+6810	4	Omien kiinteistajen kauppa
+68100	5	Omien kiinteistajen kauppa
+682	3	Omien tai leasing-kiinteistajen vuokraus ja hallinta
+6820	4	Omien tai leasing-kiinteistajen vuokraus ja hallinta
+68201	5	Asuntojen vuokraus
+68202	5	Asuntojen ja asuinkiinteistajen hallinta
+68209	5	Muiden kiinteistajen vuokraus ja hallinta
+683	3	Kiinteistaalan toiminta palkkio- tai sopimusperusteisesti
+6831	4	Kiinteistanvalitys
+68310	5	Kiinteistanvalitys
+6832	4	Kiinteistajen isannainti
+68320	5	Kiinteistajen isannainti
+M	1	Ammatillinen, tieteellinen ja tekninen toiminta
+69	2	Lakiasiain- ja laskentatoimen palvelut
+691	3	Lakiasiainpalvelut
+6910	4	Lakiasiainpalvelut
+69101	5	Asianajotoimistot
+69102	5	Lakiasiaintoimistot
+69103	5	Patenttitoimistot
+69109	5	Muu lakiasiain palvelu
+692	3	Laskentatoimi, kirjanpito ja tilintarkastus; veroneuvonta
+6920	4	Laskentatoimi, kirjanpito ja tilintarkastus; veroneuvonta
+69201	5	Kirjanpito- ja tilinpaataspalvelu
+69202	5	Tilintarkastuspalvelu
+69209	5	Muu laskentatoimen palvelu
+70	2	Paakonttorien toiminta; liikkeenjohdon konsultointi
+701	3	Paakonttorien toiminta
+7010	4	Paakonttorien toiminta
+70100	5	Paakonttorien toiminta
+702	3	Liikkeenjohdon konsultointi
+7021	4	Suhdetoiminta ja viestinta
+70210	5	Suhdetoiminta ja viestinta
+7022	4	Muu liikkeenjohdon konsultointi
+70220	5	Muu liikkeenjohdon konsultointi
+71	2	Arkkitehti- ja insinaaripalvelut; tekninen testaus ja analysointi
+711	3	Arkkitehti- ja insinaaripalvelut ja niihin liittyva tekninen konsultointi
+7111	4	Arkkitehtipalvelut
+71110	5	Arkkitehtipalvelut
+7112	4	Insinaaripalvelut ja niihin liittyva tekninen konsultointi
+71121	5	Yhdyskuntasuunnittelu
+71122	5	Maa- ja vesirakentamisen tekninen palvelu
+71123	5	Rakennetekninen palvelu
+71124	5	LVI-tekninen suunnittelu
+71125	5	Sahkatekninen suunnittelu
+71126	5	Muu rakennustekninen palvelu
+71127	5	Kone- ja prosessisuunnittelu
+71129	5	Muu tekninen palvelu
+712	3	Tekninen testaus ja analysointi
+7120	4	Tekninen testaus ja analysointi
+71201	5	Autokatsastus
+71202	5	Muu tekninen testaus ja analysointi
+72	2	Tieteellinen tutkimus ja kehittaminen
+721	3	Luonnontieteen ja tekniikan tutkimus ja kehittaminen
+7211	4	Biotekninen tutkimus ja kehittaminen
+72110	5	Biotekninen tutkimus ja kehittaminen
+7219	4	Muu luonnontieteellinen ja tekninen tutkimus ja kehittaminen
+72191	5	Laaketieteellinen tutkimus ja kehittaminen
+72192	5	Muu luonnontieteellinen tutkimus ja kehittaminen
+72193	5	Tekniikan tutkimus ja kehittaminen
+722	3	Yhteiskuntatieteellinen ja humanistinen tutkimus ja kehittaminen
+7220	4	Yhteiskuntatieteellinen ja humanistinen tutkimus ja kehittaminen
+72200	5	Yhteiskuntatieteellinen ja humanistinen tutkimus ja kehittaminen
+73	2	Mainostoiminta ja markkinatutkimus
+731	3	Mainostoiminta
+7311	4	Mainostoimistot ja mainospalvelu
+73111	5	Mainostoimistot
+73112	5	Suora- ja ulkomainonta
+73119	5	Muu mainospalvelu
+7312	4	Mainostilan vuokraus ja myynti
+73120	5	Mainostilan vuokraus ja myynti
+732	3	Markkina- ja mielipidetutkimukset
+7320	4	Markkina- ja mielipidetutkimukset
+73200	5	Markkina- ja mielipidetutkimukset
+74	2	Muut erikoistuneet palvelut liike-elamalle
+741	3	Taideteollinen muotoilu ja suunnittelu
+7410	4	Taideteollinen muotoilu ja suunnittelu
+74101	5	Graafinen muotoilu
+74102	5	Sisustussuunnittelu
+74109	5	Teollinen muotoilu ym.
+742	3	Valokuvaustoiminta
+7420	4	Valokuvaustoiminta
+74201	5	Valokuvaamot ja muu kuvaustoiminta
+74202	5	Valokuvien kehittaminen
+743	3	Kaantaminen ja tulkkaus
+7430	4	Kaantaminen ja tulkkaus
+74300	5	Kaantaminen ja tulkkaus
+749	3	Muualla luokittelemattomat erikoistuneet palvelut liike-elamalle
+7490	4	Muualla luokittelemattomat erikoistuneet palvelut liike-elamalle
+74901	5	Ohjelmatoimistot ja manageripalvelut
+74909	5	Muu ammatillinen, tieteellinen ja tekninen toiminta
+75	2	Elainlaakintapalvelut
+750	3	Elainlaakintapalvelut
+7500	4	Elainlaakintapalvelut
+75000	5	Elainlaakintapalvelut
+N	1	Hallinto- ja tukipalvelutoiminta
+77	2	Vuokraus- ja leasingtoiminta
+771	3	Moottoriajoneuvojen vuokraus ja leasing
+7711	4	Autojen ja kevyiden moottoriajoneuvojen vuokraus ja leasing
+77110	5	Autojen ja kevyiden moottoriajoneuvojen vuokraus ja leasing
+7712	4	Kuorma-autojen ja muiden raskaiden ajoneuvojen vuokraus ja leasing
+77120	5	Kuorma-autojen ja muiden raskaiden ajoneuvojen vuokraus ja leasing
+772	3	Henkilakohtaisten ja kotitaloustavaroiden vuokraus ja leasing
+7721	4	Vapaa-ajan ja urheiluvalineiden vuokraus ja leasing
+77210	5	Vapaa-ajan ja urheiluvalineiden vuokraus ja leasing
+7722	4	Videofilmien vuokraus
+77220	5	Videofilmien vuokraus
+7729	4	Muiden henkilakohtaisten ja kotitaloustavaroiden vuokraus ja leasing
+77290	5	Muiden henkilakohtaisten ja kotitaloustavaroiden vuokraus ja leasing
+773	3	Koneiden ja laitteiden vuokraus ja leasing
+7731	4	Maatalouskoneiden ja -laitteiden vuokraus ja leasing
+77310	5	Maatalouskoneiden ja -laitteiden vuokraus ja leasing
+7732	4	Rakennuskoneiden ja -laitteiden vuokraus ja leasing
+77320	5	Rakennuskoneiden ja -laitteiden vuokraus ja leasing
+7733	4	Toimistokoneiden ja -laitteiden seka tietokoneiden vuokraus ja leasing
+77330	5	Toimistokoneiden ja -laitteiden seka tietokoneiden vuokraus ja leasing
+7734	4	Vesiliikennevalineiden vuokraus ja leasing
+77340	5	Vesiliikennevalineiden vuokraus ja leasing
+7735	4	Ilmaliikennevalineiden vuokraus ja leasing
+77350	5	Ilmaliikennevalineiden vuokraus ja leasing
+7739	4	Muiden koneiden ja laitteiden vuokraus ja leasing
+77390	5	Muiden koneiden ja laitteiden vuokraus ja leasing
+774	3	Henkisen omaisuuden ja vastaavien tuotteiden leasing (pl. tekijanoikeuden suojaamat teokset)
+7740	4	Henkisen omaisuuden ja vastaavien tuotteiden leasing (pl. tekijanoikeuden suojaamat teokset)
+77400	5	Henkisen omaisuuden ja vastaavien tuotteiden leasing (pl. tekijanoikeuden suojaamat teokset)
+78	2	Tyallistamistoiminta
+781	3	Tyanvalitystoiminta
+7810	4	Tyanvalitystoiminta
+78100	5	Tyanvalitystoiminta
+782	3	Tyavoiman vuokraus
+7820	4	Tyavoiman vuokraus
+78200	5	Tyavoiman vuokraus
+783	3	Muut henkilastan hankintapalvelut
+7830	4	Muut henkilastan hankintapalvelut
+78300	5	Muut henkilastan hankintapalvelut
+79	2	Matkatoimistojen ja matkanjarjestajien toiminta; varauspalvelut
+791	3	Matkatoimistojen ja matkanjarjestajien toiminta
+7911	4	Matkatoimistojen toiminta
+79110	5	Matkatoimistojen toiminta
+7912	4	Matkanjarjestajien toiminta
+79120	5	Matkanjarjestajien toiminta
+799	3	Varauspalvelut, matkaoppaiden palvelut ym.
+7990	4	Varauspalvelut, matkaoppaiden palvelut ym.
+79900	5	Varauspalvelut, matkaoppaiden palvelut ym.
+80	2	Turvallisuus-, vartiointi- ja etsivapalvelut
+801	3	Yksityiset turvallisuuspalvelut
+8010	4	Yksityiset turvallisuuspalvelut
+80100	5	Yksityiset turvallisuuspalvelut
+802	3	Turvallisuusjarjestelmat
+8020	4	Turvallisuusjarjestelmat
+80200	5	Turvallisuusjarjestelmat
+803	3	Etsivatoiminta
+8030	4	Etsivatoiminta
+80300	5	Etsivatoiminta
+81	2	Kiinteistan- ja maisemanhoito
+811	3	Kiinteistanhoito
+8110	4	Kiinteistanhoito
+81100	5	Kiinteistanhoito
+812	3	Siivouspalvelut
+8121	4	Kiinteistajen siivous
+81210	5	Kiinteistajen siivous
+8122	4	Muu rakennus- ja teollisuussiivous
+81220	5	Muu rakennus- ja teollisuussiivous
+8129	4	Muu siivoustoiminta
+81291	5	Katujen ja teiden puhtaanapito
+81299	5	Muualla luokittelemattomat siivouspalvelut
+813	3	Maisemanhoitopalvelut
+8130	4	Maisemanhoitopalvelut
+81300	5	Maisemanhoitopalvelut
+82	2	Hallinto- ja tukipalvelut liike-elamalle
+821	3	Hallinto- ja toimistopalvelut
+8211	4	Yhdistetyt toimistopalvelut
+82110	5	Yhdistetyt toimistopalvelut
+8219	4	Sihteeri-, toimisto- ja postituspalvelut
+82191	5	Sihteeri- ja muu toimistopalvelu
+82192	5	Postituspalvelut
+822	3	Puhelinpalvelukeskusten toiminta
+8220	4	Puhelinpalvelukeskusten toiminta
+82200	5	Puhelinpalvelukeskusten toiminta
+823	3	Messujen ja kongressien jarjestaminen
+8230	4	Messujen ja kongressien jarjestaminen
+82300	5	Messujen ja kongressien jarjestaminen
+829	3	Muu liike-elamaa palveleva toiminta
+8291	4	Perinta- ja luottotietopalvelut
+82910	5	Perinta- ja luottotietopalvelut
+8292	4	Pakkauspalvelut
+82920	5	Pakkauspalvelut
+8299	4	Muut palvelut liike-elamalle
+82990	5	Muut palvelut liike-elamalle
+O	1	Julkinen hallinto ja maanpuolustus; pakollinen sosiaalivakuutus
+84	2	Julkinen hallinto ja maanpuolustus; pakollinen sosiaalivakuutus
+841	3	Julkinen hallinto
+8411	4	Julkinen yleishallinto
+84110	5	Julkinen yleishallinto
+8412	4	Terveydenhuollon, opetuksen, kulttuurin ja muiden yhteiskuntapalvelujen hallinto
+84121	5	Opetuksen ja kulttuuriasiain hallinto
+84122	5	Terveydenhuollon ja sosiaaliturvan hallinto
+8413	4	Tyavoima- ja elinkeinoasiain hallinto
+84130	5	Tyavoima- ja elinkeinoasiain hallinto
+842	3	Ulkoasiain hallinto, maanpuolustus ja jarjestystoimi
+8421	4	Ulkoasiainhallinto
+84210	5	Ulkoasiainhallinto
+8422	4	Maanpuolustus
+84220	5	Maanpuolustus
+8423	4	Oikeustoimi
+84231	5	Oikeudenhoito
+84232	5	Vankeinhoito
+8424	4	Poliisitoimi ja rajojen vartiointi
+84241	5	Poliisitoimi
+84242	5	Rajojen vartiointi ja vaestansuojelu
+8425	4	Palo- ja pelastustoimi
+84250	5	Palo- ja pelastustoimi
+843	3	Pakollinen sosiaalivakuutustoiminta
+8430	4	Pakollinen sosiaalivakuutustoiminta
+84301	5	Kansanelakelaitoksen vakuutustoiminta
+84302	5	Lakisaateinen tyaelakevakuutus
+84309	5	Muu pakollinen sosiaalivakuutustoiminta
+P	1	Koulutus
+85	2	Koulutus
+851	3	Esiasteen koulutus
+8510	4	Esiasteen koulutus
+85100	5	Esiasteen koulutus
+852	3	Alemman perusasteen koulutus
+8520	4	Alemman perusasteen koulutus
+85200	5	Alemman perusasteen koulutus
+853	3	Ylemman perusasteen ja keskiasteen koulutus
+8531	4	Ylemman perusasteen koulutus ja lukiokoulutus
+85311	5	Ylemman perusasteen koulutus
+85312	5	Lukiokoulutus
+8532	4	Keskiasteen ammatillinen koulutus
+85320	5	Keskiasteen ammatillinen koulutus
+854	3	Korkea-asteen koulutus
+8541	4	Korkea-asteen koulutus (pl. yliopistot ja ammattikorkeakoulut)
+85410	5	Korkea-asteen koulutus (pl. yliopistot ja ammattikorkeakoulut)
+8542	4	Korkea-asteen koulutus yliopistoissa ja ammattikorkeakouluissa
+85420	5	Korkea-asteen koulutus yliopistoissa ja ammattikorkeakouluissa
+855	3	Muu koulutus
+8551	4	Urheilu- ja liikuntakoulutus
+85510	5	Urheilu- ja liikuntakoulutus
+8552	4	Taiteen ja musiikin koulutus
+85520	5	Taiteen ja musiikin koulutus
+8553	4	Kuljettajakoulutus
+85530	5	Kuljettajakoulutus
+8559	4	Muualla luokittelematon koulutus
+85591	5	Kansanopistot, kansalaisopistot, tyavaenopistot yms.
+85592	5	Koulutuskeskukset
+85593	5	Kielikoulut ja -opistot
+85599	5	Muut koulutusta antavat yksikat
+856	3	Koulutusta palveleva toiminta
+8560	4	Koulutusta palveleva toiminta
+85600	5	Koulutusta palveleva toiminta
+Q	1	Terveys- ja sosiaalipalvelut
+86	2	Terveyspalvelut
+861	3	Terveydenhuollon laitospalvelut
+8610	4	Terveydenhuollon laitospalvelut
+86101	5	Varsinaiset sairaalapalvelut
+86102	5	Kuntoutuslaitokset ja sairaskodit
+862	3	Laakari- ja hammaslaakaripalvelut
+8621	4	Terveyskeskus- ja vastaavat yleislaakaripalvelut
+86210	5	Terveyskeskus- ja vastaavat yleislaakaripalvelut
+8622	4	Laakariasemat, yksityislaakarit ja vastaavat erikoislaakaripalvelut
+86220	5	Laakariasemat, yksityislaakarit ja vastaavat erikoislaakaripalvelut
+8623	4	Hammaslaakaripalvelut
+86230	5	Hammaslaakaripalvelut
+869	3	Muut terveydenhuoltopalvelut
+8690	4	Muut terveydenhuoltopalvelut
+86901	5	Fysioterapia
+86902	5	Laboratoriotutkimukset
+86903	5	Kuvantamistutkimukset
+86904	5	Sairaankuljetuspalvelut
+86909	5	Muu terveyspalvelu
+87	2	Sosiaalihuollon laitospalvelut
+871	3	Sosiaalihuollon hoitolaitokset
+8710	4	Sosiaalihuollon hoitolaitokset
+87101	5	Ikaantyneiden hoitolaitokset
+87102	5	Vammaisten hoitolaitokset (pl. kehitysvammaisten laitospalvelut)
+872	3	Kehitysvammaisten seka mielenterveys- ja paihdeongelmaisten asumispalvelut
+8720	4	Kehitysvammaisten seka mielenterveys- ja paihdeongelmaisten asumispalvelut
+87201	5	Kehitysvammaisten laitokset ja asumispalvelut
+87202	5	Mielenterveysongelmaisten asumispalvelut
+87203	5	Paihdeongelmaisten laitokset
+87204	5	Paihdeongelmaisten asumispalvelut
+873	3	Vanhusten ja vammaisten asumispalvelut
+8730	4	Vanhusten ja vammaisten asumispalvelut
+87301	5	Ikaantyneiden palveluasuminen
+87302	5	Vammaisten palveluasuminen (pl. kehitysvammaisten palveluasuminen)
+879	3	Muut sosiaalihuollon laitospalvelut
+8790	4	Muut sosiaalihuollon laitospalvelut
+87901	5	Lasten ja nuorten laitokset ja ammatillinen perhehoito
+87902	5	Ensi- ja turvakodit
+87909	5	Muut laitokset ja asumispalvelut
+88	2	Sosiaalihuollon avopalvelut
+881	3	Vanhusten ja vammaisten sosiaalihuollon avopalvelut
+8810	4	Vanhusten ja vammaisten sosiaalihuollon avopalvelut
+88101	5	Kotipalvelut ikaantyneille ja vammaisille
+88102	5	Ikaantyneiden paivatoiminta
+88103	5	Vammaisten paiva- ja tyatoiminta
+88109	5	Muut vanhusten ja vammaisten avopalvelut
+889	3	Muut sosiaalihuollon avopalvelut
+8891	4	Lasten paivahoitopalvelut
+88911	5	Lasten paivakodit
+88919	5	Muu lasten paivahoito
+8899	4	Muualla luokittelemattomat sosiaalihuollon avopalvelut
+88991	5	Kotipalvelut muille kuin ikaantyneille ja vammaisille
+88992	5	Paiva- ja tyatoiminta muille kuin ikaantyneille ja vammaisille
+88993	5	Avomuotoinen paihdekuntoutus
+88999	5	Muut muualla luokittelemattomat sosiaalihuollon avopalvelut
+R	1	Taiteet, viihde ja virkistys
+90	2	Kulttuuri- ja viihdetoiminta
+900	3	Kulttuuri- ja viihdetoiminta
+9001	4	Esittavat taiteet
+90010	5	Esittavat taiteet
+9002	4	Esittavia taiteita palveleva toiminta
+90020	5	Esittavia taiteita palveleva toiminta
+9003	4	Taiteellinen luominen
+90030	5	Taiteellinen luominen
+9004	4	Taidelaitosten toiminta
+90040	5	Taidelaitosten toiminta
+91	2	Kirjastojen, arkistojen, museoiden ja muiden kulttuurilaitosten toiminta
+910	3	Kirjastojen, arkistojen, museoiden ja muiden kulttuurilaitosten toiminta
+9101	4	Kirjastojen ja arkistojen toiminta
+91010	5	Kirjastojen ja arkistojen toiminta
+9102	4	Museoiden toiminta
+91020	5	Museoiden toiminta
+9103	4	Historiallisten nahtavyyksien, rakennusten ja vastaavien kohteiden toiminta
+91030	5	Historiallisten nahtavyyksien, rakennusten ja vastaavien kohteiden toiminta
+9104	4	Kasvitieteellisten puutarhojen, elaintarhojen ja luonnonpuistojen toiminta
+91040	5	Kasvitieteellisten puutarhojen, elaintarhojen ja luonnonpuistojen toiminta
+92	2	Rahapeli- ja vedonlyantipalvelut
+920	3	Rahapeli- ja vedonlyantipalvelut
+9200	4	Rahapeli- ja vedonlyantipalvelut
+92000	5	Rahapeli- ja vedonlyantipalvelut
+93	2	Urheilutoiminta seka huvi- ja virkistyspalvelut
+931	3	Urheilutoiminta
+9311	4	Urheilulaitosten toiminta
+93110	5	Urheilulaitosten toiminta
+9312	4	Urheiluseurojen toiminta
+93120	5	Urheiluseurojen toiminta
+9313	4	Kuntokeskukset
+93130	5	Kuntokeskukset
+9319	4	Muu urheilutoiminta
+93190	5	Muu urheilutoiminta
+932	3	Huvi- ja virkistystoiminta
+9321	4	Huvi- ja teemapuistojen toiminta
+93210	5	Huvi- ja teemapuistojen toiminta
+9329	4	Muu huvi- ja virkistystoiminta
+93291	5	Hiihto- ja laskettelukeskukset
+93299	5	Muualla luokittelematon huvi- ja virkistystoiminta
+S	1	Muu palvelutoiminta
+94	2	Jarjestajen toiminta
+941	3	Elinkeinoelaman, tyanantaja- ja ammattialajarjestajen toiminta
+9411	4	Elinkeinoelaman ja tyanantajajarjestajen toiminta
+94110	5	Elinkeinoelaman ja tyanantajajarjestajen toiminta
+9412	4	Ammattialajarjestajen toiminta
+94120	5	Ammattialajarjestajen toiminta
+942	3	Ammattiyhdistysten toiminta
+9420	4	Ammattiyhdistysten toiminta
+94200	5	Ammattiyhdistysten toiminta
+949	3	Muiden jarjestajen toiminta
+9491	4	Seurakunnat ja uskonnolliset jarjestat
+94910	5	Seurakunnat ja uskonnolliset jarjestat
+9492	4	Poliittiset jarjestat
+94920	5	Poliittiset jarjestat
+9499	4	Muut jarjestat
+94991	5	Tutkimusta ja kulttuuria palvelevat jarjestat
+94999	5	Muualla luokittelemattomat muut jarjestat
+95	2	Tietokoneiden, henkilakohtaisten ja kotitaloustavaroiden korjaus
+951	3	Tietokoneiden ja viestintalaitteiden korjaus
+9511	4	Tietokoneiden ja niiden oheislaitteiden korjaus
+95110	5	Tietokoneiden ja niiden oheislaitteiden korjaus
+9512	4	Viestintalaitteiden korjaus
+95120	5	Viestintalaitteiden korjaus
+952	3	Henkilakohtaisten ja kotitaloustavaroiden korjaus
+9521	4	Viihde-elektroniikan korjaus
+95210	5	Viihde-elektroniikan korjaus
+9522	4	Kotitalouskoneiden seka kodin ja puutarhan laitteiden korjaus
+95220	5	Kotitalouskoneiden seka kodin ja puutarhan laitteiden korjaus
+9523	4	Jalkineiden ja nahkatavaroiden korjaus
+95230	5	Jalkineiden ja nahkatavaroiden korjaus
+9524	4	Huonekalujen ja kodin kalusteiden korjaus
+95240	5	Huonekalujen ja kodin kalusteiden korjaus
+9525	4	Kellojen ja korujen korjaus
+95250	5	Kellojen ja korujen korjaus
+9529	4	Muiden henkilakohtaisten ja kotitaloustavaroiden korjaus
+95290	5	Muiden henkilakohtaisten ja kotitaloustavaroiden korjaus
+96	2	Muut henkilakohtaiset palvelut
+960	3	Muut henkilakohtaiset palvelut
+9601	4	Pesulapalvelut
+96011	5	Pesulapalvelut yrityksille
+96012	5	Pesulapalvelut kotitalouksille
+9602	4	Kampaamo- ja kauneudenhoitopalvelut
+96021	5	Parturit ja kampaamot
+96022	5	Kauneudenhoitopalvelut
+9603	4	Hautaustoimistojen palvelut
+96030	5	Hautaustoimistojen palvelut
+9604	4	Kylpylaitokset, saunat, solariumit yms. palvelut
+96040	5	Kylpylaitokset, saunat, solariumit yms. palvelut
+9609	4	Muualla luokittelemattomat henkilakohtaiset palvelut
+96090	5	Muualla luokittelemattomat henkilakohtaiset palvelut
+T	1	Kotitalouksien toiminta tyanantajina; kotitalouksien eriyttamatan toiminta tavaroiden ja palvelujen tuottamiseksi omaan kayttaan
+97	2	Kotitalouksien toiminta kotitaloustyantekijaiden tyanantajina
+970	3	Kotitalouksien toiminta kotitaloustyantekijaiden tyanantajina
+9700	4	Kotitalouksien toiminta kotitaloustyantekijaiden tyanantajina
+97000	5	Kotitalouksien toiminta kotitaloustyantekijaiden tyanantajina
+98	2	Kotitalouksien eriyttamatan toiminta tavaroiden ja palvelujen tuottamiseksi omaan kayttaan
+981	3	Kotitalouksien eriyttamatan toiminta tavaroiden tuottamiseksi omaan kayttaan
+9810	4	Kotitalouksien eriyttamatan toiminta tavaroiden tuottamiseksi omaan kayttaan
+98100	5	Kotitalouksien eriyttamatan toiminta tavaroiden tuottamiseksi omaan kayttaan
+982	3	Kotitalouksien eriyttamatan toiminta palvelujen tuottamiseksi omaan kayttaan
+9820	4	Kotitalouksien eriyttamatan toiminta palvelujen tuottamiseksi omaan kayttaan
+98200	5	Kotitalouksien eriyttamatan toiminta palvelujen tuottamiseksi omaan kayttaan
+U	1	Kansainvalisten organisaatioiden ja toimielinten toiminta
+99	2	Kansainvalisten organisaatioiden ja toimielinten toiminta
+990	3	Kansainvalisten organisaatioiden ja toimielinten toiminta
+9900	4	Kansainvalisten organisaatioiden ja toimielinten toiminta
+99000	5	Kansainvalisten organisaatioiden ja toimielinten toiminta
+X	1	Toimiala tuntematon
+00	2	Toimiala tuntematon
+000	3	Toimiala tuntematon
+0000	4	Toimiala tuntematon
+00000	5	Toimiala tuntematon

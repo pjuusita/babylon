@@ -1,0 +1,56 @@
+
+
+
+
+div {
+	border-radius:5px;
+	border:1px solid #aaaaaa;
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+}
+
+div.title {
+	 border-radius:5px;
+	 border:1px solid #aaaaaa;
+	 padding:5px 15px;
+	 font-family: Verdana,Arial,sans-serif;
+	 font-size: 1.1em;
+	 text-align:left;
+	 background: #dadada
+}
+
+select {
+	height:28px;
+	width:100%;
+	font-family: Arial;
+	font-size: 1em;
+	margin:0px;
+	padding-left: 4px;	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+input {
+	height:28px;
+	width:100%;
+	font-family: Arial;
+	font-size: 1em;
+	padding: 4px 4px;	
+	margin:0px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+textarea {
+	height:64px;
+	width:100%;
+	font-family: sans-serif;
+	font-size: 1em;
+	padding: 4px 4px;	
+	margin:0px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
