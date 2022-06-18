@@ -266,7 +266,7 @@ class GeneratorsController extends AbstractController {
 	/**
 	 * 
 	 * 
-	 * @param unknown $columns 		Tätä tarvitaan ehtolauseen sarakkeiden nimien hakuun
+	 * 
 	 */
 	private static function loadCandidates($root, $tables, $columns, $baserequirements, $generator, $comments) {
 		

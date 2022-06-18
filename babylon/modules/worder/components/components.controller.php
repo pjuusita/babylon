@@ -94,7 +94,6 @@ class ComponentsController extends AbstractController {
 	 * TODO: Tämä on aika raskas operaatio
 	 *
 	 *
-	 * @param unknown $conceptID
 	 * @return multitype:unknown
 	 */
 	public static function getChildIDs($conceptID) {

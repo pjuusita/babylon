@@ -101,7 +101,7 @@ abstract class UIField extends UIComponent {
 	/**
 	 * Hidden-kenttä on kokonaan piilossa sekä vieviltä, että editointipuolelta
 	 * 
-	 * @param unknown $boole
+	 * @param boolean $boole
 	 */
 	public function setHiddenFromEdit($boole) {
 		$this->hiddenFromEdit= $boole;

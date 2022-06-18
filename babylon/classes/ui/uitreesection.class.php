@@ -78,7 +78,7 @@ class UITreeSection extends UIAbstractSection {
 	/**
 	 * Asetetaan muuttuja jonka perusteela poista nappula on aktiivinen tai disabloitu. 
 	 * 
-	 * @param unknown $activationparam
+	 * @param string $activationparam
 	 */
 	public function setDeleteActiveParam($activationparam) {
 		$this->deleteactiveparam = $activationparam;

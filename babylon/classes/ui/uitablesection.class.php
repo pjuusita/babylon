@@ -79,7 +79,7 @@ class UITableSection extends UIAbstractSection {
 	/**
 	 * Oletuksena on nyt alkuvaiheessa, että tämä settingsaction on aina jonkin dialogin avaaminen
 	 * 
-	 * @param unknown $settingsaction
+	 * @param string $settingsaction
 	 */
 	public function setSettingsAction($settingsaction) {
 		$this->settingsaction = $settingsaction;		

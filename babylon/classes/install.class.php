@@ -370,7 +370,7 @@ class Install {
 	 * Vertaa tämänhetkisessä tietokannassa olevaa tietokantarakennetta rajapinnan kautta base-tietokannasta haettuun.
 	 * Tätä käytetään tietokantarakenteen päivittämiseen.
 	 * 
-	 * @param unknown $remotetable
+	 * @param string $remotetable
 	 */
 	public static function compareTableColumns($remotetable, $comments = false) {
 		

@@ -43,7 +43,7 @@
 	/**
 	 * TODO: 17.10.21  Poistin tämän käytöstä, kun oletan että tätä ei käytännössä käytetä missään...
 	 * 
-	 * @param unknown $registry
+	 * @param Registry $registry
 	 */
 	/*
 	function loadSession(&$registry) {
@@ -199,8 +199,8 @@
 	/**
 	 * Tämän funktion avulla haetaan kaikki 
 	 * 
-	 * @param unknown $paramname
-	 * @return unknown
+	 * @param string $paramname
+	 * @return int
 	 */
 	function getIntParam($paramname) {
 		global $urlparamcomments;
@@ -912,8 +912,8 @@
 	 * Kuten getUrl-funktio, mutta ei ota mukaan wID:tä. Tämä funktio on tarkoitettu
 	 * href-linkkeihin, joilla aukaistaan selaimessa uusi ikkuna tai tabi.
 	 * 
-	 * @param unknown $action
-	 * @param unknown $params
+	 * @param string $action
+	 * @param string $params
 	 * @param string $anchor
 	 * @return string
 	 */

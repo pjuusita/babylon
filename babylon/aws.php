@@ -7,7 +7,7 @@
 	//require 'aws/aws-test.php';
 	echo "Hello world!" . PHP_EOL;
 	
-	
+	/*
 	$mTurk = new Aws\MTurk\MTurkClient([
 			'credentials' => [
 					'key'    => 'AKIAUCWJOV3BQCZA5N7X',
@@ -21,7 +21,7 @@
 	
 	$balance = $mTurk->getAccountBalance()->get('AvailableBalance');
 	echo "<br>Your available balance is: $" . $balance . PHP_EOL;
-	
+	*/
 	
 	echo "<br>End..." . PHP_EOL;
 	

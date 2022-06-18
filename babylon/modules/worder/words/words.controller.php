@@ -1096,7 +1096,7 @@ class WordsController extends AbstractController {
 	 * TODO: Tämä on aika raskas operaatio
 	 *
 	 *
-	 * @param unknown $conceptID
+	 * @param int $conceptID
 	 * @return multitype:unknown
 	 */
 	public static function getChildIDs($wordID, $comments = false) {
@@ -1348,8 +1348,8 @@ class WordsController extends AbstractController {
 	 * 	Päivittää parametrina olevan conceptID:n parents ja parentpaths-kentät. Oletuksena on että parentlinks-taulu
 	 *  Sisältää kaikki oleelliset linkit.
 	 *
-	 * @param unknown $childID
-	 * @param unknown $parentlinks
+	 * @param int $childID
+	 * @param int $parentlinks
 	 */
 	private static function updateParentsAndPaths($wordID, &$parentlinks, $saveactive, $comments = false) {
 	
@@ -1406,11 +1406,11 @@ class WordsController extends AbstractController {
 	/**
 	 * Päivittää annetun conceptID:n components ja requirements kentät.
 	 *
-	 * @param unknown $conceptID
-	 * @param unknown $parentlinks
-	 * @param unknown $componentlinks
-	 * @param unknown $argumentlinks
-	 * @param unknown $saveactive
+	 * @param int $conceptID
+	 * @param int $parentlinks
+	 * @param int $componentlinks
+	 * @param int $argumentlinks
+	 * @param int $saveactive
 	 */
 	private static function updateWordFeatures($wordID, $parentlinks, $featurelinks, $saveactive, $comments = false) {
 	
@@ -1568,9 +1568,9 @@ class WordsController extends AbstractController {
 	 * Tämä palauttaa rekursiivisesti kaikki löydetyt lapset taulukossa childarray. Löydetyt parentlinksit lisätään
 	 * parametriin
 	 *
-	 * @param unknown $parentarray		ConceptID:t joiden childit halutaan etsiä, alkuperäisessä kutsussa yksi itemi, mutta rekursio lisää löydetyt childit tähän
-	 * @param unknown $childarray		Taulukko johon lisätään kaikki löydetyt lapset, level-järjestyksessä, voi sisältää tuplia
-	 * @param unknown $parentlinks		Taulukkoon lisätään kaikki ladatut parentlinksit, näitä ei tarvitse ladata uudelleen
+	 * @param int $parentarray		ConceptID:t joiden childit halutaan etsiä, alkuperäisessä kutsussa yksi itemi, mutta rekursio lisää löydetyt childit tähän
+	 * @param int $childarray		Taulukko johon lisätään kaikki löydetyt lapset, level-järjestyksessä, voi sisältää tuplia
+	 * @param int $parentlinks		Taulukkoon lisätään kaikki ladatut parentlinksit, näitä ei tarvitse ladata uudelleen
 	 * @param number $level				Rekursiossa käytettävä kountteri, kutsutaan alunperin ilman tätä
 	 */
 	private static function getChildLinksRecursive($parentarray, &$childarray, &$parentlinks, $level, $comments = false) {

@@ -1532,12 +1532,6 @@ class PayrollController extends AbstractController {
 	/**
 	 * Tämä funktio laskee uudet vähennysrivit palkkalaskelmalle.
 	 * 
-	 * @param unknown $paycheck
-	 * @param unknown $paycheckrows
-	 * @param unknown $salarytypes
-	 * @param unknown $deductions
-	 * @param unknown $accounts
-	 * @param unknown $taxcard
 	 * 
 	 * @return multitype:Row
 	 */

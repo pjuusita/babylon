@@ -63,118 +63,165 @@ $conceptsection->show();
 
 
 
+// ---------------------------------------------------------------------------------------------------
+// Add Component dialog
+// ---------------------------------------------------------------------------------------------------
+
+$adddefinitiondialog = new UISection('Add Definition','500px');
+$adddefinitiondialog->setDialog(true);
+$adddefinitiondialog->setMode(UIComponent::MODE_INSERT);
+$adddefinitiondialog->setInsertAction(UIComponent::ACTION_FORWARD, "worder/concepts/adddefinition&conceptID=" . $registry->concept->conceptID);
+
+$field = new UISelectField("Language", "languageID", "languageID", $this->registry->languages, 'name');
+$adddefinitiondialog->addField($field);
+
+$field = new UITextField("Definition","definition","definition");
+$adddefinitiondialog->addField($field);
+
+$field = new UISelectField("Source","sourceID","sourceID",$registry->sources, "name");
+$adddefinitiondialog->addField($field);
+
+$adddefinitiondialog->show();
+
+
+
+// ---------------------------------------------------------------------------------------------------
+
+$section = new UITableSection("Definitions",$width);
+$section->setOpen(true);
+$section->editable(true);
+$section->setFramesVisible(true);
+$section->setDeleteAction(UIComponent::ACTION_FORWARD, 'worder/concepts/removedefinition&conceptID=' . $registry->concept->conceptID, 'definitiontID');
+$section->setButtonAlign(UIComponent::VALIGN_BOTTOM);
+
+$button = new UIButton(UIComponent::ACTION_OPENDIALOG, $adddefinitiondialog->getID(), 'Add Definition');
+$section->addButton($button);
+
+$column = new UISortColumn("DefinitionID", "definitionID", "definitionID");
+$section->addColumn($column);
+
+$column = new UISelectColumn("Language", "name", "languageID", $registry->languages);
+$section->addColumn($column);
+
+$column = new UISortColumn("Definition", "definition");
+$section->addColumn($column);
+
+$section->setData($registry->definitions);
+$section->show();
+
+
 
 
 function parentSearchDiv() {
-
-	global $registry;
-
-	echo "	<table style='width:100%'>";
-	echo "		<tr>";
-	//echo "			<td style='padding-right:5px;'>";
-	/*
-	echo "				<select id=parentlanguagefield class=field-select style='width:100%'>";
-	foreach($registry->languages as $index => $language) {
-		echo "<option value='" . $language->languageID . "'>" . $language->name . "</option>";
-	}
-	echo "				</select>";
-	*/
-	//echo " 			</td>";
-
-	echo "			<td colspan=2 style='padding-right:5px;'>";
-	echo "				<input class=uitextfield  id=searchparentfield type='text' style='width:100%;' type='text' value=''>";
-	echo " 			</td>";
-
-	echo "			<td style='padding-right:5px'>";
-	echo "				<div>";
-	echo "					<button  class=section-button  onclick='searchparentbuttonpressed()'>Etsi</button>";
-	echo "				</div>";
-	echo "			</td>";
-
-	echo "	<script>";
-	echo "		$('#searchparentfield').keypress(function (e) {";
-	echo "			if (e.keyCode == 13) {";
-	echo "				searchparentbuttonpressed();";
-	echo "			};";
-	echo "		})";
-	echo "	</script>";
-
-	/*
-	echo "	<script>";
-	echo "	$('#filterselect_". $this->getID() ."_" . $selectID . "').keyup(function(e){";
-	echo "		if(e.keyCode == 13)";
-	echo "		{";
-	//echo "			value = $('#filterselect_". $this->getID() ."_" . $selectID . "').val();";
-	//echo "			alert('value - " . $this->urlparams[$selectID] . " - '+value);";
-	echo "			value = $('#filterselect_". $this->getID() ."_" . $selectID . "').val();";
-	echo "			window.location = '" . getUrl($action) . "&" . $this->urlparams[$selectID] . "='+value";
-	echo "		}";
-	echo "	});";
-	*/
-
-	echo "		</tr>";
-	echo "		<tr>";
-	echo "			<td colspan=3>";
-
-	echo "				<div id=searchparentloadingdiv style='display:none;height:100%;width:100%;'>";
-	echo "					<img width=50 height=50 src='" .  getImageUrl('loading2.gif')  . "'>";
-	echo "				</div>";
-
-	echo "				<div id=searchparentloadeddiv style='display:none;height:100%;width:100%;overflow:hidden'>";
-	//echo "					<div style='overflow-y:scroll;max-height:200px;'>";
-	//echo "				<div id=resultpanel style='width:100%;height:50px;background-color:pink;'>result</div>";
-	echo "					<table id=searchparentresulttable style='width:100%;height:50px;table-layout:fixed'>";
-	echo "						<tr><td>Empty</td></tr>";
-	echo "					</table>";
-	//echo "					</div>";
-	echo "				</div>";
-	echo "			</td>";
-	echo "		</tr>";
-	echo "	</table>";
-
-	echo "	<script>";
-	echo "		function addParentItem(conceptID) {";
-	echo "			window.location = '" . getUrl("worder/concepts/addparenttoconcept") . "&conceptID=" . $registry->concept->conceptID . "&parentID='+conceptID;";
-	echo "		}";
-	echo "	</script>";
-
-
-
-	echo "	<script>";
-	echo "		function searchparentbuttonpressed() {";
-	//echo "			console.log('search button pressed');";
-	echo "			var search = $('#searchparentfield').val();";
-	echo "			if (search == '') {";
-	echo "				alert('ei saa olla tyhjä 1');";
-	echo "				return;";
-	echo "			}";
-	echo "			$('#searchparentloadingdiv').show();";
-	echo "			$('#searchparentloadeddiv').hide();";
-	//echo "			var languageID = $('#parentlanguagefield').val();";
-	//echo "			console.log('languageid -'+languageID+'-');";
-	echo "			console.log('" . getUrl('worder/concepts/searchconcept') . "&search='+search);";
-
-	echo "			$.getJSON('" . getUrl('worder/concepts/searchconcept') . "&search='+search,'',function(data) {";
-	//echo "					console.log('data.length - '+data.length);";
-	echo "					$('#searchparentloadingdiv').hide();";
-	echo "					$('#searchparentloadeddiv').show();";
-	echo "					$('#searchparentresulttable tr').remove();";
-	echo "					$.each(data, function(index) {";
-	//echo "						console.log('row - '+data[index].conceptID+' - '+data[index].name);";
-	echo "						var row = '<tr>'";
-	echo "							+ '<td style=\"padding-right:10px;\">'+data[index].frequency+'</td>'";
-	echo "							+ '<td style=\"padding-right:10px;\">'+data[index].wordclassID+'</td>'";
-	echo "							+ '<td style=\"padding-right:10px;\">'+data[index].conceptID+'</td>'";
-	//echo "							+ '<td title=\''+data[index].gloss+'\'><a href=\"" . getUrl('worder/words/showword') . "&id='+data[index].wordID+'\">'+data[index].name+'</a></td>'";
-	echo "							+ '<td style=\"width:330px;overflow:hidden;white-space: nowrap\" title=\''+data[index].gloss+'\'>'+data[index].name+'</td>'";
-	echo "							+ '<td><button onclick=\"addParentItem(\''+data[index].conceptID+'\')\">lisää</button></td>'";
-	echo "							+ '</tr>';";
-	echo "						$('#searchparentresulttable').append(row);";
-	echo "					});";
-	echo "			}); ";
-	////echo " 			console.log('finish');";
-	echo "		}";
-	echo "	</script>";
+    
+    global $registry;
+    
+    echo "	<table style='width:100%'>";
+    echo "		<tr>";
+    //echo "			<td style='padding-right:5px;'>";
+    /*
+     echo "				<select id=parentlanguagefield class=field-select style='width:100%'>";
+     foreach($registry->languages as $index => $language) {
+     echo "<option value='" . $language->languageID . "'>" . $language->name . "</option>";
+     }
+     echo "				</select>";
+     */
+    //echo " 			</td>";
+    
+    echo "			<td colspan=2 style='padding-right:5px;'>";
+    echo "				<input class=uitextfield  id=searchparentfield type='text' style='width:100%;' type='text' value=''>";
+    echo " 			</td>";
+    
+    echo "			<td style='padding-right:5px'>";
+    echo "				<div>";
+    echo "					<button  class=section-button  onclick='searchparentbuttonpressed()'>Etsi</button>";
+    echo "				</div>";
+    echo "			</td>";
+    
+    echo "	<script>";
+    echo "		$('#searchparentfield').keypress(function (e) {";
+    echo "			if (e.keyCode == 13) {";
+    echo "				searchparentbuttonpressed();";
+    echo "			};";
+    echo "		})";
+    echo "	</script>";
+    
+    /*
+     echo "	<script>";
+     echo "	$('#filterselect_". $this->getID() ."_" . $selectID . "').keyup(function(e){";
+     echo "		if(e.keyCode == 13)";
+     echo "		{";
+     //echo "			value = $('#filterselect_". $this->getID() ."_" . $selectID . "').val();";
+     //echo "			alert('value - " . $this->urlparams[$selectID] . " - '+value);";
+     echo "			value = $('#filterselect_". $this->getID() ."_" . $selectID . "').val();";
+     echo "			window.location = '" . getUrl($action) . "&" . $this->urlparams[$selectID] . "='+value";
+     echo "		}";
+     echo "	});";
+     */
+    
+    echo "		</tr>";
+    echo "		<tr>";
+    echo "			<td colspan=3>";
+    
+    echo "				<div id=searchparentloadingdiv style='display:none;height:100%;width:100%;'>";
+    echo "					<img width=50 height=50 src='" .  getImageUrl('loading2.gif')  . "'>";
+    echo "				</div>";
+    
+    echo "				<div id=searchparentloadeddiv style='display:none;height:100%;width:100%;overflow:hidden'>";
+    //echo "					<div style='overflow-y:scroll;max-height:200px;'>";
+    //echo "				<div id=resultpanel style='width:100%;height:50px;background-color:pink;'>result</div>";
+    echo "					<table id=searchparentresulttable style='width:100%;height:50px;table-layout:fixed'>";
+    echo "						<tr><td>Empty</td></tr>";
+    echo "					</table>";
+    //echo "					</div>";
+    echo "				</div>";
+    echo "			</td>";
+    echo "		</tr>";
+    echo "	</table>";
+    
+    echo "	<script>";
+    echo "		function addParentItem(conceptID) {";
+    echo "			window.location = '" . getUrl("worder/concepts/addparenttoconcept") . "&conceptID=" . $registry->concept->conceptID . "&parentID='+conceptID;";
+    echo "		}";
+    echo "	</script>";
+    
+    
+    
+    echo "	<script>";
+    echo "		function searchparentbuttonpressed() {";
+    //echo "			console.log('search button pressed');";
+    echo "			var search = $('#searchparentfield').val();";
+    echo "			if (search == '') {";
+    echo "				alert('ei saa olla tyhjä 1');";
+    echo "				return;";
+    echo "			}";
+    echo "			$('#searchparentloadingdiv').show();";
+    echo "			$('#searchparentloadeddiv').hide();";
+    //echo "			var languageID = $('#parentlanguagefield').val();";
+    //echo "			console.log('languageid -'+languageID+'-');";
+    echo "			console.log('" . getUrl('worder/concepts/searchconcept') . "&search='+search);";
+    
+    echo "			$.getJSON('" . getUrl('worder/concepts/searchconcept') . "&search='+search,'',function(data) {";
+    //echo "					console.log('data.length - '+data.length);";
+    echo "					$('#searchparentloadingdiv').hide();";
+    echo "					$('#searchparentloadeddiv').show();";
+    echo "					$('#searchparentresulttable tr').remove();";
+    echo "					$.each(data, function(index) {";
+    //echo "						console.log('row - '+data[index].conceptID+' - '+data[index].name);";
+    echo "						var row = '<tr>'";
+    echo "							+ '<td style=\"padding-right:10px;\">'+data[index].frequency+'</td>'";
+    echo "							+ '<td style=\"padding-right:10px;\">'+data[index].wordclassID+'</td>'";
+    echo "							+ '<td style=\"padding-right:10px;\">'+data[index].conceptID+'</td>'";
+    //echo "							+ '<td title=\''+data[index].gloss+'\'><a href=\"" . getUrl('worder/words/showword') . "&id='+data[index].wordID+'\">'+data[index].name+'</a></td>'";
+    echo "							+ '<td style=\"width:330px;overflow:hidden;white-space: nowrap\" title=\''+data[index].gloss+'\'>'+data[index].name+'</td>'";
+    echo "							+ '<td><button onclick=\"addParentItem(\''+data[index].conceptID+'\')\">lisää</button></td>'";
+    echo "							+ '</tr>';";
+    echo "						$('#searchparentresulttable').append(row);";
+    echo "					});";
+    echo "			}); ";
+    ////echo " 			console.log('finish');";
+    echo "		}";
+    echo "	</script>";
 }
 
 
@@ -264,15 +311,15 @@ $button = new UIButton(UIComponent::ACTION_OPENDIALOG, $addcomponentdialog->getI
 $section->addButton($button);
 
 /*
-$column = new UISelectColumn("Component", "name", "componentID", $this->registry->components);
-$section->addColumn($column);
-
-$column = new UISelectColumn("Mode", "name", "inheritancemodeID", $this->registry->inheritancemodes);
-$section->addColumn($column);
-
-$column = new UISelectColumn("From", null, "fromconceptID", $this->registry->allparents);
-$section->addColumn($column);
-*/
+ $column = new UISelectColumn("Component", "name", "componentID", $this->registry->components);
+ $section->addColumn($column);
+ 
+ $column = new UISelectColumn("Mode", "name", "inheritancemodeID", $this->registry->inheritancemodes);
+ $section->addColumn($column);
+ 
+ $column = new UISelectColumn("From", null, "fromconceptID", $this->registry->allparents);
+ $section->addColumn($column);
+ */
 
 $column = new UISimpleColumn("Component", 0);
 $section->addColumn($column);
@@ -303,29 +350,29 @@ $addargumentdialog->setInsertAction(UIComponent::ACTION_FORWARD, "worder/concept
 //$addargumentdialog->setInsertAction(UIComponent::ACTION_FORWARD, "worder/concepts/insertargument&conceptID=" . $registry->concept->conceptID);
 
 if ($registry->concept->wordclassID == 0) {
-	$wordclassfield = new UISelectField("Wordclass","wordclassID","wordclassID", $registry->wordclasses, "name");
-	$wordclassfield->setOnChange("wordclasschanged()");
-	$addargumentdialog->addField($wordclassfield);
-	
-	$argumentfield = new UISelectField("Argument","argumentID","argumentID", $registry->arguments, "name");
-	$argumentfield->setDisabled(true);
-	$addargumentdialog->addField($argumentfield);
-	$inheritancefielddisabled = true;
+    $wordclassfield = new UISelectField("Wordclass","wordclassID","wordclassID", $registry->wordclasses, "name");
+    $wordclassfield->setOnChange("wordclasschanged()");
+    $addargumentdialog->addField($wordclassfield);
+    
+    $argumentfield = new UISelectField("Argument","argumentID","argumentID", $registry->arguments, "name");
+    $argumentfield->setDisabled(true);
+    $addargumentdialog->addField($argumentfield);
+    $inheritancefielddisabled = true;
 } else {
-
-	$wordclassfield = new UISelectField("Wordclass","wordclassID","wordclassID", $registry->wordclasses, "name");
-	$wordclassfield->setOnChange("wordclasschanged()");
-	$addargumentdialog->addField($wordclassfield);
-	
-	$wordclassarguments = array();
-	foreach($registry->arguments as $index => $argument) {
-		if ($argument->wordclassID == $registry->concept->wordclassID) {
-			$wordclassarguments[$argument->argumentID] = $argument;
-		}
-	}
-	$argumentfield = new UISelectField("Argument","argumentID","argumentID", $wordclassarguments, "name");
-	$addargumentdialog->addField($argumentfield);
-	$inheritancefielddisabled = false;
+    
+    $wordclassfield = new UISelectField("Wordclass","wordclassID","wordclassID", $registry->wordclasses, "name");
+    $wordclassfield->setOnChange("wordclasschanged()");
+    $addargumentdialog->addField($wordclassfield);
+    
+    $wordclassarguments = array();
+    foreach($registry->arguments as $index => $argument) {
+        if ($argument->wordclassID == $registry->concept->wordclassID) {
+            $wordclassarguments[$argument->argumentID] = $argument;
+        }
+    }
+    $argumentfield = new UISelectField("Argument","argumentID","argumentID", $wordclassarguments, "name");
+    $addargumentdialog->addField($argumentfield);
+    $inheritancefielddisabled = false;
 }
 
 
@@ -359,11 +406,11 @@ echo "			$(argumentfieldID).addClass('uitextfield-disabled');";
 echo "			$(argumentfieldID).removeClass('uitextfield');";
 
 /*
-echo "	 		var componentfieldID 		 	 = '#".$componentfield->getEditFieldID()."';";
-echo "			$(componentfieldID).attr('disabled', 'disabled');";
-echo "			$(componentfieldID).addClass('uitextfield-disabled');";
-echo "			$(componentfieldID).removeClass('uitextfield');";
-*/
+ echo "	 		var componentfieldID 		 	 = '#".$componentfield->getEditFieldID()."';";
+ echo "			$(componentfieldID).attr('disabled', 'disabled');";
+ echo "			$(componentfieldID).addClass('uitextfield-disabled');";
+ echo "			$(componentfieldID).removeClass('uitextfield');";
+ */
 
 echo "	 		var inheritancefieldID 		 	 = '#".$inheritancefield->getEditFieldID()."';";
 echo "			$(inheritancefieldID).attr('disabled', 'disabled');";
@@ -394,11 +441,11 @@ echo "			$(argumentfieldID).removeClass('uitextfield-disabled');";
 echo "			$(argumentfieldID).append($('<option>', {value:0, text:''}));";
 
 /*
-echo "	 		var componentfieldID 		 	 = '#".$componentfield->getEditFieldID()."';";
-echo "			$(componentfieldID).removeAttr('disabled');";
-echo "			$(componentfieldID).addClass('uitextfield');";
-echo "			$(componentfieldID).removeClass('uitextfield-disabled');";
-*/
+ echo "	 		var componentfieldID 		 	 = '#".$componentfield->getEditFieldID()."';";
+ echo "			$(componentfieldID).removeAttr('disabled');";
+ echo "			$(componentfieldID).addClass('uitextfield');";
+ echo "			$(componentfieldID).removeClass('uitextfield-disabled');";
+ */
 
 echo "	 		var inheritancefieldID 		 	 = '#".$inheritancefield->getEditFieldID()."';";
 echo "			$(inheritancefieldID).removeAttr('disabled');";
@@ -443,46 +490,46 @@ $editargumentdialog->show();
 
 
 function conceptListDiv() {
-
-	global $registry;
-
-
-	echo "	<table style='width:100%'>";
-
-	echo "		<tr>";
-	echo "			<td colspan=3 style='height:8px;'>";
-	echo "		</tr>";
-
-	echo "		<tr>";
-	echo "			<td colspan=3 style='border-top:2px solid;border-color:#ccc;height:6px;'>";
-	echo "		</tr>";
-
-	echo "		<tr>";
-	echo "			<td colspan=2>";
-
-	echo "				<div id=conceptlistloadingdiv style='display:none;height:100%;width:100%;'>";
-	echo "					<img width=50 height=50 src='" .  getImageUrl('loading2.gif')  . "'>";
-	echo "				</div>";
-
-	echo "				<div id=conceptlistloadeddiv style='display:none;height:100%;width:470px;overflow:hidden'>";
-	echo "					<div style='overflow-y:scroll;max-height:200px;width:470px;'>";
-	echo "					<table id=conceptlisttable style='width:450px;height:50px;table-layout:fixed;'>";
-	echo "						<tr><td>Empty</td></tr>";
-	echo "					</table>";
-	echo "					</div>";
-	echo "				</div>";
-	echo "			</td>";
-	echo "		</tr>";
-	
-	echo " 	<tr>";
-	echo " 		<td class=field-text></td>";
-	echo " 		<td class='iu-middle-block field-value' style='text-align:right;'><button onclick=\"closeConceptLinkDialog()\">Sulje</button></td>";
-	echo " </tr>";
-	
-	
-	echo "	</table>";
-
-
+    
+    global $registry;
+    
+    
+    echo "	<table style='width:100%'>";
+    
+    echo "		<tr>";
+    echo "			<td colspan=3 style='height:8px;'>";
+    echo "		</tr>";
+    
+    echo "		<tr>";
+    echo "			<td colspan=3 style='border-top:2px solid;border-color:#ccc;height:6px;'>";
+    echo "		</tr>";
+    
+    echo "		<tr>";
+    echo "			<td colspan=2>";
+    
+    echo "				<div id=conceptlistloadingdiv style='display:none;height:100%;width:100%;'>";
+    echo "					<img width=50 height=50 src='" .  getImageUrl('loading2.gif')  . "'>";
+    echo "				</div>";
+    
+    echo "				<div id=conceptlistloadeddiv style='display:none;height:100%;width:470px;overflow:hidden'>";
+    echo "					<div style='overflow-y:scroll;max-height:200px;width:470px;'>";
+    echo "					<table id=conceptlisttable style='width:450px;height:50px;table-layout:fixed;'>";
+    echo "						<tr><td>Empty</td></tr>";
+    echo "					</table>";
+    echo "					</div>";
+    echo "				</div>";
+    echo "			</td>";
+    echo "		</tr>";
+    
+    echo " 	<tr>";
+    echo " 		<td class=field-text></td>";
+    echo " 		<td class='iu-middle-block field-value' style='text-align:right;'><button onclick=\"closeConceptLinkDialog()\">Sulje</button></td>";
+    echo " </tr>";
+    
+    
+    echo "	</table>";
+    
+    
 }
 
 
@@ -546,44 +593,44 @@ echo "	</script>";
 
 
 function exampleListDiv() {
-
-	global $registry;
-
-
-	echo "	<table style='width:100%'>";
-
-	echo "		<tr>";
-	echo "			<td colspan=3 style='height:8px;'>";
-	echo "		</tr>";
-
-	echo "		<tr>";
-	echo "			<td colspan=3 style='border-top:2px solid;border-color:#ccc;height:6px;'>";
-	echo "		</tr>";
-
-	echo "		<tr>";
-	echo "			<td colspan=2>";
-
-	echo "				<div id=conceptlistloadingdiv style='display:none;height:100%;width:100%;'>";
-	echo "					<img width=50 height=50 src='" .  getImageUrl('loading2.gif')  . "'>";
-	echo "				</div>";
-
-	echo "				<div id=conceptlistloadeddiv style='display:none;height:100%;width:470px;overflow:hidden'>";
-	echo "					<div style='overflow-y:scroll;max-height:200px;width:470px;'>";
-	echo "					<table id=conceptlisttable style='width:450px;height:50px;table-layout:fixed;'>";
-	echo "						<tr><td>Empty</td></tr>";
-	echo "					</table>";
-	echo "					</div>";
-	echo "				</div>";
-	echo "			</td>";
-	echo "		</tr>";
-	
-	echo " 	<tr>";
-	echo " 		<td class=field-text></td>";
-	echo " 		<td class='iu-middle-block field-value' style='text-align:right;'><button class='section-button' onclick=\"closeExampleListDialog()\">Sulje</button></td>";
-	echo " </tr>";
-	
-	
-	echo "	</table>";
+    
+    global $registry;
+    
+    
+    echo "	<table style='width:100%'>";
+    
+    echo "		<tr>";
+    echo "			<td colspan=3 style='height:8px;'>";
+    echo "		</tr>";
+    
+    echo "		<tr>";
+    echo "			<td colspan=3 style='border-top:2px solid;border-color:#ccc;height:6px;'>";
+    echo "		</tr>";
+    
+    echo "		<tr>";
+    echo "			<td colspan=2>";
+    
+    echo "				<div id=conceptlistloadingdiv style='display:none;height:100%;width:100%;'>";
+    echo "					<img width=50 height=50 src='" .  getImageUrl('loading2.gif')  . "'>";
+    echo "				</div>";
+    
+    echo "				<div id=conceptlistloadeddiv style='display:none;height:100%;width:470px;overflow:hidden'>";
+    echo "					<div style='overflow-y:scroll;max-height:200px;width:470px;'>";
+    echo "					<table id=conceptlisttable style='width:450px;height:50px;table-layout:fixed;'>";
+    echo "						<tr><td>Empty</td></tr>";
+    echo "					</table>";
+    echo "					</div>";
+    echo "				</div>";
+    echo "			</td>";
+    echo "		</tr>";
+    
+    echo " 	<tr>";
+    echo " 		<td class=field-text></td>";
+    echo " 		<td class='iu-middle-block field-value' style='text-align:right;'><button class='section-button' onclick=\"closeExampleListDialog()\">Sulje</button></td>";
+    echo " </tr>";
+    
+    
+    echo "	</table>";
 }
 
 
@@ -591,13 +638,13 @@ function exampleListDiv() {
 
 
 /*
-echo "<script>";
-echo "		function exampleListDiv() {";
-echo "			alert('jeejee');";
-//echo "  		$('#sectiondialog-" . $showargumentdialog->getID() . "').dialog('close');";
-echo "		};";
-echo "	</script>";
-*/
+ echo "<script>";
+ echo "		function exampleListDiv() {";
+ echo "			alert('jeejee');";
+ //echo "  		$('#sectiondialog-" . $showargumentdialog->getID() . "').dialog('close');";
+ echo "		};";
+ echo "	</script>";
+ */
 
 
 
@@ -628,20 +675,20 @@ echo "			console.log('setting value - ' + fieldname + '='+value);";
  echo "			if (fieldname == '5') {";
  echo "				console.log('get items with component - '+value);";
  echo "			}";
-
+ 
  echo "					console.log('" . getUrl('worder/concepts/getconceptswithcomponentJSON') . "&componentID='+value);";
  echo "					$.getJSON('" . getUrl('worder/concepts/getconceptswithcomponentJSON') . "&componentID='+value,'',function(data) {";
-
+ 
  echo "						$('#conceptlistloadingdiv').hide();";
  echo "						$('#conceptlistloadeddiv').show();";
  echo "						$('#conceptlisttable').empty();";
  echo "						$.each(data, function(index) {";
  echo "							console.log('data - '+data[index].name);";
-
+ 
  echo "							if (data[index].name == '') {";
  echo "								console.log(' - ei conceptstringiä - '+data[index].conceptID);";
  echo "							}";
-
+ 
  echo "							var row = '<tr>'";
  echo "								+ '<td style=\"padding-right:10px;width:30px;\">'+data[index].conceptID+'</td>'";
  echo "								+ '<td style=\"padding-right:10px;width:140px;\">'+data[index].wordclassID+'</td>'";
@@ -666,33 +713,33 @@ echo "		function loadExampleList(itemID) {";
 echo "			console.log('loadExampleList painettu - '+itemID);";
 
 /*
-echo "			console.log('" . getUrl('worder/concepts/getconceptswithcomponentJSON') . "&componentID='+value);";
-echo "			$.getJSON('" . getUrl('worder/concepts/getconceptswithcomponentJSON') . "&ruleID=" . $registry->concept->conceptID . "','',function(data) {";
-
-echo "				console.log('data - ddd');";
-echo "				$('#conceptlistloadingdiv').hide();";
-echo "				$('#conceptlistloadeddiv').show();";
-echo "				$('#conceptlisttable').empty();";
-echo "				$.each(data, function(index) {";
-echo "					console.log('data - '+data[index].name);";
-
-echo "					if (data[index].name == '') {";
-echo "						console.log(' - ei conceptstringiä - '+data[index].conceptID);";
-echo "					}";
-
-echo "					var row = '<tr>'";
-echo "						+ '<td style=\"padding-right:10px;width:30px;\">'+data[index].conceptID+'</td>'";
-echo "						+ '<td style=\"padding-right:10px;width:140px;\">'+data[index].wordclassID+'</td>'";
-echo "						+ '<td style=\"padding-right:10px;width:250px;\">'+data[index].name+'</td>'";
-//echo "						+ '<td style=\"padding-right:10px;\">'+data[index].duedate+'</td>'";
-//echo "						+ '<td style=\"padding-right:10px;\">'+data[index].grossamount+'</td>'";
-//echo "						+ '<td style=\"width:300px;overflow:hidden;\" title=\''+data[index].gloss+'\'><a href=\"" . getUrl('worder/concepts/showconcept') . "&id='+data[index].conceptID+'\">'+data[index].name+'</a></td>'";
-//echo "						+ '<td><button onclick=\"linksalesInvoice(\''+rowID+'\',\''+data[index].invoiceID+'\')\">kohdista</button></td>'";
-echo "						+ '</tr>';";
-echo "					$('#conceptlisttable').append(row);";
-echo "				});";
-echo "		}); ";
-*/
+ echo "			console.log('" . getUrl('worder/concepts/getconceptswithcomponentJSON') . "&componentID='+value);";
+ echo "			$.getJSON('" . getUrl('worder/concepts/getconceptswithcomponentJSON') . "&ruleID=" . $registry->concept->conceptID . "','',function(data) {";
+ 
+ echo "				console.log('data - ddd');";
+ echo "				$('#conceptlistloadingdiv').hide();";
+ echo "				$('#conceptlistloadeddiv').show();";
+ echo "				$('#conceptlisttable').empty();";
+ echo "				$.each(data, function(index) {";
+ echo "					console.log('data - '+data[index].name);";
+ 
+ echo "					if (data[index].name == '') {";
+ echo "						console.log(' - ei conceptstringiä - '+data[index].conceptID);";
+ echo "					}";
+ 
+ echo "					var row = '<tr>'";
+ echo "						+ '<td style=\"padding-right:10px;width:30px;\">'+data[index].conceptID+'</td>'";
+ echo "						+ '<td style=\"padding-right:10px;width:140px;\">'+data[index].wordclassID+'</td>'";
+ echo "						+ '<td style=\"padding-right:10px;width:250px;\">'+data[index].name+'</td>'";
+ //echo "						+ '<td style=\"padding-right:10px;\">'+data[index].duedate+'</td>'";
+ //echo "						+ '<td style=\"padding-right:10px;\">'+data[index].grossamount+'</td>'";
+ //echo "						+ '<td style=\"width:300px;overflow:hidden;\" title=\''+data[index].gloss+'\'><a href=\"" . getUrl('worder/concepts/showconcept') . "&id='+data[index].conceptID+'\">'+data[index].name+'</a></td>'";
+ //echo "						+ '<td><button onclick=\"linksalesInvoice(\''+rowID+'\',\''+data[index].invoiceID+'\')\">kohdista</button></td>'";
+ echo "						+ '</tr>';";
+ echo "					$('#conceptlisttable').append(row);";
+ echo "				});";
+ echo "		}); ";
+ */
 
 
 echo "			console.log('end');";
@@ -757,59 +804,59 @@ $section->show();
 // ---------------------------------------------------------------------------------------------------
 
 /*
-$section = new UITableSection("Translations","600px");
-$section->setOpen(true);
-$section->editable(true);
-$section->setFramesVisible(true);
-$section->setTableHeaderVisible(false);
-$section->setButtonAlign(UIComponent::VALIGN_BOTTOM);
-
-
-$section->setDeleteAction(UIComponent::ACTION_FORWARD, 'worder/concepts/removedefaultword&conceptID=' . $registry->concept->conceptID, array(1 => 'lang', 3 => 'id' ));
-$section->setLineAction(UIComponent::ACTION_FORWARD, 'worder/words/showword', array(1 => 'lang', 3 => 'id' ));
-
-$selectedwords = array();
-foreach($this->registry->languages as $index => $language) {
-
-// 	/echo "<br>test - " . $language->name . " - " . $language->active;
-	
-	if ($language->active == 1) {
-		$wordline = array();
-		$wordcolumn = "finnish_word";
-		$wordline[0] = $language->name;
-		$wordline[1] = $language->languageID;
-
-		//echo "<br>test - " . $language->name . " - " . $registry->concept->english_wordID . " - " . $registry->concept->english_word;
-		//echo "<br>test - " . $wordIDcolumn;
-		//echo "<br>test - " . $wordcolumn;
-		
-		
-		if ($registry->concept->$wordIDcolumn == null) {
-			//echo "<br>" . $language->name . " - null";
-			$wordline[2] = "";
-			$wordline[3] = 0;
-		} else {
-			//echo "<br>" . $language->name . " - " . $registry->concept->$wordIDcolumn . " - " . $registry->concept->$wordcolumn;
-			$wordline[2] = $registry->concept->$wordcolumn;
-			$wordline[3] = $registry->concept->$wordIDcolumn;
-		}
-
-		$selectedwords[] = $wordline;
-	}
-}
-
-
-
-$column = new UISimpleColumn("Kieli", 0);
-$section->addColumn($column);
-
-$column = new UISimpleColumn("Sana", 2);
-$section->addColumn($column);
-
-
-$section->setData($selectedwords);
-$section->show();
-*/
+ $section = new UITableSection("Translations","600px");
+ $section->setOpen(true);
+ $section->editable(true);
+ $section->setFramesVisible(true);
+ $section->setTableHeaderVisible(false);
+ $section->setButtonAlign(UIComponent::VALIGN_BOTTOM);
+ 
+ 
+ $section->setDeleteAction(UIComponent::ACTION_FORWARD, 'worder/concepts/removedefaultword&conceptID=' . $registry->concept->conceptID, array(1 => 'lang', 3 => 'id' ));
+ $section->setLineAction(UIComponent::ACTION_FORWARD, 'worder/words/showword', array(1 => 'lang', 3 => 'id' ));
+ 
+ $selectedwords = array();
+ foreach($this->registry->languages as $index => $language) {
+ 
+ // 	/echo "<br>test - " . $language->name . " - " . $language->active;
+ 
+ if ($language->active == 1) {
+ $wordline = array();
+ $wordcolumn = "finnish_word";
+ $wordline[0] = $language->name;
+ $wordline[1] = $language->languageID;
+ 
+ //echo "<br>test - " . $language->name . " - " . $registry->concept->english_wordID . " - " . $registry->concept->english_word;
+ //echo "<br>test - " . $wordIDcolumn;
+ //echo "<br>test - " . $wordcolumn;
+ 
+ 
+ if ($registry->concept->$wordIDcolumn == null) {
+ //echo "<br>" . $language->name . " - null";
+ $wordline[2] = "";
+ $wordline[3] = 0;
+ } else {
+ //echo "<br>" . $language->name . " - " . $registry->concept->$wordIDcolumn . " - " . $registry->concept->$wordcolumn;
+ $wordline[2] = $registry->concept->$wordcolumn;
+ $wordline[3] = $registry->concept->$wordIDcolumn;
+ }
+ 
+ $selectedwords[] = $wordline;
+ }
+ }
+ 
+ 
+ 
+ $column = new UISimpleColumn("Kieli", 0);
+ $section->addColumn($column);
+ 
+ $column = new UISimpleColumn("Sana", 2);
+ $section->addColumn($column);
+ 
+ 
+ $section->setData($selectedwords);
+ $section->show();
+ */
 
 
 
@@ -874,162 +921,162 @@ $_SESSION['global_sectionID'] = $searchworddialog->getID();
 
 
 function wordSearchDiv2() {
-
-	global $registry;
-	$sectionID = $_SESSION['global_sectionID'];
-	
-	
-	echo "	<table style='width:100%'>";
-	echo "		<tr>";
-	echo "			<td class=field-text style='width:150px;'>Kieli</td>";
-	echo "			<td style='width:250px;'>";
-	echo "				<select id=searchwordlanguage class=field-select style='width:200px;'>";
-	echo "					<option value='0' selected></option>";
-	foreach ($registry->languages as $index => $language) {
-		if ($registry->defaultlanguageID == $language->languageID) {
-			echo "				<option selected='selected' value=" . $language->languageID . ">" . $language->name . "</option>";
-		} else {
-			echo "				<option value=" . $language->languageID . ">" . $language->name . "</option>";
-		}
-	}
-	echo "				</select>";
-	echo " 			</td>";
-	echo "			<td id='messagefield-zz-1 style='width:100px;'></td>";
-	echo "		</tr>";
-	
-	
-	echo "		<tr>";
-	echo "			<td class=field-text style='width:150px;'>Name</td>";
-	echo "			<td style='padding-right:5px;'>";
-	echo "				<input class=uitextfield  id=searchwordfield type='text' style='width:100%;' type='text' value=''>";
-	echo " 			</td>";
-	echo "			<td style='padding-right:5px'>";
-	echo "				<div>";
-	echo "					<button  class=section-button  onclick='searchwordbuttonpressed()'>Etsi</button>";
-	echo "				</div>";
-	echo "			</td>";
-	echo "		</tr>";
-	
-	echo "		<tr>";
-	echo "			<td colspan=3 style='height:10px;'></td>";
-	echo "		</tr>";
-	
-	echo "		<tr>";
-	echo "			<td class=field-text style='width:150px;'></td>";
-	echo "			<td style='padding-right:5px;'>";
-	echo " 			</td>";
-	echo "			<td style='padding-right:5px;text-align:right;'>";
-	echo "				<div>";
-	echo "					<button  class=section-button  onclick='closeSearchWordDialog()'>Peruuta</button>";
-	echo "				</div>";
-	echo "			</td>";
-	echo "		</tr>";
-	
-	
-	echo "	<script>";
-	echo "		$('#searchwordfield').keypress(function (e) {";
-	echo "			if (e.keyCode == 13) {";
-	echo "				searchwordbuttonpressed();";
-	echo "			};";
-	echo "		})";
-	echo "	</script>";
-
-	echo "		<tr>";
-	echo "			<td colspan=3>";
-	echo "				<div id=searchwordloadingdiv style='display:none;height:100%;width:100%;'>";
-	echo "					<img width=50 height=50 src='" .  getImageUrl('loading2.gif')  . "'>";
-	echo "				</div>";
-	echo "				<div id=searchwordloadeddiv style='display:none;height:100%;width:100%;overflow:hidden'>";
-	echo "					<table id=searchwordresulttable style='width:100%;height:50px;table-layout:fixed'>";
-	echo "						<tr><td>Empty</td></tr>";
-	echo "					</table>";
-	echo "				</div>";
-	echo "			</td>";
-	echo "		</tr>";
-	echo "	</table>";
-
-	
-	echo "	<script>";
-	echo "		function addWordItem(languageID, wordID) {";
-	echo "			window.location = '" . getUrl("worder/concepts/insertword") . "&conceptID=" . $registry->concept->conceptID . "&languageID='+languageID+'&wordID='+wordID;";
-	echo "		}";
-	echo "	</script>";
-
-
-	echo "	<script>";
-	echo "		function insertWordItem(languageID, word) {";
-	echo "			var languageID = $('#searchwordlanguage').val();";
-	echo "			window.location = '" . getUrl("worder/concepts/insertnewword") . "&conceptID=" . $registry->concept->conceptID . "&word='+word+'&languageID='+languageID;";
-	echo "		}";
-	echo "	</script>";
-	
-
-	echo "	<script>";
-	echo "		function closeSearchWordDialog() {";
-	//echo "			alert('close window - " . $sectionID . "');";
-	echo "  		$('#sectiondialog-" . $sectionID . "').dialog('close');";
-							//echo "			window.location = '" . getUrl("worder/concepts/insertnewword") . "&conceptID=" . $registry->concept->conceptID . "&word='+word+'&languageID='+languageID;";
-	echo "		}";
-	echo "	</script>";
-	
-	
-	echo "	<script>";
-	echo "		function searchwordbuttonpressed() {";
-	echo "			var search = $('#searchwordfield').val();";
-	echo "			var languageID = $('#searchwordlanguage').val();";
-	
-	echo "			if (search == '') {";
-	echo "				alert('ei saa olla tyhjä 1');";
-	echo "				return;";
-	echo "			}";
-	echo "			$('#searchwordloadingdiv').show();";
-	echo "			$('#searchwordloadeddiv').hide();";
-	//echo "			var languageID = $('#parentlanguagefield').val();";
-	//echo "			console.log('languageid -'+languageID+'-');";
-	echo "			console.log('" . getUrl('worder/words/searchwordsJSON') . "&search='+search+'&languageID='+languageID);";
-
-	echo "			$.getJSON('" . getUrl('worder/words/searchwordsJSON') . "&search='+search+'&languageID='+languageID,'',function(data) {";
-	//echo "					console.log('data.length - '+data.length);";
-	echo "					var languageID = $('#searchwordlanguage').val();";
-	echo "					var search = $('#searchwordfield').val();";
-	echo "					$('#searchwordloadingdiv').hide();";
-	echo "					$('#searchwordloadeddiv').show();";
-	echo "					$('#searchwordresulttable tr').remove();";
-	echo "					var counter = 0;";
-	echo "					$.each(data, function(index) {";
-	//echo "						console.log('row - '+data[index].conceptID+' - '+data[index].name);";
-	echo "						var row = '<tr>'";
-	echo "							+ '<td style=\"padding-right:10px;\">'+data[index].wordclass+'</td>'";
-	echo "							+ '<td style=\"padding-right:10px;\">'+data[index].wordID+'</td>'";
-	//echo "							+ '<td title=\''+data[index].gloss+'\'><a href=\"" . getUrl('worder/words/showword') . "&id='+data[index].wordID+'\">'+data[index].name+'</a></td>'";
-	echo "							+ '<td style=\"width:330px;overflow:hidden;white-space: nowrap\" title=\''+data[index].gloss+'\'>'+data[index].name+'</td>'";
-	echo "							+ '<td><button onclick=\"addWordItem(\''+languageID+'\', \''+data[index].wordID+'\')\">lisää</button></td>'";
-	echo "							+ '</tr>';";
-	echo "						$('#searchwordresulttable').append(row);";
-	echo "						counter++;";
-	echo "					});";
-	
-	echo "					if (counter == 0) {";
-	echo "						var row = '<tr>'";
-	echo "							+ '<td colspan=4>'";
-	echo "							+ 'Ei yhtään löytynyt'";
-	echo "							+ '</td>'";
-	echo "							+ '</tr>';";
-	echo "						$('#searchwordresulttable').append(row);";
-	echo "					}";
-	
-	echo "						var row = '<tr>'";
-	echo "							+ '<td colspan=4 style=\"text-align:right;\">'";
-	echo "							+ '<button onclick=\"insertWordItem(\''+languageID+'\', \''+search+'\')\">Lisää sana</button>'";
-	//echo "							+ '<button style=\"margin-left:3px;\" onclick=\"closeSearchWordDialog()\">Sulje</button>'";
-	echo "							+ '</td>'";
-	echo "							+ '</tr>';";
-	echo "						$('#searchwordresulttable').append(row);";
-	
-	echo "			}); ";
-	////echo " 			console.log('finish');";
-	echo "		}";
-	echo "	</script>";
+    
+    global $registry;
+    $sectionID = $_SESSION['global_sectionID'];
+    
+    
+    echo "	<table style='width:100%'>";
+    echo "		<tr>";
+    echo "			<td class=field-text style='width:150px;'>Kieli</td>";
+    echo "			<td style='width:250px;'>";
+    echo "				<select id=searchwordlanguage class=field-select style='width:200px;'>";
+    echo "					<option value='0' selected></option>";
+    foreach ($registry->languages as $index => $language) {
+        if ($registry->defaultlanguageID == $language->languageID) {
+            echo "				<option selected='selected' value=" . $language->languageID . ">" . $language->name . "</option>";
+        } else {
+            echo "				<option value=" . $language->languageID . ">" . $language->name . "</option>";
+        }
+    }
+    echo "				</select>";
+    echo " 			</td>";
+    echo "			<td id='messagefield-zz-1 style='width:100px;'></td>";
+    echo "		</tr>";
+    
+    
+    echo "		<tr>";
+    echo "			<td class=field-text style='width:150px;'>Name</td>";
+    echo "			<td style='padding-right:5px;'>";
+    echo "				<input class=uitextfield  id=searchwordfield type='text' style='width:100%;' type='text' value=''>";
+    echo " 			</td>";
+    echo "			<td style='padding-right:5px'>";
+    echo "				<div>";
+    echo "					<button  class=section-button  onclick='searchwordbuttonpressed()'>Etsi</button>";
+    echo "				</div>";
+    echo "			</td>";
+    echo "		</tr>";
+    
+    echo "		<tr>";
+    echo "			<td colspan=3 style='height:10px;'></td>";
+    echo "		</tr>";
+    
+    echo "		<tr>";
+    echo "			<td class=field-text style='width:150px;'></td>";
+    echo "			<td style='padding-right:5px;'>";
+    echo " 			</td>";
+    echo "			<td style='padding-right:5px;text-align:right;'>";
+    echo "				<div>";
+    echo "					<button  class=section-button  onclick='closeSearchWordDialog()'>Peruuta</button>";
+    echo "				</div>";
+    echo "			</td>";
+    echo "		</tr>";
+    
+    
+    echo "	<script>";
+    echo "		$('#searchwordfield').keypress(function (e) {";
+    echo "			if (e.keyCode == 13) {";
+    echo "				searchwordbuttonpressed();";
+    echo "			};";
+    echo "		})";
+    echo "	</script>";
+    
+    echo "		<tr>";
+    echo "			<td colspan=3>";
+    echo "				<div id=searchwordloadingdiv style='display:none;height:100%;width:100%;'>";
+    echo "					<img width=50 height=50 src='" .  getImageUrl('loading2.gif')  . "'>";
+    echo "				</div>";
+    echo "				<div id=searchwordloadeddiv style='display:none;height:100%;width:100%;overflow:hidden'>";
+    echo "					<table id=searchwordresulttable style='width:100%;height:50px;table-layout:fixed'>";
+    echo "						<tr><td>Empty</td></tr>";
+    echo "					</table>";
+    echo "				</div>";
+    echo "			</td>";
+    echo "		</tr>";
+    echo "	</table>";
+    
+    
+    echo "	<script>";
+    echo "		function addWordItem(languageID, wordID) {";
+    echo "			window.location = '" . getUrl("worder/concepts/insertword") . "&conceptID=" . $registry->concept->conceptID . "&languageID='+languageID+'&wordID='+wordID;";
+    echo "		}";
+    echo "	</script>";
+    
+    
+    echo "	<script>";
+    echo "		function insertWordItem(languageID, word) {";
+    echo "			var languageID = $('#searchwordlanguage').val();";
+    echo "			window.location = '" . getUrl("worder/concepts/insertnewword") . "&conceptID=" . $registry->concept->conceptID . "&word='+word+'&languageID='+languageID;";
+    echo "		}";
+    echo "	</script>";
+    
+    
+    echo "	<script>";
+    echo "		function closeSearchWordDialog() {";
+    //echo "			alert('close window - " . $sectionID . "');";
+    echo "  		$('#sectiondialog-" . $sectionID . "').dialog('close');";
+    //echo "			window.location = '" . getUrl("worder/concepts/insertnewword") . "&conceptID=" . $registry->concept->conceptID . "&word='+word+'&languageID='+languageID;";
+    echo "		}";
+    echo "	</script>";
+    
+    
+    echo "	<script>";
+    echo "		function searchwordbuttonpressed() {";
+    echo "			var search = $('#searchwordfield').val();";
+    echo "			var languageID = $('#searchwordlanguage').val();";
+    
+    echo "			if (search == '') {";
+    echo "				alert('ei saa olla tyhjä 1');";
+    echo "				return;";
+    echo "			}";
+    echo "			$('#searchwordloadingdiv').show();";
+    echo "			$('#searchwordloadeddiv').hide();";
+    //echo "			var languageID = $('#parentlanguagefield').val();";
+    //echo "			console.log('languageid -'+languageID+'-');";
+    echo "			console.log('" . getUrl('worder/words/searchwordsJSON') . "&search='+search+'&languageID='+languageID);";
+    
+    echo "			$.getJSON('" . getUrl('worder/words/searchwordsJSON') . "&search='+search+'&languageID='+languageID,'',function(data) {";
+    //echo "					console.log('data.length - '+data.length);";
+    echo "					var languageID = $('#searchwordlanguage').val();";
+    echo "					var search = $('#searchwordfield').val();";
+    echo "					$('#searchwordloadingdiv').hide();";
+    echo "					$('#searchwordloadeddiv').show();";
+    echo "					$('#searchwordresulttable tr').remove();";
+    echo "					var counter = 0;";
+    echo "					$.each(data, function(index) {";
+    //echo "						console.log('row - '+data[index].conceptID+' - '+data[index].name);";
+    echo "						var row = '<tr>'";
+    echo "							+ '<td style=\"padding-right:10px;\">'+data[index].wordclass+'</td>'";
+    echo "							+ '<td style=\"padding-right:10px;\">'+data[index].wordID+'</td>'";
+    //echo "							+ '<td title=\''+data[index].gloss+'\'><a href=\"" . getUrl('worder/words/showword') . "&id='+data[index].wordID+'\">'+data[index].name+'</a></td>'";
+    echo "							+ '<td style=\"width:330px;overflow:hidden;white-space: nowrap\" title=\''+data[index].gloss+'\'>'+data[index].name+'</td>'";
+    echo "							+ '<td><button onclick=\"addWordItem(\''+languageID+'\', \''+data[index].wordID+'\')\">lisää</button></td>'";
+    echo "							+ '</tr>';";
+    echo "						$('#searchwordresulttable').append(row);";
+    echo "						counter++;";
+    echo "					});";
+    
+    echo "					if (counter == 0) {";
+    echo "						var row = '<tr>'";
+    echo "							+ '<td colspan=4>'";
+    echo "							+ 'Ei yhtään löytynyt'";
+    echo "							+ '</td>'";
+    echo "							+ '</tr>';";
+    echo "						$('#searchwordresulttable').append(row);";
+    echo "					}";
+    
+    echo "						var row = '<tr>'";
+    echo "							+ '<td colspan=4 style=\"text-align:right;\">'";
+    echo "							+ '<button onclick=\"insertWordItem(\''+languageID+'\', \''+search+'\')\">Lisää sana</button>'";
+    //echo "							+ '<button style=\"margin-left:3px;\" onclick=\"closeSearchWordDialog()\">Sulje</button>'";
+    echo "							+ '</td>'";
+    echo "							+ '</tr>';";
+    echo "						$('#searchwordresulttable').append(row);";
+    
+    echo "			}); ";
+    ////echo " 			console.log('finish');";
+    echo "		}";
+    echo "	</script>";
 }
 
 
@@ -1122,18 +1169,18 @@ echo "			console.log('para3m - ' + params.length);";
 echo "			linkwordfrombutton(params);";
 
 /*
-echo "			$.getJSON(urli,params,function(reply) { ";
-
-echo "					if (reply == 1) {";
-echo "						console.log('reply - '+reply);";
-echo "						console.log('para4m - ' + params.length);";
-echo "						ConfirmDialog('Sana on linkitetty jo, linkitetäänkö tähänkin?', 'linkword', params);";
-echo "					} else {";
-echo "						linkwordfrombutton(params);";
-echo "					}";
-echo "					console.log('reply - '+reply);";
-echo "			});";
-*/
+ echo "			$.getJSON(urli,params,function(reply) { ";
+ 
+ echo "					if (reply == 1) {";
+ echo "						console.log('reply - '+reply);";
+ echo "						console.log('para4m - ' + params.length);";
+ echo "						ConfirmDialog('Sana on linkitetty jo, linkitetäänkö tähänkin?', 'linkword', params);";
+ echo "					} else {";
+ echo "						linkwordfrombutton(params);";
+ echo "					}";
+ echo "					console.log('reply - '+reply);";
+ echo "			});";
+ */
 echo "		};";
 echo "	</script>";
 
@@ -1170,22 +1217,22 @@ echo "	</script>";
 // ---------------------------------------------------------------------------------------------------
 
 /*
-$addsentencedialog = new UISection('Add sentence','500px');
-$addsentencedialog->setDialog(true);
-$addsentencedialog->setMode(UIComponent::MODE_INSERT);
-$addsentencedialog->setInsertAction(UIComponent::ACTION_FORWARD, "worder/concepts/insertsentence&conceptID=" . $registry->concept->conceptID);
-
-$field = new UISelectField("Language","languageID","languageID",$registry->languages, "name");
-$addsentencedialog->addField($field);
-
-$field = new UITextField("Kuvaus", "Kuvaus", 'description');
-$addsentencedialog->addField($field);
-
-$field = new UITextField("Url", "sourceurl", 'sourceurl');
-$addsentencedialog->addField($field);
-
-$addsentencedialog->show();
-*/
+ $addsentencedialog = new UISection('Add sentence','500px');
+ $addsentencedialog->setDialog(true);
+ $addsentencedialog->setMode(UIComponent::MODE_INSERT);
+ $addsentencedialog->setInsertAction(UIComponent::ACTION_FORWARD, "worder/concepts/insertsentence&conceptID=" . $registry->concept->conceptID);
+ 
+ $field = new UISelectField("Language","languageID","languageID",$registry->languages, "name");
+ $addsentencedialog->addField($field);
+ 
+ $field = new UITextField("Kuvaus", "Kuvaus", 'description');
+ $addsentencedialog->addField($field);
+ 
+ $field = new UITextField("Url", "sourceurl", 'sourceurl');
+ $addsentencedialog->addField($field);
+ 
+ $addsentencedialog->show();
+ */
 
 
 
@@ -1214,114 +1261,114 @@ $section->show();
 
 
 function sentenceSearchDiv() {
-
-	global $registry;
-
-	echo "	<table style='width:100%'>";
-	echo "		<tr>";
-
-	echo "			<td style='padding-right:5px;'>";
-	echo "				<select id=sentencelanguagefield class=field-select style='width:100%'>";
-	foreach($registry->languages as $index => $language) {
-		echo "<option value='" . $language->languageID . "'>" . $language->name . "</option>";
-	}
-	echo "				</select>";
-	echo " 			</td>";
-	
-	echo "			<td style='padding-right:5px;'>";
-	echo "				<input class=uitextfield  id=searchsentencefield type='text' style='width:100%;' type='text' value=''>";
-	echo " 			</td>";
-
-	echo "			<td style='padding-right:5px'>";
-	echo "				<div>";
-	echo "					<button  class=section-button  onclick='searchsentencebuttonpressed()'>Etsi</button>";
-	echo "				</div>";
-	echo "			</td>";
-
-	echo "	<script>";
-	echo "		$('#searchsentencefield').keypress(function (e) {";
-	echo "			if (e.which == 13) {";
-	echo "				searchsentencebuttonpressed();";
-	echo "			};";
-	echo "		})";
-	echo "	</script>";
-
-	echo "		</tr>";
-
-
-	echo "		<tr>";
-	echo "			<td colspan=2>";
-
-	echo "				<div id=searchsentenceloadingdiv style='display:none;height:100%;width:100%;'>";
-	echo "					<img width=50 height=50 src='" .  getImageUrl('loading2.gif')  . "'>";
-	echo "				</div>";
-
-	echo "				<div id=searchsentenceloadeddiv style='display:none;height:100%;width:100%;overflow:hidden'>";
-	echo "					<div style='overflow-y:scroll;max-height:200px;'>";
-	//echo "				<div id=resultpanel style='width:100%;height:50px;background-color:pink;'>result</div>";
-	echo "					<table id=searchsentenceresulttable style='width:100%;height:50px;'>";
-	echo "						<tr><td>Empty</td></tr>";
-	echo "					</table>";
-	echo "					</div>";
-	echo "				</div>";
-	echo "			</td>";
-	echo "		</tr>";
-	echo "	</table>";
-
-
-	echo "	<script>";
-	echo "		function addSentence(sentenceID) {";
-	echo "			window.location = '" . getUrl("worder/concepts/insertsentencetoconcept") . "&sentenceID='+sentenceID+'&conceptID=" . $registry->concept->conceptID . "';";
-	echo "		}";
-	echo "	</script>";
-
-
-	echo "	<script>";
-	echo "		function searchsentencebuttonpressed() {";
-	echo "			console.log('search button pressed');";
-
-	echo "			var languageID = $('#sentencelanguagefield').val();";
-	echo "			var searh = $('#searchsentencefield').val();";
-	echo "			if (searh == '') {";
-	echo "				alert('ei saa olla tyhj� 2');";
-	echo "			}";
-	echo "			$('#searchsentenceloadingdiv').show();";
-	echo "			$('#searchsentenceloadeddiv').hide();";
-	//echo "			var languageID = $('#languagefield').val();";
-	//echo "			var languageID = " . $registry->rule->languageID . ";";
-	echo "			console.log('languageid -'+languageID+'-');";
-	echo "			console.log('" . getUrl('worder/sentences/searchsentences') . "&search='+searh+'&languageID='+languageID);";
-
-	echo "			$.getJSON('" . getUrl('worder/sentences/searchsentences') . "&search='+searh+'&languageID='+languageID,'',function(data) {";
-	echo "					console.log('data.length aa - '+data.length);";
-	echo "					$('#searchsentenceloadingdiv').hide();";
-	echo "					$('#searchsentenceloadeddiv').show();";
-	echo "					$('#searchsentenceresulttable tr').remove();";
-	echo "					var counter = 0;";
-	echo "					$.each(data, function(index) {";
-	echo "						counter++;";
-	echo "						console.log('row - '+data[index].sentenceID+' - '+data[index].sentence);";
-	echo "						var row = '<tr>'";
-	//echo "							+ '<td style=\"padding-right:10px;\">'+data[index].frequency+'</td>'";
-	echo "							+ '<td style=\"padding-right:10px;\">'+data[index].sentenceID+'</td>'";
-	echo "							+ '<td style=\"padding-right:10px;\">'+data[index].sentence+'</td>'";
-	//echo "							+ '<td title=\''+data[index].gloss+'\'><a href=\"" . getUrl('worder/words/showword') . "&lang='+languageID+'&id='+data[index].wordID+'\">'+data[index].name+'</a></td>'";
-	echo "							+ '<td><button onclick=\"addSentence(\''+data[index].sentenceID+'\')\">lisää</button></td>'";
-	echo "							+ '</tr>';";
-	echo "						$('#searchsentenceresulttable').append(row);";
-	echo "					});";
-	echo "					if (counter == 0) {";
-	echo "						var row = '<tr>'";
-	echo "							+ '<td style=\"padding-right:10px;\">Ei löytynyt</td>'";
-	echo "							+ '</tr>';";
-	echo "						$('#searchsentenceresulttable').append(row);";
-	echo "					}";
-	
-	echo "			}); ";
-	echo " 			console.log('finish');";
-	echo "		}";
-	echo "	</script>";
-
+    
+    global $registry;
+    
+    echo "	<table style='width:100%'>";
+    echo "		<tr>";
+    
+    echo "			<td style='padding-right:5px;'>";
+    echo "				<select id=sentencelanguagefield class=field-select style='width:100%'>";
+    foreach($registry->languages as $index => $language) {
+        echo "<option value='" . $language->languageID . "'>" . $language->name . "</option>";
+    }
+    echo "				</select>";
+    echo " 			</td>";
+    
+    echo "			<td style='padding-right:5px;'>";
+    echo "				<input class=uitextfield  id=searchsentencefield type='text' style='width:100%;' type='text' value=''>";
+    echo " 			</td>";
+    
+    echo "			<td style='padding-right:5px'>";
+    echo "				<div>";
+    echo "					<button  class=section-button  onclick='searchsentencebuttonpressed()'>Etsi</button>";
+    echo "				</div>";
+    echo "			</td>";
+    
+    echo "	<script>";
+    echo "		$('#searchsentencefield').keypress(function (e) {";
+    echo "			if (e.which == 13) {";
+    echo "				searchsentencebuttonpressed();";
+    echo "			};";
+    echo "		})";
+    echo "	</script>";
+    
+    echo "		</tr>";
+    
+    
+    echo "		<tr>";
+    echo "			<td colspan=2>";
+    
+    echo "				<div id=searchsentenceloadingdiv style='display:none;height:100%;width:100%;'>";
+    echo "					<img width=50 height=50 src='" .  getImageUrl('loading2.gif')  . "'>";
+    echo "				</div>";
+    
+    echo "				<div id=searchsentenceloadeddiv style='display:none;height:100%;width:100%;overflow:hidden'>";
+    echo "					<div style='overflow-y:scroll;max-height:200px;'>";
+    //echo "				<div id=resultpanel style='width:100%;height:50px;background-color:pink;'>result</div>";
+    echo "					<table id=searchsentenceresulttable style='width:100%;height:50px;'>";
+    echo "						<tr><td>Empty</td></tr>";
+    echo "					</table>";
+    echo "					</div>";
+    echo "				</div>";
+    echo "			</td>";
+    echo "		</tr>";
+    echo "	</table>";
+    
+    
+    echo "	<script>";
+    echo "		function addSentence(sentenceID) {";
+    echo "			window.location = '" . getUrl("worder/concepts/insertsentencetoconcept") . "&sentenceID='+sentenceID+'&conceptID=" . $registry->concept->conceptID . "';";
+    echo "		}";
+    echo "	</script>";
+    
+    
+    echo "	<script>";
+    echo "		function searchsentencebuttonpressed() {";
+    echo "			console.log('search button pressed');";
+    
+    echo "			var languageID = $('#sentencelanguagefield').val();";
+    echo "			var searh = $('#searchsentencefield').val();";
+    echo "			if (searh == '') {";
+    echo "				alert('ei saa olla tyhj� 2');";
+    echo "			}";
+    echo "			$('#searchsentenceloadingdiv').show();";
+    echo "			$('#searchsentenceloadeddiv').hide();";
+    //echo "			var languageID = $('#languagefield').val();";
+    //echo "			var languageID = " . $registry->rule->languageID . ";";
+    echo "			console.log('languageid -'+languageID+'-');";
+    echo "			console.log('" . getUrl('worder/sentences/searchsentences') . "&search='+searh+'&languageID='+languageID);";
+    
+    echo "			$.getJSON('" . getUrl('worder/sentences/searchsentences') . "&search='+searh+'&languageID='+languageID,'',function(data) {";
+    echo "					console.log('data.length aa - '+data.length);";
+    echo "					$('#searchsentenceloadingdiv').hide();";
+    echo "					$('#searchsentenceloadeddiv').show();";
+    echo "					$('#searchsentenceresulttable tr').remove();";
+    echo "					var counter = 0;";
+    echo "					$.each(data, function(index) {";
+    echo "						counter++;";
+    echo "						console.log('row - '+data[index].sentenceID+' - '+data[index].sentence);";
+    echo "						var row = '<tr>'";
+    //echo "							+ '<td style=\"padding-right:10px;\">'+data[index].frequency+'</td>'";
+    echo "							+ '<td style=\"padding-right:10px;\">'+data[index].sentenceID+'</td>'";
+    echo "							+ '<td style=\"padding-right:10px;\">'+data[index].sentence+'</td>'";
+    //echo "							+ '<td title=\''+data[index].gloss+'\'><a href=\"" . getUrl('worder/words/showword') . "&lang='+languageID+'&id='+data[index].wordID+'\">'+data[index].name+'</a></td>'";
+    echo "							+ '<td><button onclick=\"addSentence(\''+data[index].sentenceID+'\')\">lisää</button></td>'";
+    echo "							+ '</tr>';";
+    echo "						$('#searchsentenceresulttable').append(row);";
+    echo "					});";
+    echo "					if (counter == 0) {";
+    echo "						var row = '<tr>'";
+    echo "							+ '<td style=\"padding-right:10px;\">Ei löytynyt</td>'";
+    echo "							+ '</tr>';";
+    echo "						$('#searchsentenceresulttable').append(row);";
+    echo "					}";
+    
+    echo "			}); ";
+    echo " 			console.log('finish');";
+    echo "		}";
+    echo "	</script>";
+    
 }
 
 

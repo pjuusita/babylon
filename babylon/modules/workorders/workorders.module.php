@@ -67,8 +67,8 @@ class WorkordersModule extends AbstractModule {
 	 * Tämä funktio olettaaa, että modulin accessRightsit on jo asetettu frameworkin toimesta...
 	 * Tänne ei pitäisi tulla edes jos kyseistä modulia ei ole käytössä.
 	 * 
-	 * @param unknown $action
-	 * @param unknown $scope
+	 * @param int $action
+	 * @param int $scope
 	 */
 	public function hasAccessRight($action) {
 		

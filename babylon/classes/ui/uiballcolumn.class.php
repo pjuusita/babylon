@@ -34,8 +34,8 @@ class UIBallColumn extends UIColumn {
 	 * 
 	 * Toteutus on kesken, pallosarake on toteutettu tasks/tasks/tasks.php
 	 * 
-	 * @param unknown $row
-	 * @param unknown $rownNumber
+	 * @param Row $row
+	 * @param int $rownNumber
 	 */
 	public function generateContentCell($row, $rownNumber) {
 		

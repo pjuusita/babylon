@@ -30,12 +30,12 @@ $entrydate		= new UIDateField("Laskun paivays","entrydate","Entrydate");
 $supplierField 	= new UISelectField("Maksun saaja","supplierID", "SupplierID", $this->registry->suppliers);
 $supplierField->setPredictive(true);
 
-$attachment	 	= new UIFileSelectField("Tosite","attachment","Attachment", "liitetiedosto");
+//$attachment	 	= new UIFileSelectField("Tosite","attachment","Attachment", "liitetiedosto");
 
 $perustiedotsection->addField($receiptnumber);
 $perustiedotsection->addField($entrydate);
 $perustiedotsection->addField($supplierField);
-$perustiedotsection->addField($attachment);
+//$perustiedotsection->addField($attachment);
 $perustiedotsection->show();
 
 echo "<script>";

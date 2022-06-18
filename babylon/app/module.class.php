@@ -135,9 +135,9 @@ abstract class AbstractModule {
 	/**
 	 * 
 	 * 
-	 * @param unknown $action
-	 * @param unknown $profiles
-	 * @param unknown $scope
+	 * @param string $action
+	 * @param string $profiles
+	 * @param int $scope
 	 */
 	abstract function hasAccess($accesskey);	
 	

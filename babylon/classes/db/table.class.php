@@ -702,8 +702,8 @@ class Table {
 	/**
 	 * Tämä ei kyllä toimi täysin oikein, esim.. $this->registry->hierarchy = Table::loadHierarchy('worder_ inflectionsets','parentID',"WHERE GrammarID=" . $_SESSION['grammarID'] . ' AND LanguageID=' . $languageID .  " ORDER BY Sortorder");
 	 * 
-	 * @param unknown $tablename
-	 * @param unknown $parentvariable
+	 * @param string $tablename
+	 * @param string $parentvariable
 	 * @param string $whereclause
 	 * @param string $comments
 	 * @return multitype:Ambigous <NULL, multitype:, multitype:unknown Row >

@@ -994,11 +994,11 @@ class LessonsController extends AbstractController {
 	 * arvona.
 	 * 
 	 * 
-	 * @param unknown $items
-	 * @param unknown $keyvariable
-	 * @param unknown $sortvariable
-	 * @param unknown $currentID
-	 * @param unknown $previousID
+	 * @param int $items
+	 * @param int $keyvariable
+	 * @param int $sortvariable
+	 * @param int $currentID
+	 * @param int $previousID
 	 */
 	private static function createSortUpdateArray($items, $keyvariable, $sortvariable, $currentID, $previousID) {
 		

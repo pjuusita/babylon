@@ -29,6 +29,15 @@ class TimesheetModule extends AbstractModule {
 		*/
 		return $menuitems;
 	}
+    public function getAccessRights()
+    {}
+
+    public function hasAccess($accesskey)
+    {}
+
+    public function hasAccessRight($action)
+    {}
+
 	
 	
 }
