@@ -70,7 +70,7 @@ $conceptsection->show();
 $adddefinitiondialog = new UISection('Add Definition','500px');
 $adddefinitiondialog->setDialog(true);
 $adddefinitiondialog->setMode(UIComponent::MODE_INSERT);
-$adddefinitiondialog->setInsertAction(UIComponent::ACTION_FORWARD, "worder/concepts/adddefinition&conceptID=" . $registry->concept->conceptID);
+$adddefinitiondialog->setInsertAction(UIComponent::ACTION_FORWARD, "worder/concepts/insertdefinition&conceptID=" . $registry->concept->conceptID);
 
 $field = new UISelectField("Language", "languageID", "languageID", $this->registry->languages, 'name');
 $adddefinitiondialog->addField($field);
@@ -84,6 +84,28 @@ $adddefinitiondialog->addField($field);
 $adddefinitiondialog->show();
 
 
+// ---------------------------------------------------------------------------------------------------
+// Update Definition dialog
+// ---------------------------------------------------------------------------------------------------
+
+$editdefinitiondialog = new UISection('Edit Defintion');
+$editdefinitiondialog->setDialog(true);
+$editdefinitiondialog->setMode(UIComponent::MODE_EDIT);
+$editdefinitiondialog->setSaveAction(UIComponent::ACTION_FORWARD, 'worder/concepts/updatedefinition&conceptID=' . $registry->concept->conceptID, 'definitionID');
+
+$field = new UISelectField("Language", "languageID", "languageID", $this->registry->languages, 'name');
+$editdefinitiondialog->addField($field);
+
+$field = new UITextField("Definition","definition","definition");
+$editdefinitiondialog->addField($field);
+
+//$field = new UISelectField("Source","sourceID","sourceID",$registry->sources, "name");
+//$editdefinitiondialog->addField($field);
+
+$editdefinitiondialog->show();
+
+
+
 
 // ---------------------------------------------------------------------------------------------------
 
@@ -91,8 +113,9 @@ $section = new UITableSection("Definitions",$width);
 $section->setOpen(true);
 $section->editable(true);
 $section->setFramesVisible(true);
-$section->setDeleteAction(UIComponent::ACTION_FORWARD, 'worder/concepts/removedefinition&conceptID=' . $registry->concept->conceptID, 'definitiontID');
+$section->setDeleteAction(UIComponent::ACTION_FORWARD, 'worder/concepts/removedefinition&conceptID=' . $registry->concept->conceptID, 'definitionID');
 $section->setButtonAlign(UIComponent::VALIGN_BOTTOM);
+$section->setLineAction(UIComponent::ACTION_OPENDIALOG, $editdefinitiondialog->getID(),"rowID");
 
 $button = new UIButton(UIComponent::ACTION_OPENDIALOG, $adddefinitiondialog->getID(), 'Add Definition');
 $section->addButton($button);

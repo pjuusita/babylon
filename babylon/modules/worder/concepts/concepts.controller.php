@@ -815,25 +815,54 @@ class ConceptsController extends AbstractController {
     }
     
     
-    /*
-     public function isSetToDefaultAction() {
-     
-     $wordID = $_GET['wordID'];
-     $languageID = $_GET['languageID'];
-     
-     $language = Table::loadRow("worder_languages", "WHERE GrammarID=" . $_SESSION['grammarID'] . " AND LanguageID=" . $_GET['languageID']);
-     $word = Table::loadRow("worder_words", "WHERE GrammarID=" . $_SESSION['grammarID'] . " AND WordID=" . $wordID);
-     
-     if ($word->selected == 1) {
-     echo "1";
-     return 1;
-     } else {
-     echo "0";
-     return 0;
-     }
-     }
-     */
     
+    
+    public function updatedefinitionAction() {
+        
+        $definitionID = $_GET['id'];
+        $conceptID = $_GET['conceptID'];
+        
+        $values = array();
+        $values['LanguageID'] = $_GET['languageID'];
+        $values['Definition'] = $_GET['definition'];
+        
+        $success = Table::updateRow('worder_definitions', $values, "WHERE DefinitionID=" . $definitionID, false);
+        redirecttotal('worder/concepts/showconcept&id=' . $conceptID, null);
+    }
+    
+    
+    public function removedefinitionAction() {
+        
+        $conceptID = $_GET['conceptID'];
+        $definitionID = $_GET['id'];
+        $success = Table::deleteRow("worder_definitions","WHERE DefinitionID=" . $definitionID . " AND GrammarID=" . $_SESSION['grammarID'], false);
+        redirecttotal('worder/concepts/showconcept&id=' . $conceptID, null);
+    }
+    
+    
+    
+    
+    public function insertdefinitionAction() {
+        
+        $conceptID =  $_GET['conceptID'];
+        
+        $values = array();
+        $values['ConceptID'] = $conceptID;
+        $values['LanguageID'] = $_GET['languageID'];
+        $values['SourceID'] = $_GET['sourceID'];
+        $values['Definition'] = $_GET['definition'];
+        $values['Definitiontype'] = 0;
+        $values['GrammarID'] = $_SESSION['grammarID'];
+        
+        $success = Table::addRow("worder_definitions", $values, false);
+        redirecttotal('worder/concepts/showconcept&id=' . $conceptID, null);
+    }
+    
+    
+    
+    
+    
+ 
     
     // tämä funktio ylikirjoittaa aiemman sanan
     // vanha sana unlinkataan
