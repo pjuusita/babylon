@@ -25,6 +25,14 @@ class LessonsController extends AbstractController {
 	//***** ACTIONS
 	//******************************************************************************************************
 	
+	private function getLessonStates() {
+	    $states = array();
+	    $states[0] = "undefined";
+	    $states[1] = "active";
+	    return $states;
+	}
+	
+	
 	
 	public function showlessonsAction() {
 		
@@ -39,8 +47,19 @@ class LessonsController extends AbstractController {
 			}
 		}
 		$this->registry->languageID = $languageID;
-		$this->registry->lessons = Table::load('worder_lessons','WHERE GrammarID=' . $_SESSION['grammarID'] . ' AND LanguageID=' . $languageID . ' ORDER BY Sortorder');
+		
+		$this->registry->states = $this->getLessonStates();
+		$stateID = getModuleSessionVar('stateID',0);
+		$this->registry->stateID = $stateID;
+        		
+		if ($this->registry->stateID > 0) {
+		    $this->registry->lessons = Table::load('worder_lessons','WHERE GrammarID=' . $_SESSION['grammarID'] . ' AND LanguageID=' . $languageID . ' AND State=' . $stateID . ' ORDER BY Sortorder');
+		} else {
+		    $this->registry->lessons = Table::load('worder_lessons','WHERE GrammarID=' . $_SESSION['grammarID'] . ' AND LanguageID=' . $languageID . ' ORDER BY Sortorder');
+		}
 		$showcounts = getModuleSessionVar('lessoncounts', 0);
+		
+		
 		
 		
 		$taskID = getModuleSessionVar('taskID',0);
@@ -113,7 +132,7 @@ class LessonsController extends AbstractController {
 			$conceptlinks = Table::load('worder_lessonconcepts', "WHERE GrammarID=" . $_SESSION['grammarID'] . " AND LanguageID=" . $languageID);
 			foreach($conceptlinks as $index => $link) {
 				if (!isset($this->registry->lessons[$link->lessonID])) {
-					echo "<br>No lesson found - lessonID:" . $link->lessonID . ", conceptID=" . $link->conceptID;
+					//echo "<br>No lesson found - lessonID:" . $link->lessonID . ", conceptID=" . $link->conceptID;
 				} else {
 					$lesson = $this->registry->lessons[$link->lessonID];
 					if ($lesson->wordcount == null) {
@@ -129,7 +148,7 @@ class LessonsController extends AbstractController {
 			
 			foreach($conceptlinks as $index => $link) {
 				if (!isset($this->registry->lessons[$link->lessonID])) {
-					echo "<br>No lesson foudn - " . $link->lessonID;
+					//echo "<br>No lesson foudn - " . $link->lessonID;
 				} else {
 					$lesson = $this->registry->lessons[$link->lessonID];
 					$concept = $concepts[$link->conceptID];
@@ -169,8 +188,10 @@ class LessonsController extends AbstractController {
 			}
 			
 			foreach($objectivelinks as $index => $link) {
-				$lesson = $this->registry->lessons[$link->lessonID];
-				$lesson->objectivecount = $lesson->objectivecount + 1;
+			    if (isset($this->registry->lessons[$link->lessonID])) {
+			        $lesson = $this->registry->lessons[$link->lessonID];
+			        $lesson->objectivecount = $lesson->objectivecount + 1;
+			    }
 			}
 			
 			
@@ -342,6 +363,7 @@ class LessonsController extends AbstractController {
 			$languageID = 1;
 			setModuleSessionVar('languageID',1);
 		}
+		$this->registry->lessonstates = $this->getLessonStates();
 		
 		/*
 		$activelanguages = getModuleSessionVar('activelanguages','');
@@ -1350,6 +1372,7 @@ class LessonsController extends AbstractController {
 		$values['Name'] = $_GET['name'];
 		$values['LanguageID'] = $_GET['languageID'];
 		$values['Level'] = 50;
+		$values['State'] = 0;
 		$values['GrammarID'] = $_SESSION['grammarID'];
 		$lessonID = Table::addRow("worder_lessons", $values);
 		
@@ -1754,6 +1777,7 @@ class LessonsController extends AbstractController {
 		
 		$values['Description'] = $_GET['description'];
 		$values['Shortdesc'] = $_GET['shortdesc'];
+		if (isset($_GET['state'])) $values['State'] = $_GET['state'];
 		//$values['Level'] = $_GET['level'];
 		//$values['Active'] = $_GET['active'];
 		//$values['RulesetID'] = $_GET['rulesetID'];

@@ -258,6 +258,7 @@ $section->addField($field);
 $field = new UITextAreaField("Kuvaus","description","description");
 $section->addField($field);
 
+
 /*
 $field = new UITextField("Ruleset", "rulesetID", 'rulesetID');
 $section->addField($field);
@@ -271,6 +272,11 @@ $section->addField($field);
 $field = new UISelectField("Difficulty","difficultylevel","difficultylevel",$registry->difficultylevels, 'name');
 $section->addField($field);
 */
+
+
+
+$field = new UISelectField("State","state","state", $registry->lessonstates);
+$section->addField($field);
 
 $section->setData($registry->lesson);
 $section->show();

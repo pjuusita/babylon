@@ -30,6 +30,9 @@ $insertsetsection->setInsertAction(UIComponent::ACTION_FORWARD, "worder/rules/in
 $field = new UITextField("Name", "name", 'name');
 $insertsetsection->addField($field);
 
+$languagefield = new UISelectField("Kieli","languageID","languageID",$registry->languages, "name");
+$insertsetsection->addField($languagefield);
+
 $insertsetsection->show();
 
 

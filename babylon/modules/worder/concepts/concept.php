@@ -123,6 +123,9 @@ $section->addButton($button);
 $column = new UISortColumn("DefinitionID", "definitionID", "definitionID");
 $section->addColumn($column);
 
+$column = new UISortColumn("Spanish", "spanish", "spanish");
+$section->addColumn($column);
+
 $column = new UISelectColumn("Language", "name", "languageID", $registry->languages);
 $section->addColumn($column);
 

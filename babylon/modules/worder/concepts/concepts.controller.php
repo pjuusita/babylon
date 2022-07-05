@@ -852,6 +852,7 @@ class ConceptsController extends AbstractController {
         $values['SourceID'] = $_GET['sourceID'];
         $values['Definition'] = $_GET['definition'];
         $values['Definitiontype'] = 0;
+        $values['Spanish'] = 0;
         $values['GrammarID'] = $_SESSION['grammarID'];
         
         $success = Table::addRow("worder_definitions", $values, false);

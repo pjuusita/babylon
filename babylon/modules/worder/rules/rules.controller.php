@@ -139,10 +139,12 @@ class RulesController extends AbstractController {
 	public function insertrulesetAction() {
 	
 		$name =  $_GET['name'];
-	
+        $languageID = $_GET['languageID'];
+		
 		$values = array();
 		$values['Name'] = $name;
 		$values['GrammarID'] = $_SESSION['grammarID'];
+		$values['LanguageID'] = $languageID;
 		$values['SentencesetID'] = 0;
 		$setID = Table::addRow("worder_rulesets", $values, false);
 	

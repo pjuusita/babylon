@@ -1,5 +1,7 @@
 <?php
 
+    // Tällä mitä ilmeisimmin luodaan pelkästään monikkomuotoja
+
 
 	function endsWith( $haystack, $needle ) {
 		$length = strlen( $needle );

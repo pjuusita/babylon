@@ -7,7 +7,12 @@ $boardfilter->setEmptySelect(false);
 		
 $taskfilter = new UIFilterBox();
 $taskfilter->addSelectFilter($this->registry->generatorID, $registry->generators, "worder/lessons/showlessons", "", "generatorID", "name");
+
+$statefilter = new UIFilterBox();
+$statefilter->addSelectFilter($this->registry->stateID, $registry->states, "worder/lessons/showlessons", "", "stateID");
+
 //$taskfilter->setEmptySelect(false);
+
 
 
 
@@ -72,6 +77,12 @@ echo "	<tr>";
 echo "		</td>";
 echo "		<td style='width:40%;text-align:right;padding-right:22px;'>";
 $taskfilter->show();
+echo "		</td>";
+echo "	</tr>";
+echo "	<tr>";
+echo "		</td>";
+echo "		<td style='width:40%;text-align:right;padding-right:22px;'>";
+$statefilter->show();
 echo "		</td>";
 echo "	</tr>";
 
